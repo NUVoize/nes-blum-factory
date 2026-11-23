@@ -1,0 +1,38 @@
+{
+  "id": "01M5C5M9BKABS5ZAM657T3298W",
+  "director": "movement",
+  "state": "approved",
+  "createdAt": "2026-10-20T08:07:45.267Z",
+  "tool": "propose_enemy",
+  "summary": {
+    "fr": "Ennemi « Limace gourmande » (marcheur, 1 vie(s)).",
+    "en": "Enemy \"Greedy Slug\" (walker, 1 hp)."
+  },
+  "ops": [
+    {
+      "op": "set",
+      "doc": "actors/limace.json",
+      "value": {
+        "schemaVersion": 1,
+        "kind": "enemy",
+        "name": {
+          "fr": "Limace gourmande",
+          "en": "Greedy Slug"
+        },
+        "pattern": "walker",
+        "speed": 64,
+        "hp": 1,
+        "damage": 1,
+        "turnAtLedge": true,
+        "frames": [
+          "limace1",
+          "limace2"
+        ],
+        "graphics": "graphics/ennemis-potager.json"
+      }
+    }
+  ],
+  "warnings": [],
+  "decidedAt": "2026-10-20T08:07:45.526Z",
+  "txId": "01M5C5M9KHQXP54MH15MCZQC97"
+}

@@ -1,0 +1,66 @@
+# Packaging (PLAN §8): portable folder for win-x64, zipped by scripts/package.mjs. No installer, no
+# auto-update, no telemetry, no code signing. Mesen is never bundled.
+appId: ca.nuvoize.nesblumfactory
+productName: NES BLUM FACTORY
+executableName: NES BLUM FACTORY
+copyright: Copyright 2026 Fred (NUVoize), given to Blum
+directories:
+  output: release/builder
+  buildResources: build-res
+files:
+  - package.json
+  - config/prices.json
+  - dist/electron/**/*.js
+  - dist/renderer/**/*
+  - "!**/*.map"
+asar: true
+extraResources:
+  - from: resources/toolchain/cc65
+    to: toolchain/cc65
+    filter:
+      - bin/cc65.exe
+      - bin/ca65.exe
+      - bin/ld65.exe
+      - include/**/*
+      - asminc/**/*
+      - lib/nes.lib
+      - cfg/nes.cfg
+      - VERSION.json
+  - from: engine
+    to: engine
+    filter:
+      - cfg/**/*
+      - src/**/*
+      - lib/**/*
+      - audio/**/*
+      - licenses/**/*
+      - README.md
+  - from: resources/licenses
+    to: licenses
+  # M6: the sample game BLUM (copied into Documents before it is opened, never edited in place)
+  - from: resources/samples
+    to: samples
+electronLanguages:
+  - fr
+  - en-US
+npmRebuild: false
+nodeGypRebuild: false
+buildDependenciesFromSource: false
+includePdb: false
+win:
+  icon: build-res/icon.ico
+  target:
+    - target: dir
+      arch:
+        - x64
+  signAndEditExecutable: true
+  signExts: []
+# Electron fuses (W1 P2-4): no ELECTRON_RUN_AS_NODE, no NODE_OPTIONS, no --inspect, app code only from
+# the asar archive, and the archive checked against its embedded hash.
+electronFuses:
+  runAsNode: false
+  enableCookieEncryption: true
+  enableNodeOptionsEnvironmentVariable: false
+  enableNodeCliInspectArguments: false
+  enableEmbeddedAsarIntegrityValidation: true
+  onlyLoadAppFromAsar: true

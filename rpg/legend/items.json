@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "comment": "Quest items (bible section 6): stable id, one source, never consumed, never dropped (the engine has no drop or sell). Consumable: the collation (count, used in battle).",
+  "items": [
+    { "id": "ITEM_CLOCHE", "name": "Clochette", "kind": "quest", "critical": true, "description": "La petite clochette de Madame Bélanger. Elle sonne clair. Garde-la toute ta vie." },
+    { "id": "ITEM_BILLET", "name": "Billet d'autorisation", "kind": "quest", "critical": true, "description": "Signé, estampé. Ouvre la porte de la classe de 1re année." }
+  ],
+  "collation": { "name": "Collation", "description": "Une collation à la pomme. +12 PV en combat." }
+}

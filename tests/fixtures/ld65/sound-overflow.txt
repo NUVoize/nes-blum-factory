@@ -1,0 +1,2 @@
+cfg/blum_mmc3.cfg:49: Warning: Segment ‘SOUND’ overflows memory area ‘PRG28’ by 1647 bytes
+ld65: Error: Cannot generate most of the files due to memory area overflow

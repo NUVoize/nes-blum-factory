@@ -1,0 +1,107 @@
+{
+  "id": "01M5C5M9XZYKFMDM9MRQYX1HGR",
+  "director": "movement",
+  "state": "approved",
+  "createdAt": "2026-10-20T08:07:45.855Z",
+  "tool": "propose_boss",
+  "summary": {
+    "fr": "Boss « Le Castor Contremaître » : 8 vies, 2 phase(s).",
+    "en": "Boss \"The Beaver Foreman\": 8 hp, 2 phase(s)."
+  },
+  "ops": [
+    {
+      "op": "set",
+      "doc": "scripts/castor.json",
+      "value": {
+        "schemaVersion": 1,
+        "phases": [
+          {
+            "steps": [
+              {
+                "op": "vulnerable",
+                "on": false
+              },
+              {
+                "op": "wait",
+                "frames": 30
+              },
+              {
+                "op": "charge",
+                "speed": 40
+              },
+              {
+                "op": "flash",
+                "frames": 10
+              },
+              {
+                "op": "vulnerable",
+                "on": true
+              },
+              {
+                "op": "wait",
+                "frames": 80
+              }
+            ]
+          },
+          {
+            "hpBelow": 4,
+            "steps": [
+              {
+                "op": "vulnerable",
+                "on": false
+              },
+              {
+                "op": "shoot",
+                "pattern": "aimed",
+                "speed": 32
+              },
+              {
+                "op": "wait",
+                "frames": 20
+              },
+              {
+                "op": "charge",
+                "speed": 48
+              },
+              {
+                "op": "flash",
+                "frames": 10
+              },
+              {
+                "op": "vulnerable",
+                "on": true
+              },
+              {
+                "op": "wait",
+                "frames": 60
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "op": "set",
+      "doc": "actors/castor.json",
+      "value": {
+        "schemaVersion": 1,
+        "kind": "boss",
+        "name": {
+          "fr": "Le Castor Contremaître",
+          "en": "The Beaver Foreman"
+        },
+        "hp": 8,
+        "damage": 1,
+        "graphics": "graphics/boss-castor.json",
+        "frames": [
+          "castor1",
+          "castor2"
+        ],
+        "script": "castor"
+      }
+    }
+  ],
+  "warnings": [],
+  "decidedAt": "2026-10-20T08:07:46.073Z",
+  "txId": "01M5C5MA38FERDH3075N9FV03K"
+}

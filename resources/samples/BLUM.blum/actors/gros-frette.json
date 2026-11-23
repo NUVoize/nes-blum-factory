@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "kind": "boss",
+  "name": {
+    "fr": "Le Gros Frette",
+    "en": "The Big Chill"
+  },
+  "hp": 12,
+  "damage": 1,
+  "graphics": "graphics/boss-gros-frette.json",
+  "frames": [
+    "gros-frette1",
+    "gros-frette2"
+  ],
+  "script": "gros-frette"
+}

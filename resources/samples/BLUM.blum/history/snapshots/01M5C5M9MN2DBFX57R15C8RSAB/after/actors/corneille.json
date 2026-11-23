@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "enemy",
+  "name": {
+    "fr": "Corneille jacasseuse",
+    "en": "Nosy Crow"
+  },
+  "pattern": "flyer",
+  "speed": 192,
+  "hp": 1,
+  "damage": 1,
+  "turnAtLedge": false,
+  "frames": [
+    "corneille1",
+    "corneille2"
+  ],
+  "period": 64,
+  "amplitude": 16,
+  "graphics": "graphics/ennemis-potager.json"
+}

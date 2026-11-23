@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 1,
+  "comment": "LEGEND OF BLUM vertical slice (BLUMZ-M1): areas and screens. Rows use the kit tileset characters (rpg/kit/gfx/tilesets/<tileset>.json). Exits: same area = slide, other area = fade. Entities: x, y in metatiles (0-15, 0-14); show.if / show.unless = flags; talk = A in front, touch = walk into it. Places are simplified and unnamed: no address, no house number, no street name.",
+  "areas": [
+    {
+      "id": "appartement",
+      "name": "Chez Madame Bélanger",
+      "tileset": "appartement",
+      "music": "legende",
+      "screens": [
+        {
+          "id": "salon",
+          "rows": [
+            "################",
+            "#wWwwwpwwhwwdww#",
+            "#B.............#",
+            "#B....TT...L...#",
+            "#B....cc.......#",
+            "#.............P#",
+            "#..=======......",
+            "#..=======......",
+            "#..=======......",
+            "#t.=======..C..#",
+            "#t.............#",
+            "#..............#",
+            "#P............P#",
+            "#..............#",
+            "################"
+          ],
+          "exits": { "right": "cuisine" },
+          "entities": [
+            { "id": "NPC_BELANGER", "x": 9, "y": 4, "sprite": "belanger", "talk": "SCR_BELANGER" },
+            { "id": "OBJ_FENETRE", "x": 2, "y": 1, "talk": "SCR_FENETRE" },
+            { "id": "NPC_MAGDI", "x": 4, "y": 10, "sprite": "magdi", "show": { "if": "F_AMIS" }, "talk": "SCR_MAGDI" },
+            { "id": "NPC_NIVOIX", "x": 6, "y": 11, "sprite": "nivoix", "show": { "if": "F_AMIS" }, "talk": "SCR_NIVOIX" },
+            { "id": "OBJ_ETOILE_SALON", "x": 13, "y": 11, "sprite": "sauvegarde", "talk": "SCR_ETOILE" }
+          ]
+        },
+        {
+          "id": "cuisine",
+          "rows": [
+            "################",
+            "#wwwhwwwwwwWwww#",
+            "#KKSKkkkkkkkkkF#",
+            "#kkkkkkkkkkkkkF#",
+            "#kkkkkkkkkkkkkk#",
+            "#kkkkkTTkkkkkkk#",
+            "kkkkkkcckkkkkkk#",
+            "kkkkkkkkkkkkkkk#",
+            "kkkkkkkkkkkkkkk#",
+            "#kkkkkkkkkkkkkk#",
+            "#P.....r......P#",
+            "#######r########",
+            "#######r########",
+            "#######r########",
+            "#######r########"
+          ],
+          "exits": { "left": "salon", "down": "entree" },
+          "entities": [
+            { "id": "ENN_MOUTON", "x": 7, "y": 11, "sprite": "mouton", "show": { "unless": "F_MOUTON" }, "touch": "SCR_MOUTON" }
+          ]
+        },
+        {
+          "id": "entree",
+          "rows": [
+            "#######r########",
+            "#wwwwww.wwwwwwp#",
+            "#......r.......#",
+            "#..L...r....B..#",
+            "#......r.......#",
+            "#P.....r......P#",
+            "#......r.......#",
+            "#......r.......#",
+            "#.....rrr......#",
+            "#......r.......#",
+            "#......r.....C.#",
+            "#......r.......#",
+            "#......r.......#",
+            "#wwwwwwDwwwwwww#",
+            "################"
+          ],
+          "exits": { "up": "cuisine" },
+          "entities": [
+            { "id": "PORTE_SORTIE_CH00", "x": 7, "y": 13, "touch": "SCR_SORTIE_CH00" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anjou",
+      "name": "La rue",
+      "tileset": "anjou",
+      "music": "awaits_a",
+      "screens": [
+        {
+          "id": "maison",
+          "rows": [
+            "ggABggggggggggAB",
+            "ggabgRRRRRRRggab",
+            "ggggReeeeeeeRggh",
+            "ggggWwWdWwWGWggh",
+            "hhhhgkkkkkkppggh",
+            "hfggggmkgggppggh",
+            "hgggggkkgggppggh",
+            "FFFFFFgkgggppFFF",
+            "ssssssssssssssss",
+            "cccccccccccccccc",
+            "rrrrrrrrrrrrrrrr",
+            "llllllllllllllll",
+            "rrrrrrrrrrrrrrrr",
+            "cccccccccccccccc",
+            "hhhhhhhhhhhhhhhh"
+          ],
+          "exits": { "right": "rue" },
+          "entities": [
+            { "id": "PORTE_MAISON", "x": 7, "y": 3, "talk": "SCR_PORTE_MAISON" },
+            { "id": "OBJ_BOITE", "x": 6, "y": 5, "talk": "SCR_BOITE" }
+          ]
+        },
+        {
+          "id": "rue",
+          "rows": [
+            "hgABggggggggABgh",
+            "hgabggggfgggabgh",
+            "hggggguggggggggh",
+            "hgfgggggggggfggh",
+            "hggABggggggABggh",
+            "hggabggggggabggh",
+            "FFFFFFFFFFFFFFFF",
+            "hggggggggggggggh",
+            "ssssssssosssssss",
+            "cccccccccccccccc",
+            "rrrrrrrrrrrrrrrr",
+            "llllllllllllllll",
+            "rrrrrrrrrrrrrrrr",
+            "cccccccccccccccc",
+            "hhhhhhhhhhhhhhhh"
+          ],
+          "exits": { "left": "maison", "right": "cour" },
+          "entities": []
+        }
+      ]
+    },
+    {
+      "id": "chenier-ext",
+      "name": "École Chénier, la cour",
+      "tileset": "chenier-ext",
+      "music": "awaits_b",
+      "screens": [
+        {
+          "id": "cour",
+          "rows": [
+            "RRRRRRRRRRRRRRRR",
+            "MPPPPMwwwwwMPPPM",
+            "MwwwwMPPPPPMwwwM",
+            "MPPPPMwwwwwMPPPM",
+            "MwwwwMPDPPPMwwwM",
+            "uuuuuuusuuuuuuuu",
+            "uuABuuusuuuABuuu",
+            "uuabuuusuuuabuuu",
+            "ssssssssssssssss",
+            "cccccccccccccccc",
+            "zzzzzzzzzzzozzzz",
+            "zzzHHzzzzzzYzzzz",
+            "zzzHHzzzzzzYzzzz",
+            "zzzzzzzzzzzzzzzz",
+            "FFFFFFFFvvFFFFFF"
+          ],
+          "exits": { "left": "rue" },
+          "entities": [
+            { "id": "PORTE_ECOLE", "x": 7, "y": 4, "touch": "SCR_PORTE_ECOLE" },
+            { "id": "NPC_MAXI_COUR", "x": 4, "y": 12, "sprite": "maxi", "show": { "unless": "F_MAT_FINIE" }, "talk": "SCR_MAXI_COUR" },
+            { "id": "NPC_PAUL_COUR", "x": 9, "y": 12, "sprite": "paul", "talk": "SCR_PAUL_COUR" },
+            { "id": "ENN_BOULETTE", "x": 7, "y": 7, "sprite": "boulette", "show": { "if": "F_MAT_FINIE", "unless": "F_BOULETTE" }, "touch": "SCR_BOULETTE" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chenier-int",
+      "name": "École Chénier",
+      "tileset": "chenier-int",
+      "music": "awaits_b",
+      "screens": [
+        {
+          "id": "couloir",
+          "rows": [
+            "################",
+            "#wdwwccccwwdwwh#",
+            "#..............#",
+            "#..............#",
+            "#,,,,,,,,,,,,,,#",
+            "#..............#",
+            "#f............b#",
+            "#..............#",
+            "#,,,,,,,,,,,,,,#",
+            "#..............#",
+            "#..............#",
+            "#wwdwwweewwwwwp#",
+            "################",
+            "################",
+            "################"
+          ],
+          "exits": {},
+          "entities": [
+            { "id": "PORTE_MATERNELLE", "x": 2, "y": 1, "touch": "SCR_PORTE_MATERNELLE" },
+            { "id": "PORTE_1RE", "x": 11, "y": 1, "talk": "SCR_PORTE_1RE", "touch": "SCR_PORTE_1RE" },
+            { "id": "PORTE_BUREAU", "x": 3, "y": 11, "touch": "SCR_PORTE_BUREAU" },
+            { "id": "PORTE_COUR_G", "x": 7, "y": 11, "touch": "SCR_PORTE_COUR" },
+            { "id": "PORTE_COUR_D", "x": 8, "y": 11, "touch": "SCR_PORTE_COUR" },
+            { "id": "NPC_MAXI_COULOIR", "x": 6, "y": 3, "sprite": "maxi", "show": { "if": "F_MAT_FINIE" }, "talk": "SCR_MAXI_COULOIR" },
+            { "id": "OBJ_ETOILE_COULOIR", "x": 13, "y": 9, "sprite": "sauvegarde", "talk": "SCR_ETOILE" }
+          ]
+        },
+        {
+          "id": "classe-mat",
+          "rows": [
+            "################",
+            "#wtTwwwwwtTwwpw#",
+            "#...K..........#",
+            "#..............#",
+            "#.k..k..k..k...#",
+            "#.s..s..s..s...#",
+            "#..............#",
+            "#.k..k..k..k..B#",
+            "#.s..s..s..s...#",
+            "#..............#",
+            "#.k..k..k..k..b#",
+            "#.s..s..s..s...#",
+            "#..............#",
+            "#WwwWwwWwwWwhdw#",
+            "################"
+          ],
+          "exits": {},
+          "entities": [
+            { "id": "PORTE_MAT_SORTIE", "x": 13, "y": 13, "touch": "SCR_SORTIE_MAT" },
+            { "id": "ENN_CRAYONS", "x": 7, "y": 3, "sprite": "crayon", "show": { "unless": "F_CRAYONS" }, "touch": "SCR_CRAYONS" }
+          ]
+        },
+        {
+          "id": "classe-1re",
+          "rows": [
+            "################",
+            "#wtTwwwwwtTwwpw#",
+            "#........K.....#",
+            "#..............#",
+            "#.k..k..k..k...#",
+            "#.s..s..s..s...#",
+            "#..............#",
+            "#.k..k..k..k..B#",
+            "#.s..s..s..s...#",
+            "#..............#",
+            "#.k..k..k..k..b#",
+            "#.s..s..s..s...#",
+            "#..............#",
+            "#WwdWwwWwwWwhww#",
+            "################"
+          ],
+          "exits": {},
+          "entities": [
+            { "id": "PORTE_1RE_SORTIE", "x": 3, "y": 13, "touch": "SCR_SORTIE_1RE" },
+            { "id": "NPC_MARIE_CLAUDE", "x": 7, "y": 3, "sprite": "marie-claude", "show": { "unless": "F_MC" }, "talk": "SCR_MARIE_CLAUDE", "touch": "SCR_MARIE_CLAUDE" }
+          ]
+        },
+        {
+          "id": "bureau",
+          "rows": [
+            "################",
+            "#wwwwpwwwWwwwhw#",
+            "#..B......B....#",
+            "#..............#",
+            "#KKKKKKKKKKKKKK#",
+            "#..............#",
+            "#..............#",
+            "#.s..s.........#",
+            "#..............#",
+            "#............b.#",
+            "#..............#",
+            "#wwwwwwdwwwwwww#",
+            "################",
+            "################",
+            "################"
+          ],
+          "exits": {},
+          "entities": [
+            { "id": "PORTE_BUREAU_SORTIE", "x": 7, "y": 11, "touch": "SCR_SORTIE_BUREAU" },
+            { "id": "OBJ_SECRETARIAT", "x": 7, "y": 3, "sprite": "marque", "talk": "SCR_SECRETARIAT" }
+          ]
+        }
+      ]
+    }
+  ]
+}

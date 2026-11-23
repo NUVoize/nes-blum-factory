@@ -1,0 +1,447 @@
+{
+  "id": "anjou",
+  "title": "Maison de Blum et rue d'Anjou (CH01, rue simplifiée sans nom)",
+  "chr": "engine/chr/anjou.chr",
+  "unit": "R1 (2 KiB at $0800)",
+  "tiles": 73,
+  "capacity": 128,
+  "metatileTable": "engine/metatiles/anjou.bin (5 bytes x 64: tl tr bl br attr)",
+  "palettes": "engine/palettes/anjou.bin",
+  "bg": [
+    [
+      "$0F",
+      "$02",
+      "$30",
+      "$27"
+    ],
+    [
+      "$0F",
+      "$08",
+      "$1A",
+      "$29"
+    ],
+    [
+      "$0F",
+      "$07",
+      "$17",
+      "$30"
+    ],
+    [
+      "$0F",
+      "$00",
+      "$10",
+      "$3D"
+    ]
+  ],
+  "bgRoles": [
+    "UI",
+    "gazon, arbres, haies",
+    "brique, maison, clôture",
+    "asphalte, trottoir"
+  ],
+  "spr": [
+    [
+      "$0F",
+      "$36",
+      "$29"
+    ],
+    [
+      "$0F",
+      "$36",
+      "$16"
+    ],
+    [
+      "$0F",
+      "$36",
+      "$12"
+    ],
+    [
+      "$0F",
+      "$00",
+      "$30"
+    ]
+  ],
+  "sprRoles": [
+    "Blum tête",
+    "Blum corps",
+    "Maxi, Paul (bleu)",
+    "Boulette de papier, objets"
+  ],
+  "attrBits": {
+    "palette": "bits 0-1",
+    "solid": 4,
+    "counter": 8,
+    "trigger": 16
+  },
+  "sheet": "gfx/tilesets/anjou.png (8 metatiles per row, in metatile order)",
+  "metatiles": [
+    {
+      "index": 0,
+      "ch": "g",
+      "name": "gazon",
+      "palette": 1,
+      "solid": false,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "attr": 1
+    },
+    {
+      "index": 1,
+      "ch": "f",
+      "name": "gazon fleuri",
+      "palette": 1,
+      "solid": false,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "attr": 1
+    },
+    {
+      "index": 2,
+      "ch": "h",
+      "name": "haie",
+      "palette": 1,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "attr": 5
+    },
+    {
+      "index": 3,
+      "ch": "A",
+      "name": "arbre haut gauche",
+      "palette": 1,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "attr": 5
+    },
+    {
+      "index": 4,
+      "ch": "B",
+      "name": "arbre haut droit",
+      "palette": 1,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "attr": 5
+    },
+    {
+      "index": 5,
+      "ch": "a",
+      "name": "arbre bas gauche",
+      "palette": 1,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        21,
+        22,
+        3,
+        23
+      ],
+      "attr": 5
+    },
+    {
+      "index": 6,
+      "ch": "b",
+      "name": "arbre bas droit",
+      "palette": 1,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        24,
+        25,
+        26,
+        4
+      ],
+      "attr": 5
+    },
+    {
+      "index": 7,
+      "ch": "u",
+      "name": "buisson",
+      "palette": 1,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        27,
+        28,
+        29,
+        30
+      ],
+      "attr": 5
+    },
+    {
+      "index": 8,
+      "ch": "s",
+      "name": "trottoir",
+      "palette": 3,
+      "solid": false,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        31,
+        32,
+        33,
+        34
+      ],
+      "attr": 3
+    },
+    {
+      "index": 9,
+      "ch": "r",
+      "name": "rue (asphalte)",
+      "palette": 3,
+      "solid": false,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        35,
+        36,
+        37,
+        38
+      ],
+      "attr": 3
+    },
+    {
+      "index": 10,
+      "ch": "l",
+      "name": "rue, ligne discontinue",
+      "palette": 3,
+      "solid": false,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        39,
+        40,
+        41,
+        42
+      ],
+      "attr": 3
+    },
+    {
+      "index": 11,
+      "ch": "c",
+      "name": "bordure (trottoir / rue)",
+      "palette": 3,
+      "solid": false,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        43,
+        43,
+        44,
+        44
+      ],
+      "attr": 3
+    },
+    {
+      "index": 12,
+      "ch": "p",
+      "name": "entrée de garage (dalles)",
+      "palette": 3,
+      "solid": false,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        45,
+        45,
+        45,
+        45
+      ],
+      "attr": 3
+    },
+    {
+      "index": 13,
+      "ch": "k",
+      "name": "allée de dalles sur gazon",
+      "palette": 3,
+      "solid": false,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        46,
+        46,
+        46,
+        46
+      ],
+      "attr": 3
+    },
+    {
+      "index": 14,
+      "ch": "W",
+      "name": "mur de brique",
+      "palette": 2,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        47,
+        47,
+        47,
+        47
+      ],
+      "attr": 6
+    },
+    {
+      "index": 15,
+      "ch": "w",
+      "name": "mur de brique avec fenêtre",
+      "palette": 2,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        48,
+        49,
+        50,
+        51
+      ],
+      "attr": 6
+    },
+    {
+      "index": 16,
+      "ch": "d",
+      "name": "porte d'entrée (blanche)",
+      "palette": 2,
+      "solid": false,
+      "counter": false,
+      "trigger": true,
+      "tiles": [
+        52,
+        53,
+        54,
+        55
+      ],
+      "attr": 18
+    },
+    {
+      "index": 17,
+      "ch": "R",
+      "name": "toit (bardeaux sombres)",
+      "palette": 2,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        56,
+        56,
+        57,
+        57
+      ],
+      "attr": 6
+    },
+    {
+      "index": 18,
+      "ch": "e",
+      "name": "bord du toit",
+      "palette": 2,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        56,
+        56,
+        58,
+        58
+      ],
+      "attr": 6
+    },
+    {
+      "index": 19,
+      "ch": "G",
+      "name": "porte de garage",
+      "palette": 2,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        59,
+        60,
+        61,
+        61
+      ],
+      "attr": 6
+    },
+    {
+      "index": 20,
+      "ch": "F",
+      "name": "clôture blanche",
+      "palette": 2,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        62,
+        63,
+        64,
+        65
+      ],
+      "attr": 6
+    },
+    {
+      "index": 21,
+      "ch": "m",
+      "name": "boîte aux lettres (sans numéro)",
+      "palette": 2,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        66,
+        67,
+        68,
+        69
+      ],
+      "attr": 6
+    },
+    {
+      "index": 22,
+      "ch": "o",
+      "name": "lampadaire sur trottoir",
+      "palette": 3,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        70,
+        71,
+        34,
+        72
+      ],
+      "attr": 7
+    }
+  ]
+}

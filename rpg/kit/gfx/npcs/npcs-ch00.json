@@ -1,0 +1,750 @@
+{
+  "id": "npcs-ch00",
+  "chr": "engine/chr/npcs-ch00.chr",
+  "unit": "R3 (1 KiB at $1400)",
+  "tiles": 37,
+  "capacity": 64,
+  "areaPalettes": "appartement",
+  "sheet": "gfx/npcs/npcs-ch00.png (cells 16x16, 5 per row)",
+  "frameNote": "down0/down1 walk, up, side faces right (mirror with attribute $40 for left); hotspot = feet centre; portrait 16x16 for the dialogue window",
+  "characters": {
+    "belanger": {
+      "name": "Madame Bélanger",
+      "palette": 2,
+      "paletteHex": [
+        "$0F",
+        "$36",
+        "$12"
+      ],
+      "frames": {
+        "down0": {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 8,
+            "y": 16
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 1,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 1,
+              "palette": 2,
+              "flipH": 1,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 2,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 2,
+              "palette": 2,
+              "flipH": 1,
+              "flipV": 0
+            }
+          ],
+          "maxPerLine": 2,
+          "sheet": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "down1": {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 8,
+            "y": 16
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 1,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 1,
+              "palette": 2,
+              "flipH": 1,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 3,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 4,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ],
+          "maxPerLine": 2,
+          "sheet": {
+            "x": 16,
+            "y": 0
+          }
+        },
+        "up": {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 8,
+            "y": 16
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 5,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 5,
+              "palette": 2,
+              "flipH": 1,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 2,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 2,
+              "palette": 2,
+              "flipH": 1,
+              "flipV": 0
+            }
+          ],
+          "maxPerLine": 2,
+          "sheet": {
+            "x": 32,
+            "y": 0
+          }
+        },
+        "side": {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 8,
+            "y": 16
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 6,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 7,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 8,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 9,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ],
+          "maxPerLine": 2,
+          "sheet": {
+            "x": 48,
+            "y": 0
+          }
+        },
+        "portrait": {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 0,
+            "y": 0
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 10,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 11,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 12,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 13,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ],
+          "maxPerLine": 2,
+          "sheet": {
+            "x": 64,
+            "y": 0
+          }
+        }
+      }
+    },
+    "magdi": {
+      "name": "Magdi",
+      "palette": 2,
+      "paletteHex": [
+        "$0F",
+        "$36",
+        "$12"
+      ],
+      "frames": {
+        "down0": {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 8,
+            "y": 16
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 14,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 15,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 16,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 17,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ],
+          "maxPerLine": 2,
+          "sheet": {
+            "x": 0,
+            "y": 16
+          }
+        },
+        "down1": {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 8,
+            "y": 16
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 14,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 15,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 18,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 19,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ],
+          "maxPerLine": 2,
+          "sheet": {
+            "x": 16,
+            "y": 16
+          }
+        },
+        "up": {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 8,
+            "y": 16
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 20,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 20,
+              "palette": 2,
+              "flipH": 1,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 16,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 17,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ],
+          "maxPerLine": 2,
+          "sheet": {
+            "x": 32,
+            "y": 16
+          }
+        },
+        "side": {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 8,
+            "y": 16
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 21,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 22,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 23,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 24,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ],
+          "maxPerLine": 2,
+          "sheet": {
+            "x": 48,
+            "y": 16
+          }
+        },
+        "portrait": {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 0,
+            "y": 0
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 25,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 26,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 27,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 28,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ],
+          "maxPerLine": 2,
+          "sheet": {
+            "x": 64,
+            "y": 16
+          }
+        }
+      }
+    },
+    "nivoix": {
+      "name": "Nivoix",
+      "palette": 0,
+      "paletteHex": [
+        "$0F",
+        "$36",
+        "$29"
+      ],
+      "frames": {
+        "down0": {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 8,
+            "y": 16
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 29,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 30,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 16,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 17,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ],
+          "maxPerLine": 2,
+          "sheet": {
+            "x": 0,
+            "y": 32
+          }
+        },
+        "down1": {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 8,
+            "y": 16
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 29,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 30,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 18,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 19,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ],
+          "maxPerLine": 2,
+          "sheet": {
+            "x": 16,
+            "y": 32
+          }
+        },
+        "up": {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 8,
+            "y": 16
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 31,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 32,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 16,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 17,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ],
+          "maxPerLine": 2,
+          "sheet": {
+            "x": 32,
+            "y": 32
+          }
+        },
+        "side": {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 8,
+            "y": 16
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 33,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 34,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 23,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 24,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ],
+          "maxPerLine": 2,
+          "sheet": {
+            "x": 48,
+            "y": 32
+          }
+        },
+        "portrait": {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 0,
+            "y": 0
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 35,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 36,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 27,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 28,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ],
+          "maxPerLine": 2,
+          "sheet": {
+            "x": 64,
+            "y": 32
+          }
+        }
+      }
+    }
+  }
+}

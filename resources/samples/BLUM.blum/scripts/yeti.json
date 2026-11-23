@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "phases": [
+    {
+      "steps": [
+        {
+          "op": "vulnerable",
+          "on": false
+        },
+        {
+          "op": "charge",
+          "speed": 28
+        },
+        {
+          "op": "wait",
+          "frames": 30
+        },
+        {
+          "op": "jump",
+          "vx": 0,
+          "vy": 64
+        },
+        {
+          "op": "shoot",
+          "pattern": "spread",
+          "speed": 28
+        },
+        {
+          "op": "flash",
+          "frames": 10
+        },
+        {
+          "op": "vulnerable",
+          "on": true
+        },
+        {
+          "op": "wait",
+          "frames": 100
+        }
+      ]
+    },
+    {
+      "hpBelow": 5,
+      "steps": [
+        {
+          "op": "vulnerable",
+          "on": false
+        },
+        {
+          "op": "charge",
+          "speed": 36
+        },
+        {
+          "op": "wait",
+          "frames": 20
+        },
+        {
+          "op": "jump",
+          "vx": 0,
+          "vy": 72
+        },
+        {
+          "op": "shoot",
+          "pattern": "spread",
+          "speed": 32
+        },
+        {
+          "op": "flash",
+          "frames": 10
+        },
+        {
+          "op": "vulnerable",
+          "on": true
+        },
+        {
+          "op": "wait",
+          "frames": 80
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "classes",
+  "nametable": "engine/screens/classes.bin (UI bank only, palette 0)",
+  "classes": [
+    [
+      "GUERRIER",
+      "Coup de cartable",
+      "Frappe fort, une cible."
+    ],
+    [
+      "MAGE",
+      "Étincelle",
+      "Touche tous les ennemis."
+    ],
+    [
+      "VOLEUR",
+      "Vol de gomme",
+      "Frappe et vole un objet."
+    ],
+    [
+      "ARCHER",
+      "Projectile de papier",
+      "Ignore la défense."
+    ],
+    [
+      "NÉCROMANCIEN",
+      "Insecte réanimé",
+      "Un allié pour 2 tours."
+    ]
+  ],
+  "note": "mock of the class choice: one window per class (name, tier-1 power, one line), cursor on the first; the FX bank sprites give the icons"
+}

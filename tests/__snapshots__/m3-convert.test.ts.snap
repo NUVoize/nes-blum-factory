@@ -1,0 +1,144 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`M3-T6 fixtures > M3-T6 budget JSON and preview PNG hash snapshots (photo, line drawing, character sheet) 1`] = `
+{
+  "character-sheet.png": {
+    "budget": {
+      "banks": [
+        {
+          "capacity": 64,
+          "index": 0,
+          "tiles": 14,
+        },
+        {
+          "capacity": 64,
+          "index": 1,
+          "tiles": 6,
+        },
+      ],
+      "colors": 3,
+      "maxPerLine": 2,
+      "merged": 0,
+      "sprites": 6,
+      "subpalettes": 1,
+      "tileCapacity": 128,
+      "tiles": 20,
+      "tilesBeforeMerge": 20,
+      "warnings": [],
+    },
+    "chr": "19a96c6a75bccfec",
+    "palettes": {
+      "backdrop": 33,
+      "mode": "locked",
+      "slots": [
+        {
+          "colors": [
+            15,
+            54,
+            41,
+          ],
+          "slot": 0,
+        },
+      ],
+      "world": "monde-1",
+    },
+    "preview": "5aee283897cda4f9",
+  },
+  "line-drawing.png": {
+    "budget": {
+      "banks": [
+        {
+          "capacity": 256,
+          "index": 0,
+          "tiles": 53,
+        },
+      ],
+      "colors": 2,
+      "maxPerLine": 0,
+      "merged": 0,
+      "metatiles": 29,
+      "sprites": 0,
+      "subpalettes": 1,
+      "tileCapacity": 256,
+      "tiles": 53,
+      "tilesBeforeMerge": 53,
+      "warnings": [],
+    },
+    "chr": "042dd2e012ddaf15",
+    "palettes": {
+      "backdrop": 33,
+      "mode": "locked",
+      "slots": [
+        {
+          "colors": [
+            15,
+            48,
+            22,
+          ],
+          "slot": 0,
+        },
+      ],
+      "world": "monde-1",
+    },
+    "preview": "1061fee5606e083c",
+  },
+  "photo-gradient.png": {
+    "budget": {
+      "banks": [
+        {
+          "capacity": 256,
+          "index": 0,
+          "tiles": 256,
+        },
+      ],
+      "colors": 9,
+      "maxPerLine": 0,
+      "merged": 471,
+      "sprites": 0,
+      "subpalettes": 3,
+      "tileCapacity": 256,
+      "tiles": 256,
+      "tilesBeforeMerge": 727,
+      "warnings": [
+        {
+          "en": "727 different tiles: 471 merged into their closest neighbour to fit 256",
+          "fr": "727 tuiles différentes : 471 fusionnées avec leur plus proche voisine pour tenir dans 256",
+        },
+      ],
+    },
+    "chr": "51e5c7f7bd899844",
+    "palettes": {
+      "backdrop": 16,
+      "mode": "free",
+      "slots": [
+        {
+          "colors": [
+            28,
+            17,
+            1,
+          ],
+          "slot": 1,
+        },
+        {
+          "colors": [
+            28,
+            56,
+            33,
+          ],
+          "slot": 2,
+        },
+        {
+          "colors": [
+            10,
+            24,
+            45,
+          ],
+          "slot": 3,
+        },
+      ],
+      "world": "monde-1",
+    },
+    "preview": "98ae8e2820f78584",
+  },
+}
+`;

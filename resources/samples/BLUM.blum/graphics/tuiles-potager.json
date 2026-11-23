@@ -1,0 +1,361 @@
+{
+  "schemaVersion": 1,
+  "format": "nbf-graphics",
+  "id": "tuiles-potager",
+  "name": "Tuiles Potager",
+  "kind": "tileset",
+  "role": "background",
+  "source": "sample-game/gfx/tilesets/w1.json (NES-BLUM-FACTORY-ASSETS 385a930)",
+  "preview": "graphics/tuiles-potager.png",
+  "chr": "graphics/tuiles-potager.chr",
+  "bankSize": 4096,
+  "settings": null,
+  "palettes": {
+    "world": "potager",
+    "mode": "free",
+    "backdrop": 33,
+    "slots": [
+      {
+        "slot": 0,
+        "colors": [
+          15,
+          48,
+          22
+        ]
+      },
+      {
+        "slot": 1,
+        "colors": [
+          25,
+          41,
+          57
+        ]
+      },
+      {
+        "slot": 2,
+        "colors": [
+          7,
+          23,
+          55
+        ]
+      },
+      {
+        "slot": 3,
+        "colors": [
+          22,
+          39,
+          48
+        ]
+      }
+    ]
+  },
+  "metatiles": [
+    {
+      "id": 0,
+      "tiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "palette": 1
+    },
+    {
+      "id": 1,
+      "tiles": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "palette": 1
+    },
+    {
+      "id": 2,
+      "tiles": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "palette": 2
+    },
+    {
+      "id": 3,
+      "tiles": [
+        9,
+        10,
+        9,
+        10
+      ],
+      "palette": 2
+    },
+    {
+      "id": 4,
+      "tiles": [
+        11,
+        12,
+        0,
+        0
+      ],
+      "palette": 2
+    },
+    {
+      "id": 5,
+      "tiles": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "palette": 2
+    },
+    {
+      "id": 6,
+      "tiles": [
+        17,
+        18,
+        17,
+        18
+      ],
+      "palette": 1
+    },
+    {
+      "id": 7,
+      "tiles": [
+        0,
+        0,
+        19,
+        19
+      ],
+      "palette": 0
+    },
+    {
+      "id": 8,
+      "tiles": [
+        20,
+        20,
+        21,
+        21
+      ],
+      "palette": 3
+    },
+    {
+      "id": 9,
+      "tiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "palette": 1
+    },
+    {
+      "id": 10,
+      "tiles": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "palette": 3
+    },
+    {
+      "id": 11,
+      "tiles": [
+        26,
+        27,
+        28,
+        29
+      ],
+      "palette": 2
+    },
+    {
+      "id": 12,
+      "tiles": [
+        30,
+        31,
+        32,
+        33
+      ],
+      "palette": 2
+    },
+    {
+      "id": 13,
+      "tiles": [
+        34,
+        35,
+        36,
+        37
+      ],
+      "palette": 2
+    },
+    {
+      "id": 14,
+      "tiles": [
+        38,
+        39,
+        40,
+        41
+      ],
+      "palette": 3
+    },
+    {
+      "id": 15,
+      "tiles": [
+        42,
+        43,
+        44,
+        45
+      ],
+      "palette": 3
+    },
+    {
+      "id": 16,
+      "tiles": [
+        46,
+        47,
+        48,
+        49
+      ],
+      "palette": 1
+    },
+    {
+      "id": 17,
+      "tiles": [
+        50,
+        51,
+        52,
+        53
+      ],
+      "palette": 2
+    },
+    {
+      "id": 18,
+      "tiles": [
+        54,
+        55,
+        56,
+        57
+      ],
+      "palette": 1
+    },
+    {
+      "id": 19,
+      "tiles": [
+        58,
+        59,
+        60,
+        61
+      ],
+      "palette": 3
+    },
+    {
+      "id": 20,
+      "tiles": [
+        62,
+        63,
+        64,
+        64
+      ],
+      "palette": 1
+    },
+    {
+      "id": 21,
+      "tiles": [
+        65,
+        66,
+        67,
+        68
+      ],
+      "palette": 1
+    },
+    {
+      "id": 22,
+      "tiles": [
+        69,
+        70,
+        71,
+        72
+      ],
+      "palette": 2
+    },
+    {
+      "id": 23,
+      "tiles": [
+        73,
+        74,
+        75,
+        76
+      ],
+      "palette": 2
+    },
+    {
+      "id": 24,
+      "tiles": [
+        0,
+        0,
+        77,
+        78
+      ],
+      "palette": 1
+    }
+  ],
+  "map": {
+    "cols": 8,
+    "rows": 4,
+    "cells": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "budget": {
+    "colors": 0,
+    "subpalettes": 4,
+    "tiles": 79,
+    "tilesBeforeMerge": 79,
+    "tileCapacity": 256,
+    "merged": 0,
+    "sprites": 0,
+    "maxPerLine": 0,
+    "banks": [
+      {
+        "index": 0,
+        "tiles": 79,
+        "capacity": 256
+      }
+    ],
+    "warnings": [],
+    "metatiles": 25
+  }
+}

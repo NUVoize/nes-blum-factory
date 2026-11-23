@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "kind": "enemy",
+  "name": {
+    "fr": "Limace gourmande",
+    "en": "Greedy Slug"
+  },
+  "pattern": "walker",
+  "speed": 64,
+  "hp": 1,
+  "damage": 1,
+  "turnAtLedge": true,
+  "frames": [
+    "limace1",
+    "limace2"
+  ],
+  "graphics": "graphics/ennemis-potager.json"
+}

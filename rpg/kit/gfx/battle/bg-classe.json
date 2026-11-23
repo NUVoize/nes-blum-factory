@@ -1,0 +1,27 @@
+{
+  "id": "classe",
+  "chr": "engine/chr/battle-bg-classe.chr",
+  "unit": "first half of R1 (tiles 0-63); enemy bank at 64-127",
+  "tiles": 36,
+  "capacity": 64,
+  "nametable": "engine/battle/bg-classe.bin (1 KiB, strip rows 6-11 + floor edge row 12, attributes for the whole screen)",
+  "palettes": {
+    "1": [
+      "$0F",
+      "$0A",
+      "$1A",
+      "$30"
+    ],
+    "2": [
+      "$0F",
+      "$17",
+      "$27",
+      "$37"
+    ]
+  },
+  "enemiesOfTheSlice": [
+    "crayon",
+    "marie-claude"
+  ],
+  "png": "gfx/battle/bg-classe.png (256 x 48 strip)"
+}

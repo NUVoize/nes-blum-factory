@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<title>NES BLUM FACTORY - LISEZ-MOI</title>
+<!-- BLUM-FIX2: the French start guide of the gift package (scripts/gift.mjs prints it to PDF, Letter). BLUMR-M2: page 3 = SEBRING (FR + EN). BLUMZ-F2: page 4 = THE LEGEND OF BLUM, the beginning (FR + EN). BLUMS-M: + its music and the « Bande sonore » folder. -->
+<style>
+  @page { size: Letter; margin: 13mm 14mm; }
+  body { font-family: Georgia, 'Times New Roman', serif; color: #181830; line-height: 1.35; font-size: 10.6pt; margin: 0; }
+  h1 { font-family: 'Courier New', monospace; font-size: 20pt; letter-spacing: 0.05em; margin: 0 0 0.1em; border-bottom: 4px solid #f86088; padding-bottom: 0.1em; }
+  .sub { margin: 0.3em 0 0.6em; font-style: italic; }
+  h2 { font-family: 'Courier New', monospace; font-size: 11.5pt; margin: 0.9em 0 0.3em; color: #b83060; }
+  ol, ul { margin: 0.2em 0 0.3em; padding-left: 1.4em; }
+  li { margin: 0.15em 0; }
+  code, kbd { font-family: 'Courier New', monospace; background: #eeeef4; padding: 0 0.2em; font-size: 0.95em; }
+  .warn { border-left: 5px solid #f0b828; background: #fff8e0; padding: 0.35em 0.6em; margin: 0.4em 0; }
+  .row { display: flex; gap: 10px; align-items: flex-start; margin: 0.4em 0; }
+  .row > div { flex: 1; }
+  figure { margin: 0; }
+  figcaption { font-size: 8.5pt; font-style: italic; color: #505070; margin-top: 2px; }
+  .crop { overflow: hidden; border: 2px solid #181830; position: relative; }
+  .crop img { display: block; position: absolute; }
+  img.full { width: 100%; display: block; border: 2px solid #181830; image-rendering: pixelated; }
+  .page2 { break-before: page; }
+  .box { columns: 2; column-gap: 18px; }
+  .sign { margin-top: 0.8em; font-style: italic; }
+</style>
+</head>
+<body>
+<h1>NES BLUM FACTORY</h1>
+<p class="sub">Ton studio pour fabriquer de vrais jeux NES. Cinq directeurs proposent, toi tu approuves. Deux pages pour bien partir, puis tes deux autres jeux.</p>
+
+<h2>Dans la boîte</h2>
+<ul class="box">
+  <li><code>NES BLUM FACTORY</code> : l’app (rien à installer).</li>
+  <li><code>Jeu BLUM</code> : ton jeu d’anniversaire, prêt à graver.</li>
+  <li><code>BLUM.nes</code> : la ROM, pour une cartouche flash ou un émulateur.</li>
+  <li><code>BLUM-PRG.bin</code> et <code>BLUM-CHR.bin</code> : pour un programmateur de puces.</li>
+  <li><code>BLUM - fiche cartouche.html</code> : tous les chiffres de la cartouche.</li>
+  <li><code>BLUM.blum.zip</code> : le projet BLUM, à ouvrir dans l’app.</li>
+  <li><code>Jeu SEBRING</code> (page 3), <code>Jeu THE LEGEND OF BLUM</code> et <code>Bande sonore</code> (page 4).</li>
+</ul>
+
+<h2>1. Installer (une seule fois)</h2>
+<ol>
+  <li><strong>Avant d’extraire :</strong> clic droit sur le zip du cadeau, <strong>Propriétés</strong>, coche <strong>« Débloquer »</strong> en bas, puis <strong>OK</strong>. Sinon Windows peut bloquer le compilateur rangé dans l’app.</li>
+  <li>Clic droit sur le zip, <strong>Extraire tout…</strong>, par exemple dans <code>Documents</code>.</li>
+  <li>Ouvre le dossier <code>NES BLUM FACTORY</code> et double-clique sur <code>NES BLUM FACTORY.exe</code>.</li>
+  <li>« Windows a protégé votre ordinateur » ? <strong>Informations complémentaires</strong>, puis <strong>Exécuter quand même</strong>. L’app n’est pas signée : c’est un cadeau fait maison.</li>
+  <li>« Smart App Control » a bloqué l’app (PC neuf, pas de bouton « Exécuter quand même ») ? <strong>Sécurité Windows</strong> &gt; <strong>Contrôle des applications et du navigateur</strong> &gt; <strong>Smart App Control</strong> &gt; <strong>Désactivé</strong>. Selon la version de Windows, on ne peut plus le rallumer sans réinstaller Windows : si tu préfères le garder, appelle Fred.</li>
+</ol>
+
+<div class="row">
+  <div>
+    <figure>
+      <div class="crop" style="height: 150px;"><img src="lisez-moi/cartouches.png" alt="L’écran des cartouches" style="width: 520px; left: -4px; top: -4px;"></div>
+      <figcaption>Tes cartouches : <em>Ta première cartouche</em>, le jeu d’exemple BLUM, tes jeux.</figcaption>
+    </figure>
+  </div>
+  <div>
+    <figure>
+      <div class="crop" style="height: 150px;"><img src="lisez-moi/atelier.png" alt="L’atelier et les cinq directeurs" style="width: 470px; left: -4px; top: -4px;"></div>
+      <figcaption>L’atelier : PLUME (histoire), CHROMA (graphismes), REBOND (mouvements), TABLEAU (niveaux), BOULON (cartouche).</figcaption>
+    </figure>
+  </div>
+</div>
+
+<h2>2. Ta clé Claude (pour parler aux directeurs)</h2>
+<div class="row">
+  <div>
+    <ol>
+      <li>Sur <code>console.anthropic.com</code>, crée une clé API (menu <strong>API Keys</strong>) et ajoute un peu de crédit prépayé dans <strong>Billing</strong> (5 $ suffisent pour beaucoup de discussions).</li>
+      <li>Dans l’app : <strong>Réglages</strong>, colle la clé, <strong>Enregistrer</strong>, puis <strong>Tester la clé</strong>.</li>
+      <li>Windows la chiffre pour ton compte, sur ce PC. Elle n’est jamais affichée. Chaque réponse montre son coût ; tu peux fixer un plafond par mois.</li>
+    </ol>
+    <p><strong>Sans clé, tout marche quand même :</strong> modèles d’histoire, éditeurs, construction de la ROM, jeu et export.</p>
+  </div>
+  <div style="flex: 0 0 260px;">
+    <figure>
+      <div class="crop" style="height: 150px;"><img src="lisez-moi/reglages.png" alt="Réglages, la clé" style="width: 800px; left: -6px; top: -6px;"></div>
+      <figcaption>Réglages : la clé se colle ici.</figcaption>
+    </figure>
+  </div>
+</div>
+
+<div class="page2"></div>
+<h2>3. Ton premier jeu</h2>
+<div class="row">
+  <div>
+    <ol>
+      <li>Écran titre : <kbd>Entrée</kbd>. Choisis <strong>« Ta première cartouche »</strong> : cinq étapes, une par directeur, de l’histoire jusqu’à la ROM.</li>
+      <li>Chaque directeur <strong>propose</strong> un changement. Rien ne bouge tant que tu n’as pas cliqué <strong>Approuver</strong>. Tout s’annule dans <strong>Historique</strong>.</li>
+      <li>Chez <strong>BOULON</strong> : <strong>Construire la ROM</strong>. Quatre lignes vertes = la ROM est prête. S’il y a du rouge, BOULON explique en mots simples et propose une réparation.</li>
+      <li><strong>Exporter la cartouche</strong> écrit le <code>.nes</code>, les deux <code>.bin</code> et la fiche cartouche.</li>
+      <li><strong>Jouer</strong> lance le jeu dans l’app : flèches pour bouger, <kbd>X</kbd> saute (deux fois pour le double saut), <kbd>Z</kbd> lance de la tire, <kbd>Entrée</kbd> = Start, <kbd>Maj</kbd> = Select. Une manette marche aussi.</li>
+    </ol>
+  </div>
+  <div style="flex: 0 0 300px;">
+    <figure>
+      <div class="crop" style="height: 175px;"><img src="lisez-moi/boulon.png" alt="BOULON, tout est vert" style="width: 740px; left: -185px; top: -40px;"></div>
+      <figcaption>BOULON : tout est vert, la ROM est prête.</figcaption>
+    </figure>
+  </div>
+</div>
+
+<h2>4. Le jeu BLUM</h2>
+<div class="row">
+  <div>
+    <p>Quatre mondes, neuf niveaux, cinq boss, et une fin rien que pour toi. Ouvre <strong>« Jeu d’exemple BLUM »</strong> pour voir comment il a été fait, proposition par proposition, et changer ce que tu veux (c’est une copie).</p>
+    <p><strong>Partie perdue ?</strong> Appuie sur <kbd>Start</kbd> pour <strong>continuer</strong> au début du monde, avec 3 vies. <kbd>Select</kbd> revient au titre.</p>
+  </div>
+  <div style="flex: 0 0 150px;"><figure><img class="full" src="lisez-moi/blum-jeu.png" alt="BLUM, monde 1"><figcaption>Monde 1, la sortie.</figcaption></figure></div>
+  <div style="flex: 0 0 150px;"><figure><img class="full" src="lisez-moi/blum-continuer.png" alt="Partie perdue, Start pour continuer"><figcaption>Start pour continuer.</figcaption></figure></div>
+</div>
+
+<h2>5. Sur une vraie cartouche</h2>
+<ul>
+  <li><strong>Cartouche flash</strong> (type EverDrive) : copie <code>BLUM.nes</code> sur la carte SD, choisis-le dans le menu.</li>
+  <li><strong>Programmateur de puces</strong> (type T48 ou TL866) : <code>BLUM-PRG.bin</code> (256 Ko) dans la puce du programme, <code>BLUM-CHR.bin</code> (128 Ko) dans la puce des graphismes.</li>
+</ul>
+<p class="warn"><strong>La carte doit avoir 8 Ko de RAM de travail (PRG-RAM)</strong> : carte MMC3, mapper 4, type TKROM ou TSROM. Sans cette RAM, le jeu plante au démarrage. Les cartouches flash l’ont déjà. Vérifie les sommes de contrôle avec la fiche cartouche avant de graver.</p>
+<p>Pour essayer une ROM sur le PC avant de graver : l’émulateur gratuit Mesen (<code>www.mesen.ca</code>).</p>
+
+<h2>6. Si quelque chose coince</h2>
+<ul>
+  <li>Tout est dans <strong>Aide</strong>, dans l’app.</li>
+  <li>Tes jeux sont dans <code>Documents\NES BLUM FACTORY</code>, un dossier par jeu. <strong>Exporter (zip)</strong> en fait une copie de sauvegarde.</li>
+  <li>Un directeur répond « Plus de crédit » : ajoute du crédit dans Billing. « Clé API refusée » : recolle la clé dans Réglages.</li>
+</ul>
+
+<p class="sign">Bonne fête, Blum ! Le jardin t’attend. — Fred</p>
+
+<div class="page2"></div>
+<h2>7. SEBRING, la course (deuxième jeu)</h2>
+<div class="row">
+  <div>
+    <p>En décapotable, de Ville d’Anjou au centre-ville de Montréal, en 5 étapes, du coucher de soleil à la nuit. Le dossier <code>Jeu SEBRING</code> contient la ROM et sa fiche cartouche (même carte MMC3 que BLUM). Dans l’app : <strong>« Jeu d’exemple SEBRING »</strong> sur l’écran des cartouches.</p>
+    <p><strong>Le trajet :</strong> 1. Ville d’Anjou (les Galeries) · 2. l’autoroute Métropolitaine · 3. la rue Sherbrooke Est (la tour du Stade) · 4. le Plateau, avenue du Parc (la croix du mont Royal) · 5. le centre-ville, l’arrivée.</p>
+    <p><strong>Manette :</strong> flèches gauche / droite pour tourner, <kbd>A</kbd> pour accélérer, <kbd>B</kbd> pour freiner, <kbd>Start</kbd> pour la pause, <kbd>Select</kbd> pour changer de poste de radio : <em>Radio Anjou 104,5</em>, <em>Métropolitaine FM</em>, <em>Centre-ville Nuit</em>. Dans l’app : <kbd>X</kbd> = A, <kbd>Z</kbd> = B, <kbd>Entrée</kbd> = Start, <kbd>Maj</kbd> = Select.</p>
+    <p><strong>Les règles :</strong> chaque point de contrôle ajoute du temps. Attention aux autos, à l’autobus, à la déneigeuse, aux cônes et aux nids-de-poule ; sortir de la route trop vite fait un tête-à-queue (2 secondes de pénalité). Temps écoulé ? <kbd>Start</kbd> pour <strong>continuer</strong> au début de l’étape (3 fois). Une partie complète prend environ 10 à 12 minutes.</p>
+    <p><em>Un secret se cache sur l’écran titre. Indice : klaxonne.</em></p>
+  </div>
+  <div style="flex: 0 0 165px;">
+    <figure><img class="full" src="lisez-moi/sebring-course.png" alt="SEBRING, rue Sherbrooke Est"><figcaption>Rue Sherbrooke Est.</figcaption></figure>
+    <figure style="margin-top: 6px;"><img class="full" src="lisez-moi/sebring-fin.png" alt="SEBRING, l’arrivée"><figcaption>L’arrivée au centre-ville.</figcaption></figure>
+  </div>
+</div>
+
+<h2>SEBRING, the race (English)</h2>
+<p>A convertible ride from Ville d’Anjou to downtown Montréal in 5 stages, sunset to night: Ville d’Anjou, the Metropolitan Expressway, Sherbrooke Street East, the Plateau (Park Avenue), downtown. <strong>Controls:</strong> left / right to steer, <kbd>A</kbd> gas, <kbd>B</kbd> brake, <kbd>Start</kbd> pause, <kbd>Select</kbd> changes the radio station. Checkpoints add time; out of time, <kbd>Start</kbd> continues from the start of the stage (3 times). In the app: <strong>“Sample game SEBRING”</strong> on the cartridge screen. A full run takes about 10 to 12 minutes. Same MMC3 cartridge as BLUM (8 KiB PRG-RAM required); see <code>SEBRING - cartridge sheet.html</code>.</p>
+
+<div class="page2"></div>
+<h2>8. THE LEGEND OF BLUM, le début (troisième jeu)</h2>
+<div class="row">
+  <div>
+    <p>Le <strong>début</strong> d’un jeu de rôle : le prologue, la maternelle et la 1re année. Le dossier <code>Jeu THE LEGEND OF BLUM</code> contient la ROM et sa fiche cartouche (même carte MMC3, <strong>avec une pile</strong> pour la sauvegarde). Dans l’app : <strong>« Jeu d’exemple THE LEGEND OF BLUM (début) »</strong> sur l’écran des cartouches. Compte 15 à 20 minutes.</p>
+    <p><strong>L’histoire :</strong> Prologue, chez Madame Bélanger : choisis ta classe, sonne la clochette à la fenêtre, fais-toi deux amis. Chapitre 1, l’école Chénier : la maternelle, puis la 1re année et la dictée de Marie-Claude.</p>
+    <p><strong>Manette :</strong> flèches pour marcher (un petit appui : Blum se tourne sans avancer), <kbd>A</kbd> pour parler et valider, <kbd>B</kbd> pour faire défiler le texte plus vite et pour annuler, <kbd>Start</kbd> pour le menu (Objets, Classe, Sauvegarder). Sur la carte « À SUIVRE », <kbd>Start</kbd> ramène au titre. Dans l’app : <kbd>X</kbd> = A, <kbd>Z</kbd> = B, <kbd>Entrée</kbd> = Start.</p>
+    <p><strong>Les 5 classes</strong> (elles changent seulement le pouvoir en combat) :</p>
+    <ul>
+      <li><strong>Guerrier</strong> : Coup de cartable, frappe fort une cible.</li>
+      <li><strong>Mage</strong> : Étincelle, touche tous les ennemis.</li>
+      <li><strong>Voleur</strong> : Vol de gomme, frappe et vole une collation.</li>
+      <li><strong>Archer</strong> : Projectile de papier, ignore la défense.</li>
+      <li><strong>Nécromancien</strong> : Insecte réanimé, un allié pendant 2 tours.</li>
+    </ul>
+    <p><strong>Combats :</strong> Attaque, Pouvoir, Objet (une collation redonne des PV), Défense, Fuite. Quand Marie-Claude annonce sa dictée, mets-toi en Défense. K.-O. ? Pas grave : Blum se relève et recommence le combat.</p>
+    <p><strong>Sauvegarde :</strong> aux étoiles, par le menu Start, et toute seule à chaque nouvelle année. Ensuite, <strong>« Continuer »</strong> sur l’écran titre. Elle marche dans l’app, dans Mesen et sur une cartouche avec pile.</p>
+    <p><strong>À SUIVRE :</strong> la suite de l’école Chénier arrive bientôt.</p>
+    <p><strong>La musique :</strong> l’écran titre, la rue et l’école jouent « Adventure Awaits », les deux chansons de Fred, réécrites pour la puce son de la NES. Le dossier <code>Bande sonore</code> a les chansons d’origine et leur version NES (WAV et NSF) : écoute-les l’une après l’autre.</p>
+  </div>
+  <div style="flex: 0 0 165px;">
+    <figure><img class="full" src="lisez-moi/legend-titre.png" alt="THE LEGEND OF BLUM, l’écran titre"><figcaption>L’écran titre.</figcaption></figure>
+    <figure style="margin-top: 6px;"><img class="full" src="lisez-moi/legend-classes.png" alt="THE LEGEND OF BLUM, les 5 classes"><figcaption>Choisis ta classe.</figcaption></figure>
+    <figure style="margin-top: 6px;"><img class="full" src="lisez-moi/legend-combat.png" alt="THE LEGEND OF BLUM, un combat"><figcaption>Contre Marie-Claude.</figcaption></figure>
+  </div>
+</div>
+
+<h2>THE LEGEND OF BLUM, the beginning (English)</h2>
+<p>The <strong>beginning</strong> of a role-playing game: the prologue at Madame Bélanger’s, then kindergarten and grade 1 at Chénier school (about 15 to 20 minutes). In the app: <strong>“Sample game THE LEGEND OF BLUM (beginning)”</strong> on the cartridge screen. <strong>Controls:</strong> arrows walk (a short tap turns), <kbd>A</kbd> talks and confirms, <kbd>B</kbd> speeds up the text and cancels, <kbd>Start</kbd> opens the menu (Items, Class, Save) and goes back to the title from “À SUIVRE”. <strong>Classes:</strong> Warrior hits one enemy hard, Mage hits every enemy, Thief hits and steals a snack, Archer ignores defence, Necromancer raises a bug that helps for 2 turns. Save at a star, from the menu or at each new school year, then “Continuer” on the title screen: it works in the app, in Mesen and on a cartridge with a battery. To be continued. <strong>Music:</strong> the title screen, the street and the school play “Adventure Awaits”, Fred’s two songs rewritten for the NES sound chip; the <code>Bande sonore</code> folder has the original songs and their NES versions (WAV and NSF).</p>
+</body>
+</html>

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "phases": [
+    {
+      "steps": [
+        {
+          "op": "vulnerable",
+          "on": false
+        },
+        {
+          "op": "wait",
+          "frames": 30
+        },
+        {
+          "op": "charge",
+          "speed": 40
+        },
+        {
+          "op": "flash",
+          "frames": 10
+        },
+        {
+          "op": "vulnerable",
+          "on": true
+        },
+        {
+          "op": "wait",
+          "frames": 80
+        }
+      ]
+    },
+    {
+      "hpBelow": 4,
+      "steps": [
+        {
+          "op": "vulnerable",
+          "on": false
+        },
+        {
+          "op": "shoot",
+          "pattern": "aimed",
+          "speed": 32
+        },
+        {
+          "op": "wait",
+          "frames": 20
+        },
+        {
+          "op": "charge",
+          "speed": 48
+        },
+        {
+          "op": "flash",
+          "frames": 10
+        },
+        {
+          "op": "vulnerable",
+          "on": true
+        },
+        {
+          "op": "wait",
+          "frames": 60
+        }
+      ]
+    }
+  ]
+}

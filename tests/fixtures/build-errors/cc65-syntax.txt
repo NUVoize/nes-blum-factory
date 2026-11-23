@@ -1,0 +1,4 @@
+3 errors and 0 warnings generated.
+syntax.c:2: Error: Expression expected
+syntax.c:3: Error: ';' expected
+syntax.c:4: Error: '}' expected

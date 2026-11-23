@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "phases": [
+    {
+      "steps": [
+        {
+          "op": "vulnerable",
+          "on": true
+        },
+        {
+          "op": "shoot",
+          "pattern": "aimed",
+          "speed": 32
+        },
+        {
+          "op": "wait",
+          "frames": 30
+        },
+        {
+          "op": "shoot",
+          "pattern": "aimed",
+          "speed": 32
+        },
+        {
+          "op": "wait",
+          "frames": 30
+        },
+        {
+          "op": "shoot",
+          "pattern": "aimed",
+          "speed": 32
+        },
+        {
+          "op": "wait",
+          "frames": 20
+        },
+        {
+          "op": "charge",
+          "speed": 32
+        },
+        {
+          "op": "wait",
+          "frames": 40
+        }
+      ]
+    },
+    {
+      "hpBelow": 6,
+      "steps": [
+        {
+          "op": "vulnerable",
+          "on": true
+        },
+        {
+          "op": "spawn",
+          "enemy": "glacon"
+        },
+        {
+          "op": "shoot",
+          "pattern": "aimed",
+          "speed": 36
+        },
+        {
+          "op": "wait",
+          "frames": 20
+        },
+        {
+          "op": "shoot",
+          "pattern": "spread",
+          "speed": 36
+        },
+        {
+          "op": "wait",
+          "frames": 15
+        },
+        {
+          "op": "charge",
+          "speed": 44
+        },
+        {
+          "op": "flash",
+          "frames": 6
+        },
+        {
+          "op": "wait",
+          "frames": 30
+        }
+      ]
+    }
+  ]
+}

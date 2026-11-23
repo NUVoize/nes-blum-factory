@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "comment": "BLUMZ-PLAN engine spike: CH00 test map (Chez Madame Bélanger) + one outdoor screen, one NPC, one battle. Placeholder content, French in game.",
+  "palettes": {
+    "world": [
+      [15, 2, 48, 39],
+      [15, 7, 23, 55],
+      [15, 6, 22, 39],
+      [15, 9, 26, 55]
+    ],
+    "battle": [
+      [15, 2, 48, 39],
+      [15, 15, 40, 22],
+      [15, 9, 26, 55],
+      [15, 2, 48, 39]
+    ],
+    "sprites": [
+      [15, 15, 55, 26],
+      [15, 0, 55, 36],
+      [15, 15, 40, 22],
+      [15, 15, 48, 39]
+    ]
+  },
+  "player": { "room": "belanger", "x": 7, "y": 9, "facing": "up", "hp": 20, "class": "GUERRIER" },
+  "classes": [
+    { "id": "GUERRIER", "name": "Guerrier", "power": "Coup de cartable", "powerDamage": 9 },
+    { "id": "MAGE", "name": "Mage", "power": "Étincelle", "powerDamage": 9 },
+    { "id": "VOLEUR", "name": "Voleur", "power": "Vol de gomme", "powerDamage": 9 },
+    { "id": "ARCHER", "name": "Archer", "power": "Projectile de papier", "powerDamage": 9 },
+    { "id": "NECROMANCIEN", "name": "Nécromancien", "power": "Insecte réanimé", "powerDamage": 9 }
+  ],
+  "rooms": [
+    {
+      "id": "belanger",
+      "name": "Chez Madame Bélanger",
+      "exits": { "right": "cour" },
+      "rows": [
+        "################",
+        "#wwwwwwwwwwwwww#",
+        "#..............#",
+        "#..TT......==..#",
+        "#..TT......==..#",
+        "#..............#",
+        "#..............#",
+        "#...............",
+        "#..............#",
+        "#..==..........#",
+        "#..==......TT..#",
+        "#..........TT..#",
+        "#..............#",
+        "#..............#",
+        "################"
+      ]
+    },
+    {
+      "id": "cour",
+      "name": "La cour",
+      "exits": { "left": "belanger" },
+      "rows": [
+        "tttttttttttttttt",
+        "tggggggggggggggt",
+        "tgg::::::::::ggt",
+        "tg::ggggggggg:gt",
+        "tg:gggtgggggg:gt",
+        "tg:gggggggggg:gt",
+        "tg:gggggggggg:gt",
+        "::::::::::::::gt",
+        "tggggggggggg:ggt",
+        "tgffffffgggg:ggt",
+        "tggggggggggg:ggt",
+        "tgggggtgggg::ggt",
+        "tggggggggggggggt",
+        "tggggggggggggggt",
+        "tttttttttttttttt"
+      ]
+    }
+  ],
+  "npcs": [
+    { "id": "NPC_BELANGER", "room": "belanger", "x": 7, "y": 5, "sprite": "belanger", "dialogue": "DLG_BELANGER", "gives": "ITEM_CLOCHE" }
+  ],
+  "dialogue": {
+    "DLG_BELANGER": [
+      ["Madame Bélanger :", "Salut Blum ! Ça va, garçon ?"],
+      ["Voici ma petite clochette.", "Garde-la à côté de toi."],
+      ["Ô, sois fin avec Magdi et", "Nivoix. Très bien, élève !"]
+    ]
+  },
+  "items": [
+    { "id": "ITEM_CLOCHE", "name": "Clochette", "critical": true }
+  ],
+  "battles": [
+    {
+      "id": "BAT_CRAYONS",
+      "room": "cour",
+      "x": 9,
+      "y": 7,
+      "flag": "BOSS_CRAYONS",
+      "enemy": { "name": "Terreur des Crayons", "short": "Crayons", "hp": 20, "attack": 3 },
+      "attackDamage": 5,
+      "itemHeal": 8,
+      "xp": 4,
+      "text": {
+        "intro": ["La Terreur des Crayons", "te barre le chemin !"],
+        "attack": ["Blum attaque !", "5 dégâts."],
+        "item": ["Une collation à la pomme.", "+8 PV."],
+        "defend": ["Blum se protège", "derrière son cartable."],
+        "enemy": ["Crayon volant !", "Blum perd 3 PV."],
+        "enemyDefended": ["Crayon volant !", "Blum perd 1 PV, à peine."],
+        "win": ["Victoire ! Ils fuient.", "Blum gagne 4 XP."],
+        "lose": ["Blum est K.-O. ...", "Allez, on se relève !"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,720 @@
+{
+  "powers": {
+    "cartable": {
+      "name": "Coup de cartable",
+      "class": "GUERRIER",
+      "palette": 2,
+      "paletteHex": [
+        "$0F",
+        "$27",
+        "$28"
+      ],
+      "frames": [
+        {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 8,
+            "y": 8
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 1,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 1,
+              "palette": 2,
+              "flipH": 1,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 2,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 2,
+              "palette": 2,
+              "flipH": 1,
+              "flipV": 0
+            }
+          ],
+          "sheet": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 8,
+            "y": 8
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 3,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 4,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 5,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 6,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ],
+          "sheet": {
+            "x": 16,
+            "y": 0
+          }
+        }
+      ]
+    },
+    "etincelle": {
+      "name": "Étincelle",
+      "class": "MAGE",
+      "palette": 2,
+      "paletteHex": [
+        "$0F",
+        "$27",
+        "$28"
+      ],
+      "frames": [
+        {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 8,
+            "y": 8
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 7,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 8,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 9,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 10,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ],
+          "sheet": {
+            "x": 32,
+            "y": 0
+          }
+        },
+        {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 8,
+            "y": 8
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 11,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 12,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 13,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 14,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ],
+          "sheet": {
+            "x": 48,
+            "y": 0
+          }
+        }
+      ]
+    },
+    "gomme": {
+      "name": "Vol de gomme",
+      "class": "VOLEUR",
+      "palette": 3,
+      "paletteHex": [
+        "$0F",
+        "$30",
+        "$2C"
+      ],
+      "frames": [
+        {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 8,
+            "y": 8
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 15,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 16,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 17,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 18,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ],
+          "sheet": {
+            "x": 64,
+            "y": 0
+          }
+        },
+        {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 8,
+            "y": 8
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 19,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 16,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 20,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 18,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ],
+          "sheet": {
+            "x": 80,
+            "y": 0
+          }
+        }
+      ]
+    },
+    "papier": {
+      "name": "Projectile de papier",
+      "class": "ARCHER",
+      "palette": 3,
+      "paletteHex": [
+        "$0F",
+        "$30",
+        "$2C"
+      ],
+      "frames": [
+        {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 8,
+            "y": 8
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 21,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 22,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 23,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 24,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ],
+          "sheet": {
+            "x": 96,
+            "y": 0
+          }
+        },
+        {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 8,
+            "y": 8
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 25,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 26,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 27,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 28,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ],
+          "sheet": {
+            "x": 0,
+            "y": 16
+          }
+        }
+      ]
+    },
+    "insecte": {
+      "name": "Insecte réanimé",
+      "class": "NECROMANCIEN",
+      "palette": 0,
+      "paletteHex": [
+        "$0F",
+        "$36",
+        "$29"
+      ],
+      "frames": [
+        {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 8,
+            "y": 8
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 29,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 30,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 31,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 32,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ],
+          "sheet": {
+            "x": 16,
+            "y": 16
+          }
+        },
+        {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 8,
+            "y": 8
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 33,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 34,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 35,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 36,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ],
+          "sheet": {
+            "x": 32,
+            "y": 16
+          }
+        }
+      ]
+    }
+  },
+  "common": {
+    "hit": {
+      "name": "coup reçu",
+      "palette": 3,
+      "paletteHex": [
+        "$0F",
+        "$30",
+        "$2C"
+      ],
+      "frames": [
+        {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 8,
+            "y": 8
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 37,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 38,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 39,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 40,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ],
+          "sheet": {
+            "x": 48,
+            "y": 16
+          }
+        },
+        {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 8,
+            "y": 8
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 41,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 42,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 43,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 44,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ],
+          "sheet": {
+            "x": 64,
+            "y": 16
+          }
+        }
+      ]
+    },
+    "bouclier": {
+      "name": "Défense",
+      "palette": 3,
+      "paletteHex": [
+        "$0F",
+        "$30",
+        "$2C"
+      ],
+      "frames": [
+        {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 8,
+            "y": 8
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 45,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 45,
+              "palette": 3,
+              "flipH": 1,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 46,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 46,
+              "palette": 3,
+              "flipH": 1,
+              "flipV": 0
+            }
+          ],
+          "sheet": {
+            "x": 80,
+            "y": 16
+          }
+        }
+      ]
+    }
+  },
+  "cursor": {
+    "tile": 47,
+    "palette": 3,
+    "note": "8x8 hand-free pointer (menu arrow), palette 3 white"
+  },
+  "id": "fx",
+  "chr": "engine/chr/fx.chr",
+  "unit": "R5 (1 KiB at $1C00)",
+  "tiles": 48,
+  "capacity": 64,
+  "palettes": {
+    "0": [
+      "$0F",
+      "$36",
+      "$29"
+    ],
+    "1": [
+      "$0F",
+      "$36",
+      "$16"
+    ],
+    "2": [
+      "$0F",
+      "$27",
+      "$28"
+    ],
+    "3": [
+      "$0F",
+      "$30",
+      "$2C"
+    ]
+  },
+  "sheet": "gfx/fx/fx.png (cells 16x16, 7 per row)",
+  "animation": "frame 0 for 8 frames at the target, frame 1 for 8 frames, then the hit spark on the enemy (2 x 6 frames)"
+}

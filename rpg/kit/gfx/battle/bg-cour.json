@@ -1,0 +1,26 @@
+{
+  "id": "cour",
+  "chr": "engine/chr/battle-bg-cour.chr",
+  "unit": "first half of R1 (tiles 0-63); enemy bank at 64-127",
+  "tiles": 26,
+  "capacity": 64,
+  "nametable": "engine/battle/bg-cour.bin (1 KiB, strip rows 6-11 + floor edge row 12, attributes for the whole screen)",
+  "palettes": {
+    "1": [
+      "$0F",
+      "$08",
+      "$1A",
+      "$2C"
+    ],
+    "2": [
+      "$0F",
+      "$00",
+      "$10",
+      "$28"
+    ]
+  },
+  "enemiesOfTheSlice": [
+    "boulette"
+  ],
+  "png": "gfx/battle/bg-cour.png (256 x 48 strip)"
+}

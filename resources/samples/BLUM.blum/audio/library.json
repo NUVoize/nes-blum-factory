@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "titleSong": "title",
+  "worlds": [
+    {
+      "worldId": "monde-1",
+      "stageSong": "stage",
+      "bossSong": "boss"
+    }
+  ]
+}

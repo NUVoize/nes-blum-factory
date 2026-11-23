@@ -1,0 +1,40 @@
+{
+  "id": "01M5C5M9EJZHR5EFY3ZV1810GN",
+  "director": "movement",
+  "state": "approved",
+  "createdAt": "2026-10-20T08:07:45.362Z",
+  "tool": "propose_enemy",
+  "summary": {
+    "fr": "Ennemi « Chaudière qui coule » (tireur, 2 vie(s)).",
+    "en": "Enemy \"Leaky Sap Bucket\" (shooter, 2 hp)."
+  },
+  "ops": [
+    {
+      "op": "set",
+      "doc": "actors/chaudiere.json",
+      "value": {
+        "schemaVersion": 1,
+        "kind": "enemy",
+        "name": {
+          "fr": "Chaudière qui coule",
+          "en": "Leaky Sap Bucket"
+        },
+        "pattern": "shooter",
+        "speed": 0,
+        "hp": 2,
+        "damage": 1,
+        "turnAtLedge": false,
+        "frames": [
+          "chaudiere1",
+          "chaudiere2"
+        ],
+        "period": 90,
+        "shotSpeed": 128,
+        "graphics": "graphics/ennemis-cabane.json"
+      }
+    }
+  ],
+  "warnings": [],
+  "decidedAt": "2026-10-20T08:07:45.635Z",
+  "txId": "01M5C5M9PY14S9AA2FY3K65T4V"
+}

@@ -1,0 +1,71 @@
+LES 3 JEUX DE BLUM SUR UNE VRAIE NES, AVEC UNE EVERDRIVE
+=========================================================
+
+(English: see README.TXT.)
+
+Ce qu'il y a dans ce dossier
+----------------------------
+
+  BLUM\BLUM.nes              BLUM (le jeu de plateforme)
+  BLUM\SEBRING.nes           SEBRING : DE L'ANJOU AU CENTRE-VILLE (la course)
+  BLUM\LEGEND.nes            THE LEGEND OF BLUM (début), le jeu avec sauvegarde
+  BLUM\MUSIQUE\AWAITS.NSF    « Adventure Awaits », versions A et B (2 pistes)
+  BLUM\MUSIQUE\LEGEND.NSF    toute la musique de THE LEGEND OF BLUM (7 pistes)
+  LISEZMOI.TXT, README.TXT   ce texte, en français et en anglais
+
+Ce sont les mêmes jeux que dans l'application NES BLUM FACTORY. Seul l'en-tête du fichier (les 16
+premiers octets) est écrit à l'ancienne mode (« iNES 1.0 ») : c'est la forme que toutes les EverDrive
+lisent sans surprise, les vieilles comme les neuves.
+
+Copier sur la carte SD (une seule fois)
+---------------------------------------
+
+1. Sors la carte micro SD de l'EverDrive et mets-la dans l'ordinateur.
+2. Copie le dossier BLUM à la racine de la carte (à côté du dossier EDN8 ou EDFC qui est déjà dessus).
+   Ne le mets pas dans EDN8 ni dans EDFC.
+3. Éjecte la carte proprement (clic droit, Éjecter), remets-la dans l'EverDrive.
+4. Allume la NES : dans le menu de l'EverDrive, ouvre BLUM, choisis un jeu, appuie sur A.
+
+Quelle EverDrive, quelle version
+--------------------------------
+
+  EverDrive N8 (l'ancienne, NES ou Famicom ; c'est celle de Joel) : les 3 jeux marchent. Les fichiers
+      .NSF ne se lisent pas sur ce modèle (il n'a pas de lecteur de musique) ; la musique est dans le
+      jeu, et en MP3 dans le dossier « Bande sonore » du cadeau. Mets le dernier système (OS v1.26 sur
+      krikzz.com, dossier EDFC à la racine de la carte).
+  EverDrive N8 Pro (NES ou Famicom) : tout marche, y compris les deux fichiers musique .NSF (le N8 Pro
+      a un lecteur NSF). Système 2.15 ou plus récent (les cartouches vendues depuis janvier 2025
+      l'ont déjà).
+
+Les sauvegardes (THE LEGEND OF BLUM)
+------------------------------------
+
+LA chose à savoir : sauvegarde dans le jeu (Start, puis « Sauvegarder », ou parle à une étoile qui
+brille), attends « Partie sauvegardée. », puis appuie sur RESET pour revenir au menu de l'EverDrive
+avant d'éteindre la NES. (Si Reset relance le jeu au lieu du menu, c'est l'option « Reset Delay » du
+N8 Pro : garde alors Reset enfoncé environ 2 secondes.)
+
+Pourquoi : la sauvegarde va d'abord dans la mémoire à pile de l'EverDrive (elle reste même si on
+éteint), puis l'EverDrive la recopie elle-même sur la carte SD (dossier EDFC ou EDN8). Sur l'ancienne
+N8, le fabricant dit qu'il n'y a pas besoin de Reset. Faire Reset avant d'éteindre ne coûte rien et
+marche sur les deux modèles : c'est l'habitude la plus sûre, surtout avant de sortir la carte SD pour
+la mettre dans l'ordinateur.
+Le jeu garde deux copies de la sauvegarde ; si l'une est abîmée, il prend l'autre.
+BLUM et SEBRING n'ont pas de sauvegarde.
+
+Si le jeu reste noir ou fait n'importe quoi
+-------------------------------------------
+
+  1. Mets à jour le système de l'EverDrive (voir plus haut). C'est la cause la plus fréquente.
+  2. Vérifie que le dossier système est bien là : EDN8 (N8 Pro) ou EDFC avec son dossier MAPS (N8).
+  3. Recopie le fichier .nes depuis le cadeau (une copie abîmée donne un écran noir).
+  4. Carte SD : formatée en FAT32 (une carte de 32 Go ou moins, c'est le plus simple).
+  5. Éteins, attends 5 secondes, rallume (pas seulement Reset).
+  6. NES européenne (PAL) : les jeux sont faits pour une NES nord-américaine (NTSC). Sur une NES PAL,
+     la musique joue plus lentement et l'image peut être décalée (surtout la route de SEBRING). Sur une
+     NES d'ici, aucun souci.
+  7. Famicom (japonaise) : il faut l'EverDrive version Famicom (60 broches), ou un adaptateur.
+  8. N8 Pro : si le voyant rouge clignote au démarrage sur une NES grise, appuie 7 fois sur Reset
+     (réglage de la puce de verrouillage, une seule fois).
+
+Bon jeu, Blum !

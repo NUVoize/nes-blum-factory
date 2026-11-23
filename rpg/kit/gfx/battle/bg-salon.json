@@ -1,0 +1,26 @@
+{
+  "id": "salon",
+  "chr": "engine/chr/battle-bg-salon.chr",
+  "unit": "first half of R1 (tiles 0-63); enemy bank at 64-127",
+  "tiles": 39,
+  "capacity": 64,
+  "nametable": "engine/battle/bg-salon.bin (1 KiB, strip rows 6-11 + floor edge row 12, attributes for the whole screen)",
+  "palettes": {
+    "1": [
+      "$0F",
+      "$09",
+      "$29",
+      "$30"
+    ],
+    "2": [
+      "$0F",
+      "$17",
+      "$27",
+      "$37"
+    ]
+  },
+  "enemiesOfTheSlice": [
+    "mouton"
+  ],
+  "png": "gfx/battle/bg-salon.png (256 x 48 strip)"
+}

@@ -1,0 +1,982 @@
+{
+  "schemaVersion": 1,
+  "format": "nbf-graphics",
+  "id": "heros-blum",
+  "name": "Blum",
+  "kind": "sprite",
+  "role": "player",
+  "source": "sample-game/gfx/hero/blum.json (NES-BLUM-FACTORY-ASSETS 385a930)",
+  "preview": "graphics/heros-blum.png",
+  "chr": "graphics/heros-blum.chr",
+  "bankSize": 1024,
+  "settings": null,
+  "palettes": {
+    "world": "monde-1",
+    "mode": "locked",
+    "backdrop": 33,
+    "slots": [
+      {
+        "slot": 0,
+        "colors": [
+          15,
+          54,
+          41
+        ]
+      }
+    ]
+  },
+  "frames": [
+    {
+      "name": "idle",
+      "bank": 0,
+      "w": 16,
+      "h": 24,
+      "hotspot": {
+        "x": 8,
+        "y": 24
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 0,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 1,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 2,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 3,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "tile": 4,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 16,
+          "tile": 5,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        }
+      ],
+      "maxPerLine": 2
+    },
+    {
+      "name": "idle2",
+      "bank": 0,
+      "w": 16,
+      "h": 24,
+      "hotspot": {
+        "x": 8,
+        "y": 24
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 6,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 7,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 8,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 9,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "tile": 4,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 16,
+          "tile": 5,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        }
+      ],
+      "maxPerLine": 2
+    },
+    {
+      "name": "run1",
+      "bank": 0,
+      "w": 16,
+      "h": 24,
+      "hotspot": {
+        "x": 8,
+        "y": 24
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 0,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 1,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 2,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 3,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "tile": 10,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 16,
+          "tile": 11,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        }
+      ],
+      "maxPerLine": 2
+    },
+    {
+      "name": "run2",
+      "bank": 0,
+      "w": 16,
+      "h": 24,
+      "hotspot": {
+        "x": 8,
+        "y": 24
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 12,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 13,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 14,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 15,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "tile": 16,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 16,
+          "tile": 17,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        }
+      ],
+      "maxPerLine": 2
+    },
+    {
+      "name": "run3",
+      "bank": 0,
+      "w": 16,
+      "h": 24,
+      "hotspot": {
+        "x": 8,
+        "y": 24
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 0,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 1,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 2,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 3,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "tile": 18,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 16,
+          "tile": 19,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        }
+      ],
+      "maxPerLine": 2
+    },
+    {
+      "name": "hurt",
+      "bank": 0,
+      "w": 16,
+      "h": 24,
+      "hotspot": {
+        "x": 8,
+        "y": 24
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 0,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 1,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 20,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 21,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "tile": 22,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 16,
+          "tile": 23,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        }
+      ],
+      "maxPerLine": 2
+    },
+    {
+      "name": "jump",
+      "bank": 1,
+      "w": 16,
+      "h": 24,
+      "hotspot": {
+        "x": 8,
+        "y": 24
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 0,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 1,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 2,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 3,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "tile": 4,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 16,
+          "tile": 5,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        }
+      ],
+      "maxPerLine": 2
+    },
+    {
+      "name": "fall",
+      "bank": 1,
+      "w": 16,
+      "h": 24,
+      "hotspot": {
+        "x": 8,
+        "y": 24
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 0,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 1,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 2,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 3,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "tile": 6,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 16,
+          "tile": 7,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        }
+      ],
+      "maxPerLine": 2
+    },
+    {
+      "name": "climb1",
+      "bank": 1,
+      "w": 16,
+      "h": 24,
+      "hotspot": {
+        "x": 8,
+        "y": 24
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 0,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 1,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 8,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 9,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "tile": 10,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 16,
+          "tile": 11,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        }
+      ],
+      "maxPerLine": 2
+    },
+    {
+      "name": "climb2",
+      "bank": 1,
+      "w": 16,
+      "h": 24,
+      "hotspot": {
+        "x": 8,
+        "y": 24
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 0,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 1,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 12,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 13,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "tile": 14,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 16,
+          "tile": 15,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        }
+      ],
+      "maxPerLine": 2
+    },
+    {
+      "name": "throw",
+      "bank": 1,
+      "w": 16,
+      "h": 24,
+      "hotspot": {
+        "x": 8,
+        "y": 24
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 0,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 1,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 16,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 17,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "tile": 18,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 16,
+          "tile": 19,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        }
+      ],
+      "maxPerLine": 2
+    },
+    {
+      "name": "wallgrab",
+      "bank": 2,
+      "w": 16,
+      "h": 24,
+      "hotspot": {
+        "x": 8,
+        "y": 24
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 0,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 1,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 2,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 3,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "tile": 4,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 16,
+          "tile": 5,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        }
+      ],
+      "maxPerLine": 2
+    },
+    {
+      "name": "victory",
+      "bank": 2,
+      "w": 16,
+      "h": 24,
+      "hotspot": {
+        "x": 8,
+        "y": 24
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 0,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 1,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 6,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 7,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "tile": 8,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 16,
+          "tile": 9,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        }
+      ],
+      "maxPerLine": 2
+    },
+    {
+      "name": "victory2",
+      "bank": 2,
+      "w": 16,
+      "h": 24,
+      "hotspot": {
+        "x": 8,
+        "y": 24
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 10,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 11,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 12,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 13,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "tile": 14,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 16,
+          "tile": 15,
+          "palette": 0,
+          "flipH": false,
+          "flipV": false
+        }
+      ],
+      "maxPerLine": 2
+    }
+  ],
+  "animations": {
+    "idle": {
+      "frames": [
+        "idle",
+        "idle2"
+      ],
+      "frameDuration": 8,
+      "loop": true
+    },
+    "run": {
+      "frames": [
+        "run1",
+        "run2",
+        "run3"
+      ],
+      "frameDuration": 8,
+      "loop": true
+    },
+    "hurt": {
+      "frames": [
+        "hurt"
+      ],
+      "frameDuration": 8,
+      "loop": true
+    },
+    "jump": {
+      "frames": [
+        "jump"
+      ],
+      "frameDuration": 8,
+      "loop": true
+    },
+    "fall": {
+      "frames": [
+        "fall"
+      ],
+      "frameDuration": 8,
+      "loop": true
+    },
+    "climb": {
+      "frames": [
+        "climb1",
+        "climb2"
+      ],
+      "frameDuration": 8,
+      "loop": true
+    },
+    "throw": {
+      "frames": [
+        "throw"
+      ],
+      "frameDuration": 8,
+      "loop": true
+    },
+    "wallgrab": {
+      "frames": [
+        "wallgrab"
+      ],
+      "frameDuration": 8,
+      "loop": true
+    },
+    "victory": {
+      "frames": [
+        "victory",
+        "victory2"
+      ],
+      "frameDuration": 8,
+      "loop": true
+    }
+  },
+  "budget": {
+    "colors": 0,
+    "subpalettes": 1,
+    "tiles": 60,
+    "tilesBeforeMerge": 60,
+    "tileCapacity": 192,
+    "merged": 0,
+    "sprites": 6,
+    "maxPerLine": 2,
+    "banks": [
+      {
+        "index": 0,
+        "tiles": 24,
+        "capacity": 64
+      },
+      {
+        "index": 1,
+        "tiles": 20,
+        "capacity": 64
+      },
+      {
+        "index": 2,
+        "tiles": 16,
+        "capacity": 64
+      }
+    ],
+    "warnings": []
+  }
+}

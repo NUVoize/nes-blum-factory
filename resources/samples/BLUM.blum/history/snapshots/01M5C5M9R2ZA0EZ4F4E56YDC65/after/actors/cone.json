@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "kind": "enemy",
+  "name": {
+    "fr": "Cône marcheur",
+    "en": "Walking Cone"
+  },
+  "pattern": "walker",
+  "speed": 128,
+  "hp": 1,
+  "damage": 1,
+  "turnAtLedge": false,
+  "frames": [
+    "cone1",
+    "cone2"
+  ],
+  "graphics": "graphics/ennemis-chantier.json"
+}

@@ -1,0 +1,631 @@
+{
+  "schemaVersion": 1,
+  "format": "sebring-kit",
+  "step": "BLUMR-A1",
+  "origin": "original pixel art and music written by code for this project (muse-ui, 2026-10-21); no third-party art, no logo, no emoji",
+  "chrLayout": {
+    "note": "1 KiB units, engine racer-assets.ts: 0-1 road A, 2-3 road B (engine-generated, unchanged), 4+2i stage i backdrop + font (R1), 16-19 sprites; this kit adds title/ending banks",
+    "backdrops": [
+      "engine/chr/backdrop-0.chr",
+      "engine/chr/backdrop-1.chr",
+      "engine/chr/backdrop-2.chr",
+      "engine/chr/backdrop-3.chr",
+      "engine/chr/backdrop-4.chr"
+    ],
+    "sprites": "engine/chr/sprites.chr",
+    "title": [
+      "engine/chr/title-r0.chr",
+      "engine/chr/title-r1.chr"
+    ],
+    "ending": [
+      "engine/chr/ending-r0.chr",
+      "engine/chr/ending-r1.chr"
+    ],
+    "fontBase": 128,
+    "fontTiles": 63,
+    "fontOrder": [
+      " ",
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J",
+      "K",
+      "L",
+      "M",
+      "N",
+      "O",
+      "P",
+      "Q",
+      "R",
+      "S",
+      "T",
+      "U",
+      "V",
+      "W",
+      "X",
+      "Y",
+      "Z",
+      ".",
+      ",",
+      "!",
+      "?",
+      "'",
+      "-",
+      ":",
+      "/",
+      "+",
+      "(",
+      ")",
+      "«",
+      "»",
+      "É",
+      "È",
+      "Ê",
+      "Ë",
+      "À",
+      "Â",
+      "Ç",
+      "Î",
+      "Ï",
+      "Ô",
+      "Û",
+      "Ù",
+      "Ü"
+    ]
+  },
+  "stageBanks": [
+    "engine/stages/stage0.bin",
+    "engine/stages/stage1.bin",
+    "engine/stages/stage2.bin",
+    "engine/stages/stage3.bin",
+    "engine/stages/stage4.bin"
+  ],
+  "stageBankLayout": {
+    "nametables": "0x000 (2 KiB, NT0 + NT1 with attributes)",
+    "palette": "0x800 (32 B)",
+    "card": "0xC00 (1 KiB NT0)",
+    "cardPalette": "engine/stages/stageN-card-palette.bin (race palette with HUD colour 3 = $0F)"
+  },
+  "screens": {
+    "file": "engine/screens.bin",
+    "order": [
+      "title",
+      "gameover",
+      "ending",
+      "credits"
+    ],
+    "palettes": {
+      "title": "engine/title-palette.bin",
+      "ending": "engine/ending-palette.bin"
+    },
+    "banksNote": "title/gameover/credits draw with title-r0 + title-r1; ending with ending-r0 + ending-r1 (R0 tiles 0-55 = road A, so the road rows draw; R1 $80+ = font with a black bottom row)"
+  },
+  "sprites": {
+    "engine": {
+      "SPR_CAR0": 0,
+      "SPR_CAR_L": 12,
+      "SPR_CAR_R": 12,
+      "SPR_CAR_R_attr": "0x40 (mirror of soft-left; hard-left likewise)",
+      "SPR_CAR_HARD_L": 24,
+      "spin_tile": [
+        0,
+        36,
+        48,
+        60,
+        72,
+        60,
+        48,
+        36
+      ],
+      "spin_attr": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        64,
+        64,
+        64
+      ],
+      "spin_note": "8 poses (rear, rear34, side, front34, front, then the three mirrored); the M1 engine uses 4 poses x 4 frames: take [straight, rear34, side, front34] with attr [0,0,0,0] or the full 8 at 2 frames each",
+      "flip_roll": 84,
+      "flip_note": "engine flips `straight` with attr $80 + upside-down offsets mid-air; flip-roll suits frames 8-15 and 48-55 of the arc"
+    },
+    "driver": {
+      "SPR_DRIVER": 96,
+      "shoulders": 97,
+      "headFrame2": 98,
+      "shouldersFrame2": 99
+    },
+    "kindTile": [
+      100,
+      101,
+      103,
+      109,
+      110,
+      112,
+      118,
+      119,
+      121,
+      127,
+      128,
+      130,
+      136,
+      137,
+      139,
+      145,
+      146,
+      148
+    ],
+    "kindAttr": [
+      2,
+      3,
+      2,
+      3,
+      3,
+      3
+    ],
+    "props": {
+      "kind": 5,
+      "looks": {
+        "lamp": {
+          "palette": 3,
+          "sizes": [
+            {
+              "size": 0,
+              "w": 8,
+              "h": 8,
+              "tile": 145
+            },
+            {
+              "size": 1,
+              "w": 16,
+              "h": 8,
+              "tile": 146
+            },
+            {
+              "size": 2,
+              "w": 24,
+              "h": 16,
+              "tile": 148
+            }
+          ]
+        },
+        "tree": {
+          "palette": 1,
+          "sizes": [
+            {
+              "size": 0,
+              "w": 8,
+              "h": 8,
+              "tile": 154
+            },
+            {
+              "size": 1,
+              "w": 16,
+              "h": 8,
+              "tile": 155
+            },
+            {
+              "size": 2,
+              "w": 24,
+              "h": 16,
+              "tile": 157
+            }
+          ]
+        },
+        "sign": {
+          "palette": 2,
+          "sizes": [
+            {
+              "size": 0,
+              "w": 8,
+              "h": 8,
+              "tile": 163
+            },
+            {
+              "size": 1,
+              "w": 16,
+              "h": 8,
+              "tile": 164
+            },
+            {
+              "size": 2,
+              "w": 24,
+              "h": 16,
+              "tile": 166
+            }
+          ]
+        }
+      },
+      "suggested": {
+        "anjou": "lamp",
+        "metropolitaine": "lamp",
+        "sherbrooke": "tree",
+        "plateau": "tree",
+        "centre-ville": "sign"
+      }
+    },
+    "fx": {
+      "burst-small": [
+        {
+          "w": 8,
+          "h": 8,
+          "tiles": [
+            172
+          ]
+        },
+        {
+          "w": 8,
+          "h": 8,
+          "tiles": [
+            173
+          ]
+        }
+      ],
+      "burst-large": [
+        {
+          "w": 16,
+          "h": 16,
+          "tiles": [
+            174,
+            175,
+            176,
+            177
+          ]
+        },
+        {
+          "w": 16,
+          "h": 16,
+          "tiles": [
+            178,
+            179,
+            180,
+            181
+          ]
+        }
+      ],
+      "smoke": [
+        {
+          "w": 8,
+          "h": 8,
+          "tiles": [
+            182
+          ]
+        },
+        {
+          "w": 8,
+          "h": 8,
+          "tiles": [
+            183
+          ]
+        }
+      ],
+      "skid": [
+        {
+          "w": 8,
+          "h": 8,
+          "tiles": [
+            184
+          ]
+        }
+      ],
+      "flag": [
+        {
+          "w": 8,
+          "h": 16,
+          "tiles": [
+            185,
+            186
+          ]
+        }
+      ],
+      "honk": [
+        {
+          "w": 8,
+          "h": 8,
+          "tiles": [
+            187
+          ]
+        }
+      ],
+      "notes": "fireworks: palette 3 (orange/white) and 0 (red/white); flag: palette 0 or 3 (black/white chequers); smoke: any (white)"
+    }
+  },
+  "music": {
+    "schemaVersion": 1,
+    "driver": "FamiStudio sound engine 4.5 (ca65), NTSC, 1 SFX stream, no DPCM, no FAMISTUDIO_USE_* flag",
+    "soundBankBytes": 8192,
+    "songs": [
+      {
+        "index": 0,
+        "id": "title",
+        "title": "Décapotable (titre)",
+        "loop": true,
+        "frames": 896,
+        "seconds": 14.91,
+        "noteLen": 7,
+        "patternLen": 16,
+        "patterns": 8,
+        "channels": [
+          "Noise",
+          "Square1",
+          "Square2",
+          "Triangle"
+        ]
+      },
+      {
+        "index": 1,
+        "id": "anjou",
+        "title": "Radio Anjou 104,5 (station 1, pop-rock)",
+        "loop": true,
+        "frames": 1152,
+        "seconds": 19.17,
+        "noteLen": 6,
+        "patternLen": 16,
+        "patterns": 12,
+        "channels": [
+          "Noise",
+          "Square1",
+          "Square2",
+          "Triangle"
+        ]
+      },
+      {
+        "index": 2,
+        "id": "metro",
+        "title": "Métropolitaine FM (station 2, synth)",
+        "loop": true,
+        "frames": 768,
+        "seconds": 12.78,
+        "noteLen": 6,
+        "patternLen": 16,
+        "patterns": 8,
+        "channels": [
+          "Noise",
+          "Square1",
+          "Square2",
+          "Triangle"
+        ]
+      },
+      {
+        "index": 3,
+        "id": "nuit",
+        "title": "Centre-ville Nuit (station 3, funk de nuit)",
+        "loop": true,
+        "frames": 896,
+        "seconds": 14.91,
+        "noteLen": 7,
+        "patternLen": 16,
+        "patterns": 8,
+        "channels": [
+          "Noise",
+          "Square1",
+          "Square2",
+          "Triangle"
+        ]
+      },
+      {
+        "index": 4,
+        "id": "clear",
+        "title": "Étape réussie (fanfare)",
+        "loop": false,
+        "frames": 192,
+        "seconds": 3.19,
+        "noteLen": 6,
+        "patternLen": 16,
+        "patterns": 2,
+        "channels": [
+          "Noise",
+          "Square1",
+          "Square2",
+          "Triangle"
+        ]
+      },
+      {
+        "index": 5,
+        "id": "gameover",
+        "title": "Panne sèche (fin de partie)",
+        "loop": false,
+        "frames": 256,
+        "seconds": 4.26,
+        "noteLen": 8,
+        "patternLen": 16,
+        "patterns": 2,
+        "channels": [
+          "Noise",
+          "Square1",
+          "Square2",
+          "Triangle"
+        ]
+      },
+      {
+        "index": 6,
+        "id": "ending",
+        "title": "Bonne fête Blum (arrivée au centre-ville)",
+        "loop": true,
+        "frames": 1024,
+        "seconds": 17.04,
+        "noteLen": 8,
+        "patternLen": 16,
+        "patterns": 8,
+        "channels": [
+          "Noise",
+          "Square1",
+          "Square2",
+          "Triangle"
+        ]
+      }
+    ],
+    "sfx": [
+      {
+        "index": 0,
+        "id": "crash",
+        "title": "collision (tonneau / tete-a-queue)",
+        "frames": 24,
+        "channels": [
+          "Noise",
+          "Square1",
+          "Triangle"
+        ]
+      },
+      {
+        "index": 1,
+        "id": "checkpoint",
+        "title": "point de controle",
+        "frames": 16,
+        "channels": [
+          "Square2"
+        ]
+      },
+      {
+        "index": 2,
+        "id": "bump",
+        "title": "nid-de-poule",
+        "frames": 8,
+        "channels": [
+          "Noise",
+          "Triangle"
+        ]
+      },
+      {
+        "index": 3,
+        "id": "honk",
+        "title": "klaxon",
+        "frames": 24,
+        "channels": [
+          "Square1",
+          "Square2"
+        ]
+      },
+      {
+        "index": 4,
+        "id": "timeover",
+        "title": "temps ecoule",
+        "frames": 30,
+        "channels": [
+          "Square2"
+        ]
+      },
+      {
+        "index": 5,
+        "id": "card",
+        "title": "carte d'etape",
+        "frames": 14,
+        "channels": [
+          "Noise"
+        ]
+      },
+      {
+        "index": 6,
+        "id": "pause",
+        "title": "pause",
+        "frames": 16,
+        "channels": [
+          "Square2"
+        ]
+      },
+      {
+        "index": 7,
+        "id": "rev",
+        "title": "moteur (passage de regime)",
+        "frames": 10,
+        "channels": [
+          "Square1"
+        ]
+      },
+      {
+        "index": 8,
+        "id": "skid",
+        "title": "derapage",
+        "frames": 12,
+        "channels": [
+          "Noise"
+        ]
+      },
+      {
+        "index": 9,
+        "id": "start",
+        "title": "depart",
+        "frames": 12,
+        "channels": [
+          "Square2"
+        ]
+      }
+    ],
+    "stations": {
+      "anjou": {
+        "name": "RADIO ANJOU 104,5",
+        "song": 1
+      },
+      "metro": {
+        "name": "MÉTROPOLITAINE FM",
+        "song": 2
+      },
+      "nuit": {
+        "name": "CENTRE-VILLE NUIT",
+        "song": 3
+      }
+    },
+    "racerSound": {
+      "SONG_TITLE": 0,
+      "RADIO_SONGS": [
+        1,
+        2,
+        3
+      ],
+      "SONG_CLEAR": 4,
+      "SONG_GAMEOVER": 5,
+      "SONG_ENDING": 6,
+      "SFX_CRASH": 0,
+      "SFX_CP": 1,
+      "SFX_BUMP": 2,
+      "SFX_HONK": 3,
+      "SFX_TIMEOVER": 4,
+      "SFX_CARD": 5,
+      "SFX_PAUSE": 6,
+      "SFX_REV": 7,
+      "SFX_SKID": 8,
+      "SFX_START": 9
+    },
+    "engineSound": "no endless engine loop (would hold a music channel); rev blip at speed thresholds + skid on hard turns"
+  },
+  "racerSound": {
+    "note": "proposed RACER_SOUND for build-racer.ts once music/export/*.s replace engine/audio copies",
+    "SONG_TITLE": 0,
+    "RADIO_SONGS": [
+      1,
+      2,
+      3
+    ],
+    "SONG_CLEAR": 4,
+    "SONG_GAMEOVER": 5,
+    "SONG_ENDING": 6,
+    "SFX_CRASH": 0,
+    "SFX_CP": 1,
+    "SFX_BUMP": 2,
+    "SFX_HONK": 3,
+    "SFX_TIMEOVER": 4,
+    "SFX_CARD": 5,
+    "SFX_PAUSE": 6,
+    "SFX_REV": 7,
+    "SFX_SKID": 8,
+    "SFX_START": 9
+  }
+}

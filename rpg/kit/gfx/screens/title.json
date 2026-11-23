@@ -1,0 +1,48 @@
+{
+  "id": "title",
+  "chr": "engine/chr/title.chr",
+  "unit": "R1 (2 KiB at $0800) while R0 = UI bank",
+  "tiles": 58,
+  "capacity": 128,
+  "nametable": "engine/screens/title.bin (1 KiB)",
+  "palettes": "engine/palettes/title.bin",
+  "bg": [
+    [
+      "$0F",
+      "$02",
+      "$30",
+      "$27"
+    ],
+    [
+      "$0F",
+      "$02",
+      "$12",
+      "$30"
+    ],
+    [
+      "$0F",
+      "$02",
+      "$27",
+      "$28"
+    ],
+    [
+      "$0F",
+      "$08",
+      "$1A",
+      "$29"
+    ]
+  ],
+  "text": {
+    "4": "THE LEGEND OF",
+    "24": "COMMENCER",
+    "26": "CONTINUER",
+    "29": "UNE AVENTURE ORIGINALE, 2026"
+  },
+  "lettering": "own block letters from the ROM font (2x + shadow, 4x + shadow + highlight), no third-party font",
+  "cursorRow": 24,
+  "menu": [
+    "COMMENCER",
+    "CONTINUER"
+  ],
+  "blumSprite": "mock only: Blum (map, down) at (120, 176) on the ground"
+}

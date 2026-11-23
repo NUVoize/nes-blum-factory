@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "kind": "boss",
+  "name": {
+    "fr": "Le Roi des Cônes",
+    "en": "The Cone King"
+  },
+  "hp": 8,
+  "damage": 1,
+  "graphics": "graphics/boss-roi-cones.json",
+  "frames": [
+    "roi-cones1",
+    "roi-cones2"
+  ],
+  "script": "roi-cones"
+}

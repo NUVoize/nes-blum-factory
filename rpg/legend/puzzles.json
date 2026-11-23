@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "comment": "Blocking puzzles (bible section 6 contract). requires may name items and flags only (never a class): the validator refuses anything else. hints = ids of say blocks that must be reachable before the puzzle is solved.",
+  "puzzles": [
+    {
+      "id": "PUZ_FENETRE",
+      "chapter": "CH00",
+      "obstacle": "OBJ_FENETRE",
+      "requires": { "items": ["ITEM_CLOCHE"], "flags": [] },
+      "unlocks": { "flags": ["F_AMIS"] },
+      "hints": ["HINT_CLOCHE_1", "HINT_CLOCHE_2"],
+      "action": "use",
+      "success": "Magdi et Nivoix arrivent dans le salon.",
+      "failure": "Rien ne se passe, aucun objet perdu.",
+      "recovery": "item-permanent"
+    },
+    {
+      "id": "PUZ_PORTE_1RE",
+      "chapter": "CH01",
+      "obstacle": "PORTE_1RE",
+      "requires": { "items": ["ITEM_BILLET"], "flags": ["F_MAT_FINIE"] },
+      "unlocks": { "flags": ["F_PORTE_1RE"] },
+      "hints": ["HINT_BILLET_1", "HINT_BILLET_2"],
+      "action": "use",
+      "success": "La porte de la classe de 1re s'ouvre.",
+      "failure": "Blum garde son billet, la porte reste barrée.",
+      "recovery": "item-permanent"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<title>NES BLUM FACTORY - Guide pour Blum</title>
+<style>
+  body { font-family: Georgia, 'Times New Roman', serif; max-width: 46em; margin: 2em auto; padding: 0 1.5em; color: #181830; line-height: 1.45; }
+  h1 { font-family: 'Courier New', monospace; letter-spacing: 0.05em; border-bottom: 4px solid #f86088; padding-bottom: 0.2em; }
+  h2 { font-family: 'Courier New', monospace; font-size: 1.1em; margin-top: 1.6em; color: #b83060; }
+  .warn { border-left: 6px solid #f0b828; background: #fff8e0; padding: 0.5em 0.8em; }
+  code, kbd { font-family: 'Courier New', monospace; background: #eeeef4; padding: 0 0.25em; }
+  ol li, ul li { margin: 0.25em 0; }
+  .sign { margin-top: 2em; font-style: italic; }
+  @media print { body { margin: 0; font-size: 11pt; } }
+</style>
+</head>
+<body>
+<h1>NES BLUM FACTORY</h1>
+<p>Ton studio pour fabriquer de vrais jeux NES, avec cinq directeurs qui proposent et toi qui approuves. Une page pour bien partir.</p>
+
+<h2>1. Installer (une seule fois)</h2>
+<ol>
+  <li><strong>Avant d’extraire :</strong> clic droit sur <code>NES-BLUM-FACTORY-1.3.0-win-x64.zip</code>, <strong>Propriétés</strong>, coche <strong>« Débloquer »</strong> en bas, puis <strong>OK</strong>. Sans ça, Windows peut bloquer le compilateur caché dans le dossier.</li>
+  <li>Clic droit sur le zip, <strong>Extraire tout…</strong>, par exemple dans <code>Documents</code>.</li>
+  <li>Ouvre le dossier <code>NES BLUM FACTORY</code> et double-clique sur <code>NES BLUM FACTORY.exe</code>. Rien d’autre à installer.</li>
+  <li>Si Windows affiche « Windows a protégé votre ordinateur » : <strong>Informations complémentaires</strong>, puis <strong>Exécuter quand même</strong>. L’app n’est pas signée : c’est un cadeau fait maison.</li>
+  <li>Si Windows parle de <strong>« Smart App Control »</strong> (PC neuf, pas de bouton « Exécuter quand même ») : <strong>Sécurité Windows</strong>, <strong>Contrôle des applications et du navigateur</strong>, <strong>Smart App Control</strong>, mets <strong>Désactivé</strong>. Attention : selon la version de Windows, on ne peut plus le rallumer sans réinstaller Windows. Si tu préfères le garder, demande à Fred.</li>
+</ol>
+
+<h2>2. Ta clé Claude (sur ton PC à toi)</h2>
+<ol>
+  <li>Crée une clé API sur <code>console.anthropic.com</code> (menu API Keys). Garde-la pour toi. Ajoute un peu de crédit prépayé dans <strong>Billing</strong> (5 $ suffisent pour beaucoup de discussions).</li>
+  <li>Dans l’app : <strong>Réglages</strong>, colle la clé, <strong>Enregistrer</strong>, puis <strong>Tester</strong>.</li>
+  <li>Windows la chiffre sur ce PC, pour ton compte. Elle n’est jamais affichée ni écrite dans un fichier lisible. Sur un autre PC, il faut la retaper.</li>
+  <li>Chaque réponse d’un directeur affiche son coût estimé ; tu peux fixer un plafond par mois dans Réglages.</li>
+</ol>
+<p><strong>Sans clé, tout marche quand même</strong> : modèles d’histoire, réglages de saut, éditeurs, construction de la ROM, jeu et export.</p>
+
+<h2>3. Premiers pas</h2>
+<ul>
+  <li>Écran titre : <kbd>Entrée</kbd>. Puis <strong>« Ta première cartouche »</strong> : cinq étapes, une par directeur, de l’histoire jusqu’à la ROM.</li>
+  <li>Ou ouvre <strong>« Jeu d’exemple BLUM »</strong> : une copie du jeu fait pour toi. Tu peux tout changer et relire son historique.</li>
+  <li>Jouer : flèches pour bouger, <kbd>X</kbd> pour sauter (deux fois de suite pour le double saut), <kbd>Z</kbd> pour lancer de la tire, <kbd>Entrée</kbd> pour Start. Une manette marche aussi.</li>
+  <li>Partie perdue ? <kbd>Start</kbd> pour <strong>continuer</strong> au début du monde, avec 3 vies (<kbd>Maj</kbd>, c’est Select : retour au titre).</li>
+</ul>
+
+<h2>SEBRING, la course</h2>
+<p>Ton deuxième jeu : en décapotable, de Ville d’Anjou au centre-ville en 5 étapes (Anjou, Métropolitaine, Sherbrooke Est, Plateau, centre-ville). Écran des cartouches : <strong>« Jeu d’exemple SEBRING »</strong>. Flèches pour tourner, <kbd>X</kbd> (A) pour accélérer, <kbd>Z</kbd> (B) pour freiner, <kbd>Entrée</kbd> (Start) pour la pause, <kbd>Maj</kbd> (Select) pour changer de poste de radio. Les points de contrôle ajoutent du temps ; temps écoulé, Start pour continuer (3 fois). La ROM et sa fiche sont dans <code>Jeu SEBRING</code>.</p>
+
+<h2>THE LEGEND OF BLUM, le début</h2>
+<p>Ton troisième jeu, le début d’un jeu de rôle : le prologue chez Madame Bélanger, puis la maternelle et la 1re année à l’école Chénier. Écran des cartouches : <strong>« Jeu d’exemple THE LEGEND OF BLUM (début) »</strong>. Flèches pour marcher, <kbd>X</kbd> (A) pour parler et valider, <kbd>Z</kbd> (B) pour le texte plus vite et pour annuler, <kbd>Entrée</kbd> (Start) pour le menu. Cinq classes : Guerrier (frappe fort), Mage (touche tous les ennemis), Voleur (vole une collation), Archer (ignore la défense), Nécromancien (un allié pendant 2 tours). La partie se sauvegarde dans l’app : « Continuer » sur l’écran titre. La ROM et sa fiche sont dans <code>Jeu THE LEGEND OF BLUM</code>. À SUIVRE.</p>
+
+<h2>4. Sur une vraie cartouche</h2>
+<p>Dans BOULON, <strong>Exporter</strong> écrit le jeu et une <strong>fiche cartouche</strong> (page HTML avec tous les chiffres et les sommes de contrôle).</p>
+<ul>
+  <li><strong>Cartouche flash</strong> (type EverDrive) : copie le fichier <code>.nes</code> sur la carte SD.</li>
+  <li><strong>Programmateur de puces</strong> (type T48 ou TL866) : <code>-PRG.bin</code> (256 Ko) dans la puce du programme, <code>-CHR.bin</code> (128 Ko) dans la puce des graphismes.</li>
+</ul>
+<p class="warn"><strong>La carte doit avoir 8 Ko de RAM de travail (PRG-RAM)</strong> : carte MMC3, mapper 4, de type TKROM ou TSROM. Sans cette RAM, le jeu plante au démarrage. Les cartouches flash l’ont déjà.</p>
+<p>Pour vérifier une ROM avant de la graver, l’émulateur gratuit Mesen (<code>www.mesen.ca</code>) est très précis.</p>
+
+<h2>5. Si quelque chose coince</h2>
+<ul>
+  <li>Tout est dans <strong>Aide</strong>, dans l’app.</li>
+  <li>Tes jeux sont dans <code>Documents\NES BLUM FACTORY</code>, un dossier par jeu. <strong>Exporter (zip)</strong> en fait une copie de sauvegarde.</li>
+  <li>Chaque changement s’annule dans <strong>Historique</strong>.</li>
+</ul>
+
+<p class="sign">Bonne fête, Blum ! Le jardin t’attend. — Fred</p>
+</body>
+</html>

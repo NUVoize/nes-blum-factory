@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "kind": "player",
+  "name": {
+    "fr": "Blum",
+    "en": "Blum"
+  },
+  "graphics": "graphics/heros-blum.json"
+}

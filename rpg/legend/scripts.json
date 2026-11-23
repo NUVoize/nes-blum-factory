@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "comment": "Event scripts of the slice (CH00 + CH01 maternelle and 1re). Lines are invented for the slice in the bible's tone (flagged in the BLUMZ-M1 report), except the Madame Bélanger class line (bible section 8 sample). Ops: say (who, text: one string or a list = one paragraph per page group), choice (question, options, then: one op list per option, bot = option the test bot takes), if (flag / notFlag / item / notItem / all), set, clear, give, giveCollations, battle, warp, classSelect, card, save, heal, levelUp, music, sfx, chapter, theEnd, sayClass, label, goto.",
+  "scripts": {
+    "SCR_START": [
+      { "card": "CARD_CH00" },
+      { "chapter": 0 },
+      { "say": ["Le premier jour chez Madame Bélanger, à l'école de bienveillance.", "Marche avec la croix. Parle avec A devant quelqu'un."] }
+    ],
+    "SCR_BELANGER": [
+      { "if": { "flag": "F_CLASSE" }, "then": [
+        { "if": { "notFlag": "F_AMIS" }, "then": [
+          { "say": "Tu te souviens de ma clochette ? Sonne-la devant la fenêtre, en haut à gauche.", "who": "Madame Bélanger", "id": "HINT_CLOCHE_2" }
+        ], "else": [
+          { "if": { "notFlag": "F_MOUTON" }, "then": [
+            { "say": "Un mouton de poussière dans ma cuisine ? Va lui montrer qui est le boss.", "who": "Madame Bélanger" }
+          ], "else": [
+            { "say": "T'es prêt pour la grande école, Blum. Je suis fière de toi.", "who": "Madame Bélanger" }
+          ] }
+        ] }
+      ], "else": [
+        { "say": ["Salut Blum ! Bienvenue à l'école de bienveillance.", "Ici, on apprend à être fin. Pis à se défendre un peu, aussi."], "who": "Madame Bélanger" },
+        { "label": "choix" },
+        { "say": "Choisis ta classe, Blum. Pis essaie de pas perdre ton cartable.", "who": "Madame Bélanger" },
+        { "classSelect": true },
+        { "choice": "Tu as choisi ta classe. C'est ton dernier mot ?", "options": ["Oui", "Non"], "bot": 0, "then": [
+          [],
+          [ { "goto": "choix" } ]
+        ] },
+        { "set": "F_CLASSE" },
+        { "say": "Tiens, ma petite clochette. Garde-la toute ta vie. On sait jamais.", "who": "Madame Bélanger" },
+        { "give": "ITEM_CLOCHE" },
+        { "say": ["Sonne-la devant la fenêtre : Magdi pis Nivoix vont rappliquer.", "Pis appuie sur START pour regarder tes objets."], "who": "Madame Bélanger", "id": "HINT_CLOCHE_1" }
+      ] }
+    ],
+    "SCR_FENETRE": [
+      { "if": { "flag": "F_AMIS" }, "then": [
+        { "say": "La cour est vide. Tout le monde est en dedans." }
+      ], "else": [
+        { "if": { "item": "ITEM_CLOCHE" }, "then": [
+          { "choice": "Une fenêtre sur la cour. Sonner la clochette ?", "options": ["Oui", "Non"], "bot": 0, "then": [
+            [
+              { "sfx": "bell" },
+              { "say": "Ding ! Ding ! Ding !" },
+              { "set": "F_AMIS" },
+              { "say": "Deux amis arrivent en courant dans le salon." }
+            ],
+            [ { "say": "Blum garde sa clochette dans sa poche." } ]
+          ] }
+        ], "else": [
+          { "say": "Une fenêtre sur la cour. Des enfants jouent dehors." }
+        ] }
+      ] }
+    ],
+    "SCR_MAGDI": [
+      { "set": "F_MAGDI" },
+      { "say": ["Salut ! Moi c'est Magdi. T'as une clochette ? Malade !", "Dans la cuisine, y a un mouton de poussière gros comme un chien."], "who": "Magdi" }
+    ],
+    "SCR_NIVOIX": [
+      { "set": "F_NIVOIX" },
+      { "say": ["Moi c'est Nivoix. On va être amis pour la vie, c'est décidé.", "Le mouton bloque le corridor de l'entrée. Faut le battre pour sortir !"], "who": "Nivoix" }
+    ],
+    "SCR_MOUTON": [
+      { "if": { "notFlag": "F_CLASSE" }, "then": [
+        { "say": "Le mouton te regarde. Va d'abord voir Madame Bélanger dans le salon." }
+      ], "else": [
+        { "battle": "BAT_MOUTON" },
+        { "set": "F_MOUTON" },
+        { "say": "Le mouton se disperse en petits nuages. Atchoum !" }
+      ] }
+    ],
+    "SCR_SORTIE_CH00": [
+      { "if": { "all": [{ "flag": "F_MAGDI" }, { "flag": "F_NIVOIX" }] }, "then": [
+        { "say": "Bonne chance, Blum. Pis garde ta clochette !", "who": "Madame Bélanger" },
+        { "set": "F_CH00_FINI" },
+        { "levelUp": true },
+        { "chapter": 1 },
+        { "card": "CARD_CH01_MAT" },
+        { "warp": { "screen": "maison", "x": 7, "y": 4, "facing": "down" } },
+        { "save": true },
+        { "say": "Premier jour de maternelle ! L'école est au bout de la rue, à droite." }
+      ], "else": [
+        { "say": "Blum ! Dis bonjour à tes amis avant de partir !", "who": "Madame Bélanger" }
+      ] }
+    ],
+    "SCR_ETOILE": [
+      { "heal": true },
+      { "sfx": "item" },
+      { "say": "L'étoile brille. PV et Énergie au maximum !" },
+      { "choice": "Sauvegarder la partie ?", "options": ["Oui", "Non"], "bot": 0, "then": [
+        [ { "save": true } ],
+        []
+      ] }
+    ],
+    "SCR_PORTE_MAISON": [
+      { "say": "C'est chez vous. Pas le temps de niaiser, l'école commence !" }
+    ],
+    "SCR_BOITE": [
+      { "say": "Une boîte aux lettres. Vide. Comme le frigo le dimanche soir." }
+    ],
+    "SCR_MAXI_COUR": [
+      { "set": "F_MAXI" },
+      { "say": ["Salut ! Moi c'est Maxi. T'es en maternelle toi aussi ?", "Paraît que la Terreur des Crayons se cache dans notre classe."], "who": "Maxi" }
+    ],
+    "SCR_PAUL_COUR": [
+      { "if": { "flag": "F_MAT_FINIE" }, "then": [
+        { "say": ["La 1re année, c'est Marie-Claude. Sa dictée est mortelle.", "Littéralement. Quand elle prépare son coup, mets-toi en Défense."], "who": "Paul" }
+      ], "else": [
+        { "set": "F_PAUL" },
+        { "say": ["Moi c'est Paul. Ma casquette est à l'envers. Exprès.", "La Terreur des Crayons ? Elle mord... les gommes à effacer."], "who": "Paul" }
+      ] }
+    ],
+    "SCR_PORTE_ECOLE": [
+      { "if": { "all": [{ "flag": "F_MAXI" }, { "flag": "F_PAUL" }] }, "then": [
+        { "sfx": "door" },
+        { "warp": { "screen": "couloir", "x": 7, "y": 10, "facing": "up" } }
+      ], "else": [
+        { "say": "Une voix dans la cour : Hé, le nouveau ! Viens nous voir avant d'entrer !" }
+      ] }
+    ],
+    "SCR_PORTE_COUR": [
+      { "sfx": "door" },
+      { "warp": { "screen": "cour", "x": 7, "y": 5, "facing": "down" } }
+    ],
+    "SCR_PORTE_MATERNELLE": [
+      { "if": { "flag": "F_MAT_FINIE" }, "then": [
+        { "say": "La classe de maternelle. T'es rendu trop grand pour ça." }
+      ], "else": [
+        { "sfx": "door" },
+        { "warp": { "screen": "classe-mat", "x": 13, "y": 12, "facing": "up" } }
+      ] }
+    ],
+    "SCR_SORTIE_MAT": [
+      { "sfx": "door" },
+      { "warp": { "screen": "couloir", "x": 2, "y": 2, "facing": "down" } }
+    ],
+    "SCR_CRAYONS": [
+      { "battle": "BAT_CRAYONS" },
+      { "set": "F_CRAYONS" },
+      { "say": "La Terreur des Crayons s'enfuit en laissant des copeaux partout." },
+      { "levelUp": true },
+      { "set": "F_MAT_FINIE" },
+      { "chapter": 2 },
+      { "card": "CARD_1RE" },
+      { "warp": { "screen": "maison", "x": 7, "y": 4, "facing": "down" } },
+      { "save": true },
+      { "say": "Un an plus tard. La 1re année commence !" }
+    ],
+    "SCR_PORTE_1RE": [
+      { "if": { "flag": "F_PORTE_1RE" }, "then": [
+        { "sfx": "door" },
+        { "warp": { "screen": "classe-1re", "x": 3, "y": 12, "facing": "up" } }
+      ], "else": [
+        { "if": { "notFlag": "F_MAT_FINIE" }, "then": [
+          { "say": "La classe de 1re année. Toi, t'es en maternelle, mon p'tit." }
+        ], "else": [
+          { "if": { "item": "ITEM_BILLET" }, "then": [
+            { "choice": "La porte est barrée. Montrer le billet d'autorisation ?", "options": ["Oui", "Non"], "bot": 0, "then": [
+              [
+                { "sfx": "door" },
+                { "set": "F_PORTE_1RE" },
+                { "say": "Clic ! La porte de la classe de 1re s'ouvre." }
+              ],
+              [ { "say": "Blum garde son billet. La porte reste barrée." } ]
+            ] }
+          ], "else": [
+            { "say": "La porte de la 1re est barrée. Une affiche : « Billet d'autorisation obligatoire. »", "id": "HINT_BILLET_1" }
+          ] }
+        ] }
+      ] }
+    ],
+    "SCR_SORTIE_1RE": [
+      { "sfx": "door" },
+      { "warp": { "screen": "couloir", "x": 11, "y": 2, "facing": "down" } }
+    ],
+    "SCR_PORTE_BUREAU": [
+      { "sfx": "door" },
+      { "warp": { "screen": "bureau", "x": 7, "y": 10, "facing": "up" } }
+    ],
+    "SCR_SORTIE_BUREAU": [
+      { "sfx": "door" },
+      { "warp": { "screen": "couloir", "x": 3, "y": 10, "facing": "down" } }
+    ],
+    "SCR_SECRETARIAT": [
+      { "if": { "notFlag": "F_MAT_FINIE" }, "then": [
+        { "say": "Bonjour, mon grand ! La maternelle, c'est la porte en haut à gauche.", "who": "Voix du secrétariat" }
+      ], "else": [
+        { "if": { "item": "ITEM_BILLET" }, "then": [
+          { "say": "Tu l'as, ton billet. Cours pas dans le corridor !", "who": "Voix du secrétariat" }
+        ], "else": [
+          { "say": "Un billet pour la 1re ? Signé, estampé. Tiens.", "who": "Voix du secrétariat" },
+          { "give": "ITEM_BILLET" },
+          { "say": "Montre-le à la porte de ta classe, en haut à droite.", "who": "Voix du secrétariat" }
+        ] }
+      ] }
+    ],
+    "SCR_MAXI_COULOIR": [
+      { "if": { "item": "ITEM_BILLET" }, "then": [
+        { "say": "T'as ton billet ? Go, go, go ! Marie-Claude attend pas.", "who": "Maxi" }
+      ], "else": [
+        { "say": ["On est en 1re ! La prof, c'est Marie-Claude.", "Pour entrer, ça prend un billet. Le secrétariat en donne, la porte en bas à gauche."], "who": "Maxi", "id": "HINT_BILLET_2" }
+      ] }
+    ],
+    "SCR_BOULETTE": [
+      { "battle": "BAT_BOULETTE" },
+      { "set": "F_BOULETTE" },
+      { "say": "La boulette se déplie : c'est un vieux bulletin. Ouf." }
+    ],
+    "SCR_MARIE_CLAUDE": [
+      { "say": ["Assis-toi, Blum. Sors ton cahier.", "Aujourd'hui... DICTÉE MORTELLE !"], "who": "Marie-Claude" },
+      { "battle": "BAT_MARIE_CLAUDE" },
+      { "set": "F_MC" },
+      { "say": "Hmm. Neuf sur dix. Pas pire pantoute, Blum.", "who": "Marie-Claude" },
+      { "levelUp": true },
+      { "set": "F_SLICE_FINI" },
+      { "theEnd": "CARD_FIN" }
+    ]
+  }
+}

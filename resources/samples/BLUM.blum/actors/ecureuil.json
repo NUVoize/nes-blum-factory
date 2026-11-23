@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "enemy",
+  "name": {
+    "fr": "Écureuil nerveux",
+    "en": "Jumpy Squirrel"
+  },
+  "pattern": "hopper",
+  "speed": 256,
+  "hp": 1,
+  "damage": 1,
+  "turnAtLedge": false,
+  "frames": [
+    "ecureuil1",
+    "ecureuil2"
+  ],
+  "period": 30,
+  "jump": 768,
+  "graphics": "graphics/ennemis-cabane.json"
+}

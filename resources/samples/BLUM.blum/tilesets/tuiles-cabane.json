@@ -1,0 +1,272 @@
+{
+  "schemaVersion": 1,
+  "id": "tuiles-cabane",
+  "chr": "graphics/tuiles-cabane.chr",
+  "empty": 0,
+  "metatiles": [
+    {
+      "id": 0,
+      "name": "vide",
+      "tiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "palette": 1,
+      "behaviour": "empty"
+    },
+    {
+      "id": 1,
+      "name": "neige",
+      "tiles": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "palette": 3,
+      "behaviour": "solid"
+    },
+    {
+      "id": 2,
+      "name": "terre",
+      "tiles": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "palette": 1,
+      "behaviour": "solid"
+    },
+    {
+      "id": 3,
+      "name": "buches",
+      "tiles": [
+        9,
+        10,
+        9,
+        10
+      ],
+      "palette": 1,
+      "behaviour": "solid"
+    },
+    {
+      "id": 4,
+      "name": "planche",
+      "tiles": [
+        11,
+        12,
+        0,
+        0
+      ],
+      "palette": 1,
+      "behaviour": "oneWay"
+    },
+    {
+      "id": 5,
+      "name": "echelle",
+      "tiles": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "palette": 1,
+      "behaviour": "ladder"
+    },
+    {
+      "id": 6,
+      "name": "pics_glace",
+      "tiles": [
+        0,
+        0,
+        17,
+        17
+      ],
+      "palette": 3,
+      "behaviour": "hazard"
+    },
+    {
+      "id": 7,
+      "name": "graine",
+      "tiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "palette": 1,
+      "behaviour": "collectible"
+    },
+    {
+      "id": 8,
+      "name": "poteau",
+      "tiles": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "palette": 2,
+      "behaviour": "checkpoint"
+    },
+    {
+      "id": 9,
+      "name": "porte_haut",
+      "tiles": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "palette": 1,
+      "behaviour": "exit"
+    },
+    {
+      "id": 10,
+      "name": "porte_bas",
+      "tiles": [
+        26,
+        27,
+        28,
+        29
+      ],
+      "palette": 1,
+      "behaviour": "exit"
+    },
+    {
+      "id": 11,
+      "name": "tronc",
+      "tiles": [
+        30,
+        31,
+        32,
+        33
+      ],
+      "palette": 1,
+      "behaviour": "empty"
+    },
+    {
+      "id": 12,
+      "name": "feuillage",
+      "tiles": [
+        34,
+        35,
+        36,
+        37
+      ],
+      "palette": 2,
+      "behaviour": "empty"
+    },
+    {
+      "id": 13,
+      "name": "feuilles",
+      "tiles": [
+        38,
+        39,
+        40,
+        41
+      ],
+      "palette": 2,
+      "behaviour": "empty"
+    },
+    {
+      "id": 14,
+      "name": "cabane_mur",
+      "tiles": [
+        42,
+        43,
+        42,
+        43
+      ],
+      "palette": 1,
+      "behaviour": "solid"
+    },
+    {
+      "id": 15,
+      "name": "cabane_toit",
+      "tiles": [
+        44,
+        44,
+        45,
+        45
+      ],
+      "palette": 2,
+      "behaviour": "solid"
+    },
+    {
+      "id": 16,
+      "name": "cabane_fenetre",
+      "tiles": [
+        46,
+        47,
+        48,
+        49
+      ],
+      "palette": 1,
+      "behaviour": "solid"
+    },
+    {
+      "id": 17,
+      "name": "cheminee",
+      "tiles": [
+        50,
+        51,
+        52,
+        53
+      ],
+      "palette": 1,
+      "behaviour": "solid"
+    },
+    {
+      "id": 18,
+      "name": "fumee",
+      "tiles": [
+        54,
+        55,
+        56,
+        57
+      ],
+      "palette": 3,
+      "behaviour": "empty"
+    },
+    {
+      "id": 19,
+      "name": "baril",
+      "tiles": [
+        58,
+        59,
+        60,
+        61
+      ],
+      "palette": 1,
+      "behaviour": "solid"
+    },
+    {
+      "id": 20,
+      "name": "sapin",
+      "tiles": [
+        62,
+        63,
+        64,
+        65
+      ],
+      "palette": 3,
+      "behaviour": "empty"
+    },
+    {
+      "id": 21,
+      "name": "congere",
+      "tiles": [
+        66,
+        67,
+        68,
+        69
+      ],
+      "palette": 3,
+      "behaviour": "empty"
+    }
+  ]
+}

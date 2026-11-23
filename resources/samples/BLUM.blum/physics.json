@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "walkAccel": 24,
+  "runMax": 384,
+  "friction": 32,
+  "turnBoost": 48,
+  "gravity": 56,
+  "maxFall": 1024,
+  "airControl": 208,
+  "jumpVelocity": 1184,
+  "jumpCut": 256,
+  "coyoteFrames": 6,
+  "jumpBufferFrames": 6,
+  "doubleJump": {
+    "enabled": true,
+    "velocity": 960
+  },
+  "wallGrab": {
+    "enabled": false,
+    "wallSlideSpeed": 128,
+    "wallJump": {
+      "x": 384,
+      "y": 1024,
+      "lockFrames": 8
+    }
+  },
+  "ladders": {
+    "climbSpeed": 256,
+    "canJumpOff": true
+  },
+  "swim": {
+    "enabled": false,
+    "swimGravity": 8,
+    "strokeVelocity": 512,
+    "maxSwimFall": 256
+  },
+  "melee": {
+    "enabled": false,
+    "frames": 12,
+    "hitbox": 16
+  },
+  "projectile": {
+    "enabled": true,
+    "speed": 768,
+    "maxOnScreen": 2,
+    "cooldown": 18
+  },
+  "health": {
+    "hp": 3,
+    "knockback": {
+      "x": 512,
+      "y": 512
+    },
+    "iframes": 60
+  },
+  "doors": {
+    "enterDelayFrames": 20
+  }
+}

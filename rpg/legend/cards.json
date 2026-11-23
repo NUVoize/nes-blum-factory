@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "comment": "Full-screen title cards (chapter and year changes, end of the slice). Lines are centred; an empty string is a blank line.",
+  "cards": {
+    "CARD_CH00": ["PROLOGUE", "", "", "Chez Madame Bélanger", "", "L'école de bienveillance"],
+    "CARD_CH01_MAT": ["CHAPITRE 1", "", "", "École Chénier", "", "Maternelle"],
+    "CARD_1RE": ["CHAPITRE 1", "", "", "École Chénier", "", "1re année"],
+    "CARD_FIN": ["À SUIVRE", "", "", "Merci d'avoir joué !", "", "Blum, Magdi, Nivoix,", "Maxi et Paul reviennent", "bientôt."]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "01M5C5M9DKDR83C5B5MNAV2HBV",
+  "director": "movement",
+  "state": "approved",
+  "createdAt": "2026-10-20T08:07:45.331Z",
+  "tool": "propose_enemy",
+  "summary": {
+    "fr": "Ennemi « Écureuil nerveux » (sauteur, 1 vie(s)).",
+    "en": "Enemy \"Jumpy Squirrel\" (hopper, 1 hp)."
+  },
+  "ops": [
+    {
+      "op": "set",
+      "doc": "actors/ecureuil.json",
+      "value": {
+        "schemaVersion": 1,
+        "kind": "enemy",
+        "name": {
+          "fr": "Écureuil nerveux",
+          "en": "Jumpy Squirrel"
+        },
+        "pattern": "hopper",
+        "speed": 256,
+        "hp": 1,
+        "damage": 1,
+        "turnAtLedge": false,
+        "frames": [
+          "ecureuil1",
+          "ecureuil2"
+        ],
+        "period": 30,
+        "jump": 768,
+        "graphics": "graphics/ennemis-cabane.json"
+      }
+    }
+  ],
+  "warnings": [],
+  "decidedAt": "2026-10-20T08:07:45.599Z",
+  "txId": "01M5C5M9NS19SBXKDXJM4R66Z8"
+}

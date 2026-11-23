@@ -1,0 +1,558 @@
+{
+  "schemaVersion": 1,
+  "format": "nbf-graphics",
+  "id": "objets",
+  "name": "Objets",
+  "kind": "sprite",
+  "role": "common",
+  "source": "sample-game/gfx/common/common.json (NES-BLUM-FACTORY-ASSETS 385a930)",
+  "preview": "graphics/objets.png",
+  "chr": "graphics/objets.chr",
+  "bankSize": 1024,
+  "settings": null,
+  "palettes": {
+    "world": "monde-1",
+    "mode": "locked",
+    "backdrop": 33,
+    "slots": [
+      {
+        "slot": 1,
+        "colors": [
+          15,
+          48,
+          39
+        ]
+      }
+    ]
+  },
+  "frames": [
+    {
+      "name": "graine1",
+      "bank": 0,
+      "w": 8,
+      "h": 8,
+      "hotspot": {
+        "x": 4,
+        "y": 8
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 0,
+          "palette": 1,
+          "flipH": false,
+          "flipV": false
+        }
+      ],
+      "maxPerLine": 1
+    },
+    {
+      "name": "graine2",
+      "bank": 0,
+      "w": 8,
+      "h": 8,
+      "hotspot": {
+        "x": 4,
+        "y": 8
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 1,
+          "palette": 1,
+          "flipH": false,
+          "flipV": false
+        }
+      ],
+      "maxPerLine": 1
+    },
+    {
+      "name": "coeur",
+      "bank": 0,
+      "w": 8,
+      "h": 8,
+      "hotspot": {
+        "x": 4,
+        "y": 8
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 2,
+          "palette": 1,
+          "flipH": false,
+          "flipV": false
+        }
+      ],
+      "maxPerLine": 1
+    },
+    {
+      "name": "poutine",
+      "bank": 0,
+      "w": 16,
+      "h": 16,
+      "hotspot": {
+        "x": 8,
+        "y": 16
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 3,
+          "palette": 1,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 4,
+          "palette": 1,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 5,
+          "palette": 1,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 6,
+          "palette": 1,
+          "flipH": false,
+          "flipV": false
+        }
+      ],
+      "maxPerLine": 2
+    },
+    {
+      "name": "sirop",
+      "bank": 0,
+      "w": 16,
+      "h": 16,
+      "hotspot": {
+        "x": 8,
+        "y": 16
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 7,
+          "palette": 1,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 8,
+          "palette": 1,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 9,
+          "palette": 1,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 10,
+          "palette": 1,
+          "flipH": false,
+          "flipV": false
+        }
+      ],
+      "maxPerLine": 2
+    },
+    {
+      "name": "tire1",
+      "bank": 0,
+      "w": 8,
+      "h": 8,
+      "hotspot": {
+        "x": 4,
+        "y": 8
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 11,
+          "palette": 1,
+          "flipH": false,
+          "flipV": false
+        }
+      ],
+      "maxPerLine": 1
+    },
+    {
+      "name": "tire2",
+      "bank": 0,
+      "w": 8,
+      "h": 8,
+      "hotspot": {
+        "x": 4,
+        "y": 8
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 12,
+          "palette": 1,
+          "flipH": false,
+          "flipV": false
+        }
+      ],
+      "maxPerLine": 1
+    },
+    {
+      "name": "goutte",
+      "bank": 0,
+      "w": 8,
+      "h": 8,
+      "hotspot": {
+        "x": 4,
+        "y": 8
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 13,
+          "palette": 1,
+          "flipH": false,
+          "flipV": false
+        }
+      ],
+      "maxPerLine": 1
+    },
+    {
+      "name": "boule",
+      "bank": 0,
+      "w": 8,
+      "h": 8,
+      "hotspot": {
+        "x": 4,
+        "y": 8
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 14,
+          "palette": 1,
+          "flipH": false,
+          "flipV": false
+        }
+      ],
+      "maxPerLine": 1
+    },
+    {
+      "name": "buche",
+      "bank": 0,
+      "w": 16,
+      "h": 8,
+      "hotspot": {
+        "x": 8,
+        "y": 8
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 15,
+          "palette": 1,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 16,
+          "palette": 1,
+          "flipH": false,
+          "flipV": false
+        }
+      ],
+      "maxPerLine": 2
+    },
+    {
+      "name": "onde",
+      "bank": 0,
+      "w": 16,
+      "h": 8,
+      "hotspot": {
+        "x": 8,
+        "y": 8
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 17,
+          "palette": 1,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 17,
+          "palette": 1,
+          "flipH": true,
+          "flipV": false
+        }
+      ],
+      "maxPerLine": 2
+    },
+    {
+      "name": "pouf1",
+      "bank": 0,
+      "w": 16,
+      "h": 16,
+      "hotspot": {
+        "x": 8,
+        "y": 16
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 18,
+          "palette": 1,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 19,
+          "palette": 1,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 20,
+          "palette": 1,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 20,
+          "palette": 1,
+          "flipH": true,
+          "flipV": false
+        }
+      ],
+      "maxPerLine": 2
+    },
+    {
+      "name": "pouf2",
+      "bank": 0,
+      "w": 16,
+      "h": 16,
+      "hotspot": {
+        "x": 8,
+        "y": 16
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 21,
+          "palette": 1,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 22,
+          "palette": 1,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 23,
+          "palette": 1,
+          "flipH": false,
+          "flipV": false
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 24,
+          "palette": 1,
+          "flipH": false,
+          "flipV": false
+        }
+      ],
+      "maxPerLine": 2
+    },
+    {
+      "name": "pop1",
+      "bank": 0,
+      "w": 8,
+      "h": 8,
+      "hotspot": {
+        "x": 4,
+        "y": 8
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 25,
+          "palette": 1,
+          "flipH": false,
+          "flipV": false
+        }
+      ],
+      "maxPerLine": 1
+    },
+    {
+      "name": "pop2",
+      "bank": 0,
+      "w": 8,
+      "h": 8,
+      "hotspot": {
+        "x": 4,
+        "y": 8
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 26,
+          "palette": 1,
+          "flipH": false,
+          "flipV": false
+        }
+      ],
+      "maxPerLine": 1
+    }
+  ],
+  "animations": {
+    "graine": {
+      "frames": [
+        "graine1",
+        "graine2"
+      ],
+      "frameDuration": 8,
+      "loop": true
+    },
+    "coeur": {
+      "frames": [
+        "coeur"
+      ],
+      "frameDuration": 8,
+      "loop": true
+    },
+    "poutine": {
+      "frames": [
+        "poutine"
+      ],
+      "frameDuration": 8,
+      "loop": true
+    },
+    "sirop": {
+      "frames": [
+        "sirop"
+      ],
+      "frameDuration": 8,
+      "loop": true
+    },
+    "tire": {
+      "frames": [
+        "tire1",
+        "tire2"
+      ],
+      "frameDuration": 8,
+      "loop": true
+    },
+    "goutte": {
+      "frames": [
+        "goutte"
+      ],
+      "frameDuration": 8,
+      "loop": true
+    },
+    "boule": {
+      "frames": [
+        "boule"
+      ],
+      "frameDuration": 8,
+      "loop": true
+    },
+    "buche": {
+      "frames": [
+        "buche"
+      ],
+      "frameDuration": 8,
+      "loop": true
+    },
+    "onde": {
+      "frames": [
+        "onde"
+      ],
+      "frameDuration": 8,
+      "loop": true
+    },
+    "pouf": {
+      "frames": [
+        "pouf1",
+        "pouf2"
+      ],
+      "frameDuration": 8,
+      "loop": true
+    },
+    "pop": {
+      "frames": [
+        "pop1",
+        "pop2"
+      ],
+      "frameDuration": 8,
+      "loop": true
+    }
+  },
+  "budget": {
+    "colors": 0,
+    "subpalettes": 1,
+    "tiles": 27,
+    "tilesBeforeMerge": 27,
+    "tileCapacity": 64,
+    "merged": 0,
+    "sprites": 4,
+    "maxPerLine": 2,
+    "banks": [
+      {
+        "index": 0,
+        "tiles": 27,
+        "capacity": 64
+      }
+    ],
+    "warnings": []
+  }
+}

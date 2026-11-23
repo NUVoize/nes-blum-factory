@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "enemy",
+  "name": {
+    "fr": "Marteau-piqueur",
+    "en": "Jackhammer"
+  },
+  "pattern": "hopper",
+  "speed": 0,
+  "hp": 2,
+  "damage": 1,
+  "turnAtLedge": false,
+  "frames": [
+    "marteau1",
+    "marteau2"
+  ],
+  "period": 20,
+  "jump": 512,
+  "graphics": "graphics/ennemis-chantier.json"
+}

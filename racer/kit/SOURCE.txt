@@ -1,0 +1,2 @@
+NES-BLUM-FACTORY-ASSETS/sebring @ eb84ef4 (BLUMR-A1, original art and music, see README.md and ASSETS-ROWS.md)
+Imported by scripts/import-sebring-kit.mjs. Do not edit by hand: change the kit, then re-import.

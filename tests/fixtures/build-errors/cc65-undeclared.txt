@@ -1,0 +1,2 @@
+1 errors and 0 warnings generated.
+undeclared.c:2: Error: Undeclared identifier 'hero_speed'

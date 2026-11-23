@@ -1,0 +1,40 @@
+{
+  "id": "01M5C5M9JF44S7AR5GAAMEKKDC",
+  "director": "movement",
+  "state": "approved",
+  "createdAt": "2026-10-20T08:07:45.487Z",
+  "tool": "propose_enemy",
+  "summary": {
+    "fr": "Ennemi « Glaçon filant » (volant, 1 vie(s)).",
+    "en": "Enemy \"Shooting Icicle\" (flyer, 1 hp)."
+  },
+  "ops": [
+    {
+      "op": "set",
+      "doc": "actors/glacon.json",
+      "value": {
+        "schemaVersion": 1,
+        "kind": "enemy",
+        "name": {
+          "fr": "Glaçon filant",
+          "en": "Shooting Icicle"
+        },
+        "pattern": "flyer",
+        "speed": 256,
+        "hp": 1,
+        "damage": 1,
+        "turnAtLedge": false,
+        "frames": [
+          "glacon1",
+          "glacon2"
+        ],
+        "period": 32,
+        "amplitude": 8,
+        "graphics": "graphics/ennemis-tempete.json"
+      }
+    }
+  ],
+  "warnings": [],
+  "decidedAt": "2026-10-20T08:07:45.784Z",
+  "txId": "01M5C5M9VJ0BGBJ3RJ13CQBZ96"
+}

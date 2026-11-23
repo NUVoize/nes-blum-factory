@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "kind": "boss",
+  "name": {
+    "fr": "Le Castor Contremaître",
+    "en": "The Beaver Foreman"
+  },
+  "hp": 8,
+  "damage": 1,
+  "graphics": "graphics/boss-castor.json",
+  "frames": [
+    "castor1",
+    "castor2"
+  ],
+  "script": "castor"
+}

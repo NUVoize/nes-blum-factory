@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "mapper": 4,
+  "submapper": 0,
+  "prgRomKiB": 256,
+  "chrRomKiB": 128,
+  "prgRamKiB": 8,
+  "battery": false,
+  "mirroring": "software",
+  "region": "ntsc"
+}

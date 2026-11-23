@@ -1,0 +1,1 @@
+ld65: Error: Duplicate external identifier: ‘_boss_tick’

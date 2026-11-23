@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "comment": "The 5 classes (bible section 4): they change battle powers only. Tier 1 (primaire) is playable in the slice; tiers 2-3 are shown as ??? in the menu. effect: hit = strong single hit, all = hits every enemy, steal = hit + steals a collation once per battle, pierce = ignores defence, summon = a helper hits for 2 enemy turns.",
+  "classes": [
+    { "id": "GUERRIER", "name": "Guerrier", "tiers": ["Coup de cartable", "Frappe du lendemain de veille", "Épée du destin"], "effect": "hit", "power": 9, "cost": 1, "fx": "cartable", "battleText": "Coup de cartable ! [n] dégâts.", "pitch": "Frappe fort, une cible." },
+    { "id": "MAGE", "name": "Mage", "tiers": ["Étincelle", "Boule de code", "Tempête arcanique"], "effect": "all", "power": 8, "cost": 1, "fx": "etincelle", "battleText": "Étincelle ! [n] dégâts.", "pitch": "Touche tous les ennemis." },
+    { "id": "VOLEUR", "name": "Voleur", "tiers": ["Vol de gomme", "Esquive des examens", "Ombre légendaire"], "effect": "steal", "power": 7, "cost": 1, "fx": "gomme", "battleText": "Vol de gomme ! [n] dégâts.", "pitch": "Frappe et vole un objet." },
+    { "id": "ARCHER", "name": "Archer", "tiers": ["Projectile de papier", "Tir de précision", "Flèche du destin"], "effect": "pierce", "power": 7, "cost": 1, "fx": "papier", "battleText": "Projectile de papier ! [n] dégâts.", "pitch": "Ignore la défense." },
+    { "id": "NECROMANCIEN", "name": "Nécromancien", "tiers": ["Insecte réanimé", "Réanime une plante", "Armée des anciens boss"], "effect": "summon", "power": 5, "cost": 1, "fx": "insecte", "battleText": "Insecte réanimé ! [n] dégâts.", "pitch": "Un allié pour 2 tours." }
+  ],
+  "helper": { "damage": 3, "turns": 2, "text": "L'insecte réanimé pique ! [n] dégâts." },
+  "stealText": "Blum vole une collation !"
+}

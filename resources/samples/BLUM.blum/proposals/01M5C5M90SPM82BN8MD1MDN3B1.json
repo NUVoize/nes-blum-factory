@@ -1,0 +1,69 @@
+{
+  "id": "01M5C5M90SPM82BN8MD1MDN3B1",
+  "director": "visual",
+  "state": "approved",
+  "createdAt": "2026-10-20T08:07:44.921Z",
+  "tool": "propose_palette_set",
+  "summary": {
+    "fr": "Palettes du monde « Le Chantier ».",
+    "en": "Palettes for world \"The Roadworks\"."
+  },
+  "ops": [
+    {
+      "op": "add",
+      "doc": "graphics/palettes.json",
+      "pointer": "/sets/-",
+      "value": {
+        "id": "chantier",
+        "backdrop": 2,
+        "bg": [
+          [
+            15,
+            48,
+            22
+          ],
+          [
+            15,
+            39,
+            48
+          ],
+          [
+            0,
+            16,
+            61
+          ],
+          [
+            8,
+            40,
+            56
+          ]
+        ],
+        "sprites": [
+          [
+            15,
+            54,
+            41
+          ],
+          [
+            15,
+            48,
+            39
+          ],
+          [
+            15,
+            39,
+            48
+          ],
+          [
+            15,
+            40,
+            0
+          ]
+        ]
+      }
+    }
+  ],
+  "warnings": [],
+  "decidedAt": "2026-10-20T08:07:45.105Z",
+  "txId": "01M5C5M96AF0XYS60ZQKBCTT3J"
+}

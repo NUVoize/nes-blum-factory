@@ -1,0 +1,40 @@
+{
+  "id": "01M5C5M9CK3F80RZPJN9CMBDR3",
+  "director": "movement",
+  "state": "approved",
+  "createdAt": "2026-10-20T08:07:45.299Z",
+  "tool": "propose_enemy",
+  "summary": {
+    "fr": "Ennemi « Corneille jacasseuse » (volant, 1 vie(s)).",
+    "en": "Enemy \"Nosy Crow\" (flyer, 1 hp)."
+  },
+  "ops": [
+    {
+      "op": "set",
+      "doc": "actors/corneille.json",
+      "value": {
+        "schemaVersion": 1,
+        "kind": "enemy",
+        "name": {
+          "fr": "Corneille jacasseuse",
+          "en": "Nosy Crow"
+        },
+        "pattern": "flyer",
+        "speed": 192,
+        "hp": 1,
+        "damage": 1,
+        "turnAtLedge": false,
+        "frames": [
+          "corneille1",
+          "corneille2"
+        ],
+        "period": 64,
+        "amplitude": 16,
+        "graphics": "graphics/ennemis-potager.json"
+      }
+    }
+  ],
+  "warnings": [],
+  "decidedAt": "2026-10-20T08:07:45.562Z",
+  "txId": "01M5C5M9MN2DBFX57R15C8RSAB"
+}

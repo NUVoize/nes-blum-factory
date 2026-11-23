@@ -1,0 +1,69 @@
+{
+  "id": "01M5C5M8Y688AQ3N2AQWQYSDC3",
+  "director": "visual",
+  "state": "approved",
+  "createdAt": "2026-10-20T08:07:44.838Z",
+  "tool": "propose_palette_set",
+  "summary": {
+    "fr": "Palettes du monde « Le Potager ».",
+    "en": "Palettes for world \"The Vegetable Patch\"."
+  },
+  "ops": [
+    {
+      "op": "add",
+      "doc": "graphics/palettes.json",
+      "pointer": "/sets/-",
+      "value": {
+        "id": "potager",
+        "backdrop": 33,
+        "bg": [
+          [
+            15,
+            48,
+            22
+          ],
+          [
+            25,
+            41,
+            57
+          ],
+          [
+            7,
+            23,
+            55
+          ],
+          [
+            22,
+            39,
+            48
+          ]
+        ],
+        "sprites": [
+          [
+            15,
+            54,
+            41
+          ],
+          [
+            15,
+            48,
+            39
+          ],
+          [
+            15,
+            23,
+            55
+          ],
+          [
+            15,
+            0,
+            48
+          ]
+        ]
+      }
+    }
+  ],
+  "warnings": [],
+  "decidedAt": "2026-10-20T08:07:45.011Z",
+  "txId": "01M5C5M93CCP6TZ2VNRQT9518X"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "01M5C5M9HEXMARHF07KTJFK7ZD",
+  "director": "movement",
+  "state": "approved",
+  "createdAt": "2026-10-20T08:07:45.455Z",
+  "tool": "propose_enemy",
+  "summary": {
+    "fr": "Ennemi « Bonhomme de neige » (tireur, 2 vie(s)).",
+    "en": "Enemy \"Snowman\" (shooter, 2 hp)."
+  },
+  "ops": [
+    {
+      "op": "set",
+      "doc": "actors/bonhomme.json",
+      "value": {
+        "schemaVersion": 1,
+        "kind": "enemy",
+        "name": {
+          "fr": "Bonhomme de neige",
+          "en": "Snowman"
+        },
+        "pattern": "shooter",
+        "speed": 0,
+        "hp": 2,
+        "damage": 1,
+        "turnAtLedge": false,
+        "frames": [
+          "bonhomme1",
+          "bonhomme2"
+        ],
+        "period": 120,
+        "shotSpeed": 192,
+        "graphics": "graphics/ennemis-tempete.json"
+      }
+    }
+  ],
+  "warnings": [],
+  "decidedAt": "2026-10-20T08:07:45.746Z",
+  "txId": "01M5C5M9TC4AV4VGWYJHYD46WE"
+}

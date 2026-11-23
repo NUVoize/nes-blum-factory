@@ -1,0 +1,162 @@
+{
+  "id": "01M5C5M9WWHG7SKA2QJPFPWD03",
+  "director": "movement",
+  "state": "approved",
+  "createdAt": "2026-10-20T08:07:45.820Z",
+  "tool": "propose_boss",
+  "summary": {
+    "fr": "Boss « Rosaire la Taupe » : 6 vies, 2 phase(s).",
+    "en": "Boss \"Rosaire the Mole\": 6 hp, 2 phase(s)."
+  },
+  "ops": [
+    {
+      "op": "set",
+      "doc": "scripts/taupe.json",
+      "value": {
+        "schemaVersion": 1,
+        "phases": [
+          {
+            "steps": [
+              {
+                "op": "vulnerable",
+                "on": false
+              },
+              {
+                "op": "move_to",
+                "x": 114,
+                "speed": 1
+              },
+              {
+                "op": "wait",
+                "frames": 30
+              },
+              {
+                "op": "jump",
+                "vx": 0,
+                "vy": 64
+              },
+              {
+                "op": "flash",
+                "frames": 12
+              },
+              {
+                "op": "vulnerable",
+                "on": true
+              },
+              {
+                "op": "wait",
+                "frames": 90
+              },
+              {
+                "op": "vulnerable",
+                "on": false
+              },
+              {
+                "op": "move_to",
+                "x": 121,
+                "speed": 1
+              },
+              {
+                "op": "wait",
+                "frames": 30
+              },
+              {
+                "op": "jump",
+                "vx": 0,
+                "vy": 64
+              },
+              {
+                "op": "flash",
+                "frames": 12
+              },
+              {
+                "op": "vulnerable",
+                "on": true
+              },
+              {
+                "op": "wait",
+                "frames": 90
+              }
+            ]
+          },
+          {
+            "hpBelow": 3,
+            "steps": [
+              {
+                "op": "vulnerable",
+                "on": false
+              },
+              {
+                "op": "move_to",
+                "x": 115,
+                "speed": 2
+              },
+              {
+                "op": "jump",
+                "vx": 0,
+                "vy": 72
+              },
+              {
+                "op": "spawn",
+                "enemy": "limace"
+              },
+              {
+                "op": "vulnerable",
+                "on": true
+              },
+              {
+                "op": "wait",
+                "frames": 70
+              },
+              {
+                "op": "vulnerable",
+                "on": false
+              },
+              {
+                "op": "move_to",
+                "x": 122,
+                "speed": 2
+              },
+              {
+                "op": "jump",
+                "vx": 0,
+                "vy": 72
+              },
+              {
+                "op": "vulnerable",
+                "on": true
+              },
+              {
+                "op": "wait",
+                "frames": 70
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "op": "set",
+      "doc": "actors/taupe.json",
+      "value": {
+        "schemaVersion": 1,
+        "kind": "boss",
+        "name": {
+          "fr": "Rosaire la Taupe",
+          "en": "Rosaire the Mole"
+        },
+        "hp": 6,
+        "damage": 1,
+        "graphics": "graphics/boss-taupe.json",
+        "frames": [
+          "taupe1",
+          "taupe2"
+        ],
+        "script": "taupe"
+      }
+    }
+  ],
+  "warnings": [],
+  "decidedAt": "2026-10-20T08:07:45.993Z",
+  "txId": "01M5C5MA22820TCHYEGFM46VPA"
+}

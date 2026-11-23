@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "enemy",
+  "name": {
+    "fr": "Bonhomme de neige",
+    "en": "Snowman"
+  },
+  "pattern": "shooter",
+  "speed": 0,
+  "hp": 2,
+  "damage": 1,
+  "turnAtLedge": false,
+  "frames": [
+    "bonhomme1",
+    "bonhomme2"
+  ],
+  "period": 120,
+  "shotSpeed": 192,
+  "graphics": "graphics/ennemis-tempete.json"
+}

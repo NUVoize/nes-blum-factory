@@ -1,0 +1,383 @@
+{
+  "id": "chenier-int",
+  "title": "École Chénier, couloir et classe (CH01)",
+  "chr": "engine/chr/chenier-int.chr",
+  "unit": "R1 (2 KiB at $0800)",
+  "tiles": 61,
+  "capacity": 128,
+  "metatileTable": "engine/metatiles/chenier-int.bin (5 bytes x 64: tl tr bl br attr)",
+  "palettes": "engine/palettes/chenier-int.bin",
+  "bg": [
+    [
+      "$0F",
+      "$02",
+      "$30",
+      "$27"
+    ],
+    [
+      "$0F",
+      "$00",
+      "$10",
+      "$38"
+    ],
+    [
+      "$0F",
+      "$17",
+      "$27",
+      "$37"
+    ],
+    [
+      "$0F",
+      "$0A",
+      "$1A",
+      "$30"
+    ]
+  ],
+  "bgRoles": [
+    "UI",
+    "plancher, murs, casiers gris",
+    "portes, pupitres bois",
+    "tableau vert, affiches"
+  ],
+  "spr": [
+    [
+      "$0F",
+      "$36",
+      "$29"
+    ],
+    [
+      "$0F",
+      "$36",
+      "$16"
+    ],
+    [
+      "$0F",
+      "$36",
+      "$12"
+    ],
+    [
+      "$0F",
+      "$28",
+      "$16"
+    ]
+  ],
+  "sprRoles": [
+    "Blum tête",
+    "Blum corps",
+    "Maxi, Paul, Marie-Claude (bleu)",
+    "Terreur des Crayons (jaune, rouge)"
+  ],
+  "attrBits": {
+    "palette": "bits 0-1",
+    "solid": 4,
+    "counter": 8,
+    "trigger": 16
+  },
+  "sheet": "gfx/tilesets/chenier-int.png (8 metatiles per row, in metatile order)",
+  "metatiles": [
+    {
+      "index": 0,
+      "ch": ".",
+      "name": "plancher carrelé",
+      "palette": 1,
+      "solid": false,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "attr": 1
+    },
+    {
+      "index": 1,
+      "ch": ",",
+      "name": "plancher, bande grise",
+      "palette": 1,
+      "solid": false,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "attr": 1
+    },
+    {
+      "index": 2,
+      "ch": "#",
+      "name": "mur, haut (sombre)",
+      "palette": 1,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        3,
+        3,
+        4,
+        4
+      ],
+      "attr": 5
+    },
+    {
+      "index": 3,
+      "ch": "w",
+      "name": "mur beige",
+      "palette": 1,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        5,
+        5,
+        6,
+        6
+      ],
+      "attr": 5
+    },
+    {
+      "index": 4,
+      "ch": "c",
+      "name": "casiers",
+      "palette": 1,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "attr": 5
+    },
+    {
+      "index": 5,
+      "ch": "d",
+      "name": "porte de classe",
+      "palette": 2,
+      "solid": false,
+      "counter": false,
+      "trigger": true,
+      "tiles": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "attr": 18
+    },
+    {
+      "index": 6,
+      "ch": "e",
+      "name": "sortie (double porte)",
+      "palette": 2,
+      "solid": false,
+      "counter": false,
+      "trigger": true,
+      "tiles": [
+        15,
+        16,
+        17,
+        18
+      ],
+      "attr": 18
+    },
+    {
+      "index": 7,
+      "ch": "k",
+      "name": "pupitre",
+      "palette": 2,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        19,
+        20,
+        21,
+        22
+      ],
+      "attr": 6
+    },
+    {
+      "index": 8,
+      "ch": "K",
+      "name": "bureau du professeur",
+      "palette": 2,
+      "solid": true,
+      "counter": true,
+      "trigger": false,
+      "tiles": [
+        23,
+        24,
+        25,
+        26
+      ],
+      "attr": 14
+    },
+    {
+      "index": 9,
+      "ch": "s",
+      "name": "chaise",
+      "palette": 2,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        27,
+        28,
+        29,
+        30
+      ],
+      "attr": 6
+    },
+    {
+      "index": 10,
+      "ch": "t",
+      "name": "tableau vert, gauche",
+      "palette": 3,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        31,
+        32,
+        33,
+        34
+      ],
+      "attr": 7
+    },
+    {
+      "index": 11,
+      "ch": "T",
+      "name": "tableau vert, droite",
+      "palette": 3,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        35,
+        36,
+        34,
+        37
+      ],
+      "attr": 7
+    },
+    {
+      "index": 12,
+      "ch": "p",
+      "name": "mur avec affiche",
+      "palette": 3,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        38,
+        39,
+        40,
+        41
+      ],
+      "attr": 7
+    },
+    {
+      "index": 13,
+      "ch": "W",
+      "name": "fenêtre intérieure",
+      "palette": 3,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        42,
+        43,
+        44,
+        45
+      ],
+      "attr": 7
+    },
+    {
+      "index": 14,
+      "ch": "f",
+      "name": "fontaine",
+      "palette": 1,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        46,
+        47,
+        48,
+        49
+      ],
+      "attr": 5
+    },
+    {
+      "index": 15,
+      "ch": "b",
+      "name": "poubelle",
+      "palette": 1,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        50,
+        51,
+        52,
+        53
+      ],
+      "attr": 5
+    },
+    {
+      "index": 16,
+      "ch": "h",
+      "name": "crochets à manteaux",
+      "palette": 2,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        54,
+        55,
+        6,
+        6
+      ],
+      "attr": 6
+    },
+    {
+      "index": 17,
+      "ch": "B",
+      "name": "bibliothèque",
+      "palette": 2,
+      "solid": true,
+      "counter": true,
+      "trigger": false,
+      "tiles": [
+        56,
+        57,
+        58,
+        59
+      ],
+      "attr": 14
+    },
+    {
+      "index": 18,
+      "ch": "x",
+      "name": "escalier",
+      "palette": 1,
+      "solid": false,
+      "counter": false,
+      "trigger": true,
+      "tiles": [
+        60,
+        60,
+        60,
+        60
+      ],
+      "attr": 17
+    }
+  ]
+}

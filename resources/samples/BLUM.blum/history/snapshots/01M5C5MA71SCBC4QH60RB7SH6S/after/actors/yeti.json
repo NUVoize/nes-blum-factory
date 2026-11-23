@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "kind": "boss",
+  "name": {
+    "fr": "Le Yéti du Mont-Frette",
+    "en": "The Mount Frette Yeti"
+  },
+  "hp": 10,
+  "damage": 1,
+  "graphics": "graphics/boss-yeti.json",
+  "frames": [
+    "yeti1",
+    "yeti2"
+  ],
+  "script": "yeti"
+}

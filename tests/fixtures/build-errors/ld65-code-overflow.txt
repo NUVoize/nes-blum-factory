@@ -1,0 +1,8 @@
+<cfg>:125: Warning: Segment ‘HEADER’ does not exist
+<cfg>:125: Warning: Segment ‘CHARS’ does not exist
+<cfg>:125: Warning: Segment ‘BANK0’ does not exist
+<cfg>:125: Warning: Segment ‘SOUND’ does not exist
+<cfg>:125: Warning: Segment ‘STARTUP’ does not exist
+<cfg>:125: Warning: Segment ‘VECTORS’ does not exist
+<cfg>:52: Warning: Segment ‘CODE’ overflows memory area ‘PRG’ by 616 bytes
+ld65: Error: Cannot generate most of the files due to memory area overflow 

@@ -1,0 +1,2 @@
+NES-BLUM-FACTORY-ASSETS/legend @ 63b4664 (BLUMZ-A1, original art and music, see README.md)
+Imported by scripts/import-legend-kit.mjs. Do not edit by hand: change the kit, then re-import.

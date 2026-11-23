@@ -1,0 +1,2 @@
+1 errors and 0 warnings generated.
+include.c:1: Error: Include file 'gen/stage.h' not found

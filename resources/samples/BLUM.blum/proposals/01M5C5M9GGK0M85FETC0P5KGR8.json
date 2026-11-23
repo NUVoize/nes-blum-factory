@@ -1,0 +1,40 @@
+{
+  "id": "01M5C5M9GGK0M85FETC0P5KGR8",
+  "director": "movement",
+  "state": "approved",
+  "createdAt": "2026-10-20T08:07:45.424Z",
+  "tool": "propose_enemy",
+  "summary": {
+    "fr": "Ennemi « Marteau-piqueur » (sauteur, 2 vie(s)).",
+    "en": "Enemy \"Jackhammer\" (hopper, 2 hp)."
+  },
+  "ops": [
+    {
+      "op": "set",
+      "doc": "actors/marteau.json",
+      "value": {
+        "schemaVersion": 1,
+        "kind": "enemy",
+        "name": {
+          "fr": "Marteau-piqueur",
+          "en": "Jackhammer"
+        },
+        "pattern": "hopper",
+        "speed": 0,
+        "hp": 2,
+        "damage": 1,
+        "turnAtLedge": false,
+        "frames": [
+          "marteau1",
+          "marteau2"
+        ],
+        "period": 20,
+        "jump": 512,
+        "graphics": "graphics/ennemis-chantier.json"
+      }
+    }
+  ],
+  "warnings": [],
+  "decidedAt": "2026-10-20T08:07:45.708Z",
+  "txId": "01M5C5M9S76SY3R3X2YMJ285V9"
+}

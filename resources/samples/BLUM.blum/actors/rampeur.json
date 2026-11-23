@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "kind": "enemy",
+  "name": {
+    "fr": "Rampeur",
+    "en": "Crawler"
+  },
+  "pattern": "walker",
+  "speed": 128,
+  "hp": 1,
+  "damage": 1,
+  "turnAtLedge": true,
+  "graphics": "builtin:walker"
+}

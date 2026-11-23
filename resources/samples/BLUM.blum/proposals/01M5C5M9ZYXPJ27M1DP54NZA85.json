@@ -1,0 +1,122 @@
+{
+  "id": "01M5C5M9ZYXPJ27M1DP54NZA85",
+  "director": "movement",
+  "state": "approved",
+  "createdAt": "2026-10-20T08:07:45.918Z",
+  "tool": "propose_boss",
+  "summary": {
+    "fr": "Boss « Le Yéti du Mont-Frette » : 10 vies, 2 phase(s).",
+    "en": "Boss \"The Mount Frette Yeti\": 10 hp, 2 phase(s)."
+  },
+  "ops": [
+    {
+      "op": "set",
+      "doc": "scripts/yeti.json",
+      "value": {
+        "schemaVersion": 1,
+        "phases": [
+          {
+            "steps": [
+              {
+                "op": "vulnerable",
+                "on": false
+              },
+              {
+                "op": "charge",
+                "speed": 28
+              },
+              {
+                "op": "wait",
+                "frames": 30
+              },
+              {
+                "op": "jump",
+                "vx": 0,
+                "vy": 64
+              },
+              {
+                "op": "shoot",
+                "pattern": "spread",
+                "speed": 28
+              },
+              {
+                "op": "flash",
+                "frames": 10
+              },
+              {
+                "op": "vulnerable",
+                "on": true
+              },
+              {
+                "op": "wait",
+                "frames": 100
+              }
+            ]
+          },
+          {
+            "hpBelow": 5,
+            "steps": [
+              {
+                "op": "vulnerable",
+                "on": false
+              },
+              {
+                "op": "charge",
+                "speed": 36
+              },
+              {
+                "op": "wait",
+                "frames": 20
+              },
+              {
+                "op": "jump",
+                "vx": 0,
+                "vy": 72
+              },
+              {
+                "op": "shoot",
+                "pattern": "spread",
+                "speed": 32
+              },
+              {
+                "op": "flash",
+                "frames": 10
+              },
+              {
+                "op": "vulnerable",
+                "on": true
+              },
+              {
+                "op": "wait",
+                "frames": 80
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "op": "set",
+      "doc": "actors/yeti.json",
+      "value": {
+        "schemaVersion": 1,
+        "kind": "boss",
+        "name": {
+          "fr": "Le Yéti du Mont-Frette",
+          "en": "The Mount Frette Yeti"
+        },
+        "hp": 10,
+        "damage": 1,
+        "graphics": "graphics/boss-yeti.json",
+        "frames": [
+          "yeti1",
+          "yeti2"
+        ],
+        "script": "yeti"
+      }
+    }
+  ],
+  "warnings": [],
+  "decidedAt": "2026-10-20T08:07:46.153Z",
+  "txId": "01M5C5MA71SCBC4QH60RB7SH6S"
+}

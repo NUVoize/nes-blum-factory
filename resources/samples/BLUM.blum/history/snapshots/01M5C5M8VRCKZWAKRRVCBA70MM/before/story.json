@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "title": "BLUM",
+  "premise": {
+    "fr": "Une petite fleur part à l’aventure.",
+    "en": "A little flower goes on an adventure."
+  },
+  "romLocale": "fr",
+  "worlds": [
+    {
+      "id": "monde-1",
+      "name": {
+        "fr": "Le jardin",
+        "en": "The garden"
+      },
+      "theme": "jardin",
+      "stages": [
+        {
+          "id": "niveau-1",
+          "name": {
+            "fr": "Premiers pas",
+            "en": "First steps"
+          }
+        }
+      ]
+    }
+  ],
+  "ending": {
+    "fr": "La fleur est rentrée chez elle.",
+    "en": "The flower is home again."
+  }
+}

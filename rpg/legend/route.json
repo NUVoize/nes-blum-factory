@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "comment": "Test bot route through the slice (src/core/rpg/legend/run.ts): the first step whose condition is not met yet is the bot's goal. talk = walk next to the entity, face it, A; touch = walk into it; menu = open the Start menu, read Objets, close. The bot finds its way (screens, doors, tiles) from the compiled maps; the route only says what to do, in story order. Choices: the option written in scripts.json (bot).",
+  "steps": [
+    { "until": { "flag": "F_CLASSE" }, "talk": "NPC_BELANGER" },
+    { "until": { "menu": true }, "menu": true },
+    { "until": { "flag": "F_AMIS" }, "talk": "OBJ_FENETRE" },
+    { "until": { "flag": "F_MAGDI" }, "talk": "NPC_MAGDI" },
+    { "until": { "flag": "F_NIVOIX" }, "talk": "NPC_NIVOIX" },
+    { "until": { "talked": "OBJ_ETOILE_SALON" }, "talk": "OBJ_ETOILE_SALON" },
+    { "until": { "flag": "F_MOUTON" }, "touch": "ENN_MOUTON" },
+    { "until": { "flag": "F_CH00_FINI" }, "touch": "PORTE_SORTIE_CH00" },
+    { "until": { "flag": "F_MAXI" }, "talk": "NPC_MAXI_COUR" },
+    { "until": { "flag": "F_PAUL" }, "talk": "NPC_PAUL_COUR" },
+    { "until": { "flag": "F_CRAYONS" }, "touch": "ENN_CRAYONS" },
+    { "until": { "flag": "F_BOULETTE" }, "touch": "ENN_BOULETTE" },
+    { "until": { "talked": "NPC_MAXI_COULOIR" }, "talk": "NPC_MAXI_COULOIR" },
+    { "until": { "talked": "PORTE_1RE" }, "talk": "PORTE_1RE" },
+    { "until": { "item": "ITEM_BILLET" }, "talk": "OBJ_SECRETARIAT" },
+    { "until": { "flag": "F_PORTE_1RE" }, "talk": "PORTE_1RE" },
+    { "until": { "talked": "OBJ_ETOILE_COULOIR" }, "talk": "OBJ_ETOILE_COULOIR" },
+    { "until": { "flag": "F_MC" }, "talk": "NPC_MARIE_CLAUDE" }
+  ]
+}

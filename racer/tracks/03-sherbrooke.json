@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "sherbrooke",
+  "name": {"fr": "Rue Sherbrooke Est", "en": "Sherbrooke Street East"},
+  "palette": "soir",
+  "backdrop": "stade-olympique",
+  "timeStart": 50,
+  "segments": [
+    {"length": 220, "curve": 0, "hill": 0, "traffic": 1},
+    {"length": 240, "curve": 12, "hill": 0, "traffic": 2},
+    {"length": 200, "curve": 0, "hill": 0, "traffic": 1, "objects": [{"at": 60, "kind": "bus", "lane": 1}, {"at": 150, "kind": "pothole", "lane": -1}]},
+    {"length": 260, "curve": -16, "hill": 0, "traffic": 2},
+    {"length": 200, "curve": 0, "hill": 4, "traffic": 1, "objects": [{"at": 100, "kind": "pothole", "lane": 0}]},
+    {"length": 240, "curve": 0, "hill": -4, "traffic": 2},
+    {"length": 220, "curve": 0, "hill": 0, "traffic": 1, "scenery": 2, "checkpoint": {"addTime": 49}},
+    {"length": 260, "curve": -20, "hill": 0, "traffic": 1, "scenery": 2},
+    {"length": 220, "curve": 0, "hill": 6, "traffic": 1, "scenery": 2, "objects": [{"at": 80, "kind": "pothole", "lane": 1}, {"at": 140, "kind": "car", "lane": 0}]},
+    {"length": 240, "curve": 18, "hill": -2, "traffic": 2, "scenery": 2},
+    {"length": 220, "curve": 0, "hill": -4, "traffic": 1, "scenery": 2, "objects": [{"at": 90, "kind": "bus", "lane": -1}]},
+    {"length": 240, "curve": -14, "hill": 0, "traffic": 2, "scenery": 2},
+    {"length": 200, "curve": 0, "hill": 0, "traffic": 1, "objects": [{"at": 40, "kind": "pothole", "lane": -1}, {"at": 90, "kind": "pothole", "lane": 1}, {"at": 150, "kind": "pothole", "lane": 0}], "checkpoint": {"addTime": 48}},
+    {"length": 260, "curve": 22, "hill": 0, "traffic": 2},
+    {"length": 220, "curve": 0, "hill": 0, "traffic": 1, "objects": [{"at": 60, "kind": "pothole", "lane": 0}, {"at": 120, "kind": "pothole", "lane": -1}, {"at": 180, "kind": "pothole", "lane": 1}]},
+    {"length": 240, "curve": -22, "hill": 0, "traffic": 2},
+    {"length": 200, "curve": 0, "hill": 8, "traffic": 1},
+    {"length": 240, "curve": 0, "hill": -6, "traffic": 2},
+    {"length": 220, "curve": 0, "hill": 0, "traffic": 2, "checkpoint": {"addTime": 28}},
+    {"length": 260, "curve": 16, "hill": 0, "traffic": 1, "objects": [{"at": 120, "kind": "bus", "lane": 0}]},
+    {"length": 240, "curve": 0, "hill": 0, "traffic": 2}
+  ]
+}

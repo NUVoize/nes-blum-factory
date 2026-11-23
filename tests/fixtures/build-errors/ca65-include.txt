@@ -1,0 +1,1 @@
+inc.s:1: Error: Cannot open include file ‘missing.inc’: No such file or directory

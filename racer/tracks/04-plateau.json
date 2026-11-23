@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "plateau",
+  "name": {"fr": "Le Plateau - avenue du Parc", "en": "The Plateau - Park Avenue"},
+  "palette": "nuit-tombante",
+  "backdrop": "mont-royal",
+  "timeStart": 56,
+  "segments": [
+    {"length": 220, "curve": 0, "hill": 0, "traffic": 1},
+    {"length": 240, "curve": 0, "hill": 10, "traffic": 1},
+    {"length": 200, "curve": -14, "hill": 4, "traffic": 2},
+    {"length": 240, "curve": 0, "hill": -8, "traffic": 1, "objects": [{"at": 120, "kind": "pothole", "lane": 0}]},
+    {"length": 220, "curve": 18, "hill": 0, "traffic": 2},
+    {"length": 240, "curve": 0, "hill": 12, "traffic": 1, "objects": [{"at": 60, "kind": "car", "lane": -1}]},
+    {"length": 200, "curve": 0, "hill": -10, "traffic": 1},
+    {"length": 220, "curve": -22, "hill": 0, "traffic": 2, "checkpoint": {"addTime": 48}},
+    {"length": 200, "curve": 0, "hill": 0, "traffic": 1, "objects": [{"at": 80, "kind": "plow", "lane": 0}, {"at": 150, "kind": "pothole", "lane": 1}]},
+    {"length": 260, "curve": 24, "hill": 0, "traffic": 2},
+    {"length": 220, "curve": 0, "hill": 6, "traffic": 1},
+    {"length": 240, "curve": -24, "hill": -4, "traffic": 2},
+    {"length": 220, "curve": 0, "hill": 0, "traffic": 1, "objects": [{"at": 60, "kind": "cone", "lane": 1}, {"at": 100, "kind": "cone", "lane": 1}, {"at": 140, "kind": "cone", "lane": 1}]},
+    {"length": 220, "curve": 0, "hill": 0, "traffic": 2, "checkpoint": {"addTime": 50}},
+    {"length": 260, "curve": 0, "hill": 14, "traffic": 1},
+    {"length": 240, "curve": 20, "hill": 8, "traffic": 1, "objects": [{"at": 120, "kind": "pothole", "lane": -1}]},
+    {"length": 220, "curve": 0, "hill": -10, "traffic": 1},
+    {"length": 260, "curve": -26, "hill": 0, "traffic": 2},
+    {"length": 220, "curve": 0, "hill": 0, "traffic": 1, "objects": [{"at": 70, "kind": "car", "lane": 1}, {"at": 150, "kind": "bus", "lane": -1}]},
+    {"length": 240, "curve": 0, "hill": -6, "traffic": 2, "checkpoint": {"addTime": 29}},
+    {"length": 260, "curve": 22, "hill": 0, "traffic": 1},
+    {"length": 240, "curve": 0, "hill": 0, "traffic": 2}
+  ]
+}

@@ -1,0 +1,636 @@
+{
+  "id": "blum-enfant",
+  "era": "enfant",
+  "chr": "engine/chr/blum-enfant.chr",
+  "unit": "R2 (1 KiB at $1000)",
+  "tiles": 48,
+  "capacity": 64,
+  "tile0": "blank",
+  "palettes": {
+    "0": [
+      "$0F",
+      "$36",
+      "$29"
+    ],
+    "1": [
+      "$0F",
+      "$36",
+      "$16"
+    ]
+  },
+  "cellPalettes": "top 8 px row of cells = sprite palette 0 (head), lower cells = palette 1 (body)",
+  "map": {
+    "down0": {
+      "w": 16,
+      "h": 16,
+      "hotspot": {
+        "x": 8,
+        "y": 16
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 1,
+          "palette": 0,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 1,
+          "palette": 0,
+          "flipH": 1,
+          "flipV": 0
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 2,
+          "palette": 1,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 3,
+          "palette": 1,
+          "flipH": 0,
+          "flipV": 0
+        }
+      ],
+      "maxPerLine": 2,
+      "sheet": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "down1": {
+      "w": 16,
+      "h": 16,
+      "hotspot": {
+        "x": 8,
+        "y": 16
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 4,
+          "palette": 0,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 5,
+          "palette": 0,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 6,
+          "palette": 1,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 7,
+          "palette": 1,
+          "flipH": 0,
+          "flipV": 0
+        }
+      ],
+      "maxPerLine": 2,
+      "sheet": {
+        "x": 16,
+        "y": 0
+      }
+    },
+    "up0": {
+      "w": 16,
+      "h": 16,
+      "hotspot": {
+        "x": 8,
+        "y": 16
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 8,
+          "palette": 0,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 8,
+          "palette": 0,
+          "flipH": 1,
+          "flipV": 0
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 9,
+          "palette": 1,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 10,
+          "palette": 1,
+          "flipH": 0,
+          "flipV": 0
+        }
+      ],
+      "maxPerLine": 2,
+      "sheet": {
+        "x": 32,
+        "y": 0
+      }
+    },
+    "up1": {
+      "w": 16,
+      "h": 16,
+      "hotspot": {
+        "x": 8,
+        "y": 16
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 11,
+          "palette": 0,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 12,
+          "palette": 0,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 13,
+          "palette": 1,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 14,
+          "palette": 1,
+          "flipH": 0,
+          "flipV": 0
+        }
+      ],
+      "maxPerLine": 2,
+      "sheet": {
+        "x": 48,
+        "y": 0
+      }
+    },
+    "side0": {
+      "w": 16,
+      "h": 16,
+      "hotspot": {
+        "x": 8,
+        "y": 16
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 15,
+          "palette": 0,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 16,
+          "palette": 0,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 17,
+          "palette": 1,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 18,
+          "palette": 1,
+          "flipH": 0,
+          "flipV": 0
+        }
+      ],
+      "maxPerLine": 2,
+      "sheet": {
+        "x": 64,
+        "y": 0
+      }
+    },
+    "side1": {
+      "w": 16,
+      "h": 16,
+      "hotspot": {
+        "x": 8,
+        "y": 16
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 15,
+          "palette": 0,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 19,
+          "palette": 0,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 20,
+          "palette": 1,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 21,
+          "palette": 1,
+          "flipH": 0,
+          "flipV": 0
+        }
+      ],
+      "maxPerLine": 2,
+      "sheet": {
+        "x": 80,
+        "y": 0
+      }
+    }
+  },
+  "mapNote": "16x16, hotspot = feet centre (8,16); left = side frames with attribute $40 (flipH) and x mirrored per cell",
+  "battle": {
+    "idle": {
+      "w": 16,
+      "h": 24,
+      "hotspot": {
+        "x": 8,
+        "y": 24
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 22,
+          "palette": 0,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 23,
+          "palette": 0,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 24,
+          "palette": 1,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 25,
+          "palette": 1,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "tile": 26,
+          "palette": 1,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 8,
+          "y": 16,
+          "tile": 27,
+          "palette": 1,
+          "flipH": 0,
+          "flipV": 0
+        }
+      ],
+      "maxPerLine": 2,
+      "sheet": {
+        "x": 96,
+        "y": 0
+      }
+    },
+    "attack": {
+      "w": 16,
+      "h": 24,
+      "hotspot": {
+        "x": 8,
+        "y": 24
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 28,
+          "palette": 0,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 29,
+          "palette": 0,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 30,
+          "palette": 1,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 31,
+          "palette": 1,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "tile": 32,
+          "palette": 1,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 8,
+          "y": 16,
+          "tile": 33,
+          "palette": 1,
+          "flipH": 0,
+          "flipV": 0
+        }
+      ],
+      "maxPerLine": 2,
+      "sheet": {
+        "x": 112,
+        "y": 0
+      }
+    },
+    "hurt": {
+      "w": 16,
+      "h": 24,
+      "hotspot": {
+        "x": 8,
+        "y": 24
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 34,
+          "palette": 0,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 35,
+          "palette": 0,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 36,
+          "palette": 1,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 37,
+          "palette": 1,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "tile": 38,
+          "palette": 1,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 8,
+          "y": 16,
+          "tile": 39,
+          "palette": 1,
+          "flipH": 0,
+          "flipV": 0
+        }
+      ],
+      "maxPerLine": 2,
+      "sheet": {
+        "x": 128,
+        "y": 0
+      }
+    },
+    "victory": {
+      "w": 16,
+      "h": 24,
+      "hotspot": {
+        "x": 8,
+        "y": 24
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 40,
+          "palette": 0,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 41,
+          "palette": 0,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 42,
+          "palette": 1,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 43,
+          "palette": 1,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "tile": 26,
+          "palette": 1,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 8,
+          "y": 16,
+          "tile": 26,
+          "palette": 1,
+          "flipH": 1,
+          "flipV": 0
+        }
+      ],
+      "maxPerLine": 2,
+      "sheet": {
+        "x": 144,
+        "y": 0
+      }
+    }
+  },
+  "battleNote": "16x24, faces left, hotspot (8,24); hero drawn on the right of the battle screen",
+  "portrait": {
+    "w": 16,
+    "h": 16,
+    "hotspot": {
+      "x": 0,
+      "y": 0
+    },
+    "sprites": [
+      {
+        "x": 0,
+        "y": 0,
+        "tile": 44,
+        "palette": 0,
+        "flipH": 0,
+        "flipV": 0
+      },
+      {
+        "x": 8,
+        "y": 0,
+        "tile": 45,
+        "palette": 0,
+        "flipH": 0,
+        "flipV": 0
+      },
+      {
+        "x": 0,
+        "y": 8,
+        "tile": 46,
+        "palette": 0,
+        "flipH": 0,
+        "flipV": 0
+      },
+      {
+        "x": 8,
+        "y": 8,
+        "tile": 47,
+        "palette": 0,
+        "flipH": 0,
+        "flipV": 0
+      }
+    ],
+    "sheet": {
+      "x": 160,
+      "y": 0
+    }
+  },
+  "sheet": "gfx/blum/blum-enfant.png (cells 16x24, 11 per row)",
+  "eras": {
+    "enfant": [
+      "$0F",
+      "$36",
+      "$16"
+    ],
+    "primaire": [
+      "$0F",
+      "$36",
+      "$12"
+    ],
+    "secondaire": [
+      "$0F",
+      "$00",
+      "$16"
+    ],
+    "etudiant": [
+      "$0F",
+      "$36",
+      "$1A"
+    ],
+    "adulte": [
+      "$0F",
+      "$36",
+      "$01"
+    ]
+  }
+}

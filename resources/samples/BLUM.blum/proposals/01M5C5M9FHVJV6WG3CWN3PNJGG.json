@@ -1,0 +1,38 @@
+{
+  "id": "01M5C5M9FHVJV6WG3CWN3PNJGG",
+  "director": "movement",
+  "state": "approved",
+  "createdAt": "2026-10-20T08:07:45.393Z",
+  "tool": "propose_enemy",
+  "summary": {
+    "fr": "Ennemi « Cône marcheur » (marcheur, 1 vie(s)).",
+    "en": "Enemy \"Walking Cone\" (walker, 1 hp)."
+  },
+  "ops": [
+    {
+      "op": "set",
+      "doc": "actors/cone.json",
+      "value": {
+        "schemaVersion": 1,
+        "kind": "enemy",
+        "name": {
+          "fr": "Cône marcheur",
+          "en": "Walking Cone"
+        },
+        "pattern": "walker",
+        "speed": 128,
+        "hp": 1,
+        "damage": 1,
+        "turnAtLedge": false,
+        "frames": [
+          "cone1",
+          "cone2"
+        ],
+        "graphics": "graphics/ennemis-chantier.json"
+      }
+    }
+  ],
+  "warnings": [],
+  "decidedAt": "2026-10-20T08:07:45.671Z",
+  "txId": "01M5C5M9R2ZA0EZ4F4E56YDC65"
+}

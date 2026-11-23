@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 1,
+  "driver": "FamiStudio sound engine 4.5 (ca65), NTSC, 1 SFX stream, no DPCM, no FAMISTUDIO_USE_* flag",
+  "soundBankBytes": 8192,
+  "songs": [
+    {
+      "index": 0,
+      "id": "title",
+      "title": "La légende (titre)",
+      "loop": true,
+      "frames": 1152,
+      "seconds": 19.17,
+      "noteLen": 9,
+      "patternLen": 16,
+      "patterns": 8,
+      "channels": [
+        "Noise",
+        "Square1",
+        "Square2",
+        "Triangle"
+      ]
+    },
+    {
+      "index": 1,
+      "id": "anjou",
+      "title": "Rue d'Anjou (carte, CH00-CH01)",
+      "loop": true,
+      "frames": 896,
+      "seconds": 14.91,
+      "noteLen": 7,
+      "patternLen": 16,
+      "patterns": 8,
+      "channels": [
+        "Noise",
+        "Square1",
+        "Square2",
+        "Triangle"
+      ]
+    },
+    {
+      "index": 2,
+      "id": "battle",
+      "title": "Récré de combat (combat normal)",
+      "loop": true,
+      "frames": 640,
+      "seconds": 10.65,
+      "noteLen": 5,
+      "patternLen": 16,
+      "patterns": 8,
+      "channels": [
+        "Noise",
+        "Square1",
+        "Square2",
+        "Triangle"
+      ]
+    },
+    {
+      "index": 3,
+      "id": "boss",
+      "title": "Dictée mortelle (boss)",
+      "loop": true,
+      "frames": 768,
+      "seconds": 12.78,
+      "noteLen": 6,
+      "patternLen": 16,
+      "patterns": 8,
+      "channels": [
+        "Noise",
+        "Square1",
+        "Square2",
+        "Triangle"
+      ]
+    },
+    {
+      "index": 4,
+      "id": "victory",
+      "title": "Victoire ! (jingle)",
+      "loop": false,
+      "frames": 160,
+      "seconds": 2.66,
+      "noteLen": 5,
+      "patternLen": 16,
+      "patterns": 2,
+      "channels": [
+        "Noise",
+        "Square1",
+        "Square2",
+        "Triangle"
+      ]
+    },
+    {
+      "index": 5,
+      "id": "awaits_a",
+      "title": "Adventure Awaits, version A (titre + rue)",
+      "loop": true,
+      "frames": 3456,
+      "seconds": 57.51,
+      "noteLen": 8,
+      "patternLen": 16,
+      "patterns": 27,
+      "channels": [
+        "Noise",
+        "Square1",
+        "Square2",
+        "Triangle"
+      ]
+    },
+    {
+      "index": 6,
+      "id": "awaits_b",
+      "title": "Adventure Awaits, version B (école Chénier)",
+      "loop": true,
+      "frames": 3952,
+      "seconds": 65.76,
+      "noteLen": 8,
+      "patternLen": 12,
+      "patterns": 38,
+      "channels": [
+        "Noise",
+        "Square1",
+        "Square2",
+        "Triangle"
+      ]
+    }
+  ],
+  "sfx": [
+    {
+      "index": 0,
+      "id": "menu",
+      "title": "menu (curseur, confirmer)",
+      "frames": 12,
+      "channels": [
+        "Square2"
+      ]
+    },
+    {
+      "index": 1,
+      "id": "text",
+      "title": "texte (clic de la machine à écrire)",
+      "frames": 4,
+      "channels": [
+        "Square2"
+      ]
+    },
+    {
+      "index": 2,
+      "id": "hit",
+      "title": "coup (attaque qui touche)",
+      "frames": 20,
+      "channels": [
+        "Noise",
+        "Square1",
+        "Triangle"
+      ]
+    },
+    {
+      "index": 3,
+      "id": "item",
+      "title": "objet obtenu",
+      "frames": 20,
+      "channels": [
+        "Square2"
+      ]
+    },
+    {
+      "index": 4,
+      "id": "bell",
+      "title": "clochette (ITEM_CLOCHE)",
+      "frames": 42,
+      "channels": [
+        "Square1",
+        "Square2"
+      ]
+    },
+    {
+      "index": 5,
+      "id": "cancel",
+      "title": "annuler (retour)",
+      "frames": 12,
+      "channels": [
+        "Square2"
+      ]
+    },
+    {
+      "index": 6,
+      "id": "levelup",
+      "title": "niveau gagné",
+      "frames": 36,
+      "channels": [
+        "Square1",
+        "Square2"
+      ]
+    },
+    {
+      "index": 7,
+      "id": "door",
+      "title": "porte (changement de lieu)",
+      "frames": 14,
+      "channels": [
+        "Noise",
+        "Triangle"
+      ]
+    }
+  ],
+  "legendSound": {
+    "SONG_TITLE": 5,
+    "SONG_LEGENDE": 0,
+    "SONG_ANJOU": 1,
+    "SONG_BATTLE": 2,
+    "SONG_BOSS": 3,
+    "SONG_VICTORY": 4,
+    "SONG_AWAITS_A": 5,
+    "SONG_AWAITS_B": 6,
+    "SFX_MENU": 0,
+    "SFX_TEXT": 1,
+    "SFX_HIT": 2,
+    "SFX_ITEM": 3,
+    "SFX_BELL": 4,
+    "SFX_CANCEL": 5,
+    "SFX_LEVELUP": 6,
+    "SFX_DOOR": 7
+  },
+  "areaMusic": {
+    "appartement": "legende",
+    "anjou": "awaits_a",
+    "chenier-ext": "awaits_b",
+    "chenier-int": "awaits_b"
+  },
+  "note": "BLUMS-M: the title screen (SONG_TITLE) and the street play Fred's « Adventure Awaits » version A, the school (yard and inside) version B; the first title theme (SONG_LEGENDE, index 0) plays at Madame Bélanger's; « Rue d'Anjou » (SONG_ANJOU) stays in the bank, unused by the slice areas"
+}

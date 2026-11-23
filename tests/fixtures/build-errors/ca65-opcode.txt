@@ -1,0 +1,1 @@
+opcode.s:2: Error: Expected ‘:’ after identifier to form a label but found ‘#’

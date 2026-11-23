@@ -1,0 +1,80 @@
+{
+  "id": "marie-claude",
+  "name": "Marie-Claude « Dictée mortelle »",
+  "shortName": "Marie-Claude",
+  "kind": "boss",
+  "chapter": "CH01 1re",
+  "chr": "engine/chr/enemy-marie-claude.chr",
+  "unit": "second half of R1 (tiles 64-127 of the battle bank): add 64 to every index",
+  "tiles": 31,
+  "capacity": 64,
+  "w": 48,
+  "h": 56,
+  "tilesW": 6,
+  "tilesH": 7,
+  "palette": 3,
+  "paletteHex": [
+    "$01",
+    "$36",
+    "$12"
+  ],
+  "grid": [
+    [
+      0,
+      0,
+      1,
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      3,
+      4,
+      5,
+      6,
+      0
+    ],
+    [
+      0,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    [
+      0,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    [
+      0,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    [
+      0,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    [
+      0,
+      27,
+      28,
+      29,
+      30,
+      0
+    ]
+  ],
+  "placement": "feet on the battle floor line (tile row 19), centred in the enemy area (columns 2-15)"
+}

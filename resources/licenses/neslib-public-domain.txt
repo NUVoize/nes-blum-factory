@@ -1,0 +1,3 @@
+;NES hardware-dependent functions by Shiru (shiru@mail.ru)
+;with improvements by VEG
+;Feel free to do anything you want with this code, consider it Public Domain

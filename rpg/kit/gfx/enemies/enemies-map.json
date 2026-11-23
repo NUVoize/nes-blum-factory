@@ -1,0 +1,493 @@
+{
+  "enemies": {
+    "crayon": {
+      "name": "La Terreur des Crayons",
+      "palette": 3,
+      "area": "chenier-int",
+      "paletteHex": [
+        "$0F",
+        "$28",
+        "$16"
+      ],
+      "frames": [
+        {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 8,
+            "y": 16
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 1,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 2,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 3,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 3,
+              "palette": 3,
+              "flipH": 1,
+              "flipV": 0
+            }
+          ],
+          "sheet": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 8,
+            "y": 16
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 1,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 2,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 4,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 3,
+              "palette": 3,
+              "flipH": 1,
+              "flipV": 0
+            }
+          ],
+          "sheet": {
+            "x": 16,
+            "y": 0
+          }
+        }
+      ]
+    },
+    "mouton": {
+      "name": "Mouton de poussière",
+      "palette": 3,
+      "area": "appartement",
+      "paletteHex": [
+        "$0F",
+        "$00",
+        "$10"
+      ],
+      "frames": [
+        {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 8,
+            "y": 16
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 5,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 6,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 7,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 8,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ],
+          "sheet": {
+            "x": 32,
+            "y": 0
+          }
+        },
+        {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 8,
+            "y": 16
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 5,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 6,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 9,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 10,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ],
+          "sheet": {
+            "x": 48,
+            "y": 0
+          }
+        }
+      ]
+    },
+    "boulette": {
+      "name": "Boulette de papier",
+      "palette": 3,
+      "area": "chenier-ext",
+      "paletteHex": [
+        "$0F",
+        "$00",
+        "$30"
+      ],
+      "frames": [
+        {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 8,
+            "y": 16
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 11,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 12,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 13,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 14,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ],
+          "sheet": {
+            "x": 64,
+            "y": 0
+          }
+        },
+        {
+          "w": 16,
+          "h": 16,
+          "hotspot": {
+            "x": 8,
+            "y": 16
+          },
+          "sprites": [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 15,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 16,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 17,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 18,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ],
+          "sheet": {
+            "x": 80,
+            "y": 0
+          }
+        }
+      ]
+    }
+  },
+  "objects": {
+    "billet": {
+      "w": 8,
+      "h": 8,
+      "hotspot": {
+        "x": 4,
+        "y": 8
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 19,
+          "palette": 3,
+          "flipH": 0,
+          "flipV": 0
+        }
+      ],
+      "sheet": {
+        "x": 96,
+        "y": 0
+      },
+      "name": "Billet d'autorisation (papier)",
+      "palette": 3
+    },
+    "clochette": {
+      "w": 8,
+      "h": 8,
+      "hotspot": {
+        "x": 4,
+        "y": 8
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 20,
+          "palette": 3,
+          "flipH": 0,
+          "flipV": 0
+        }
+      ],
+      "sheet": {
+        "x": 112,
+        "y": 0
+      },
+      "name": "Clochette (ITEM_CLOCHE)",
+      "palette": 3
+    },
+    "cartable": {
+      "w": 8,
+      "h": 8,
+      "hotspot": {
+        "x": 4,
+        "y": 8
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 21,
+          "palette": 1,
+          "flipH": 0,
+          "flipV": 0
+        }
+      ],
+      "sheet": {
+        "x": 0,
+        "y": 16
+      },
+      "name": "Cartable (objet / sac)",
+      "palette": 1
+    },
+    "marque": {
+      "w": 8,
+      "h": 8,
+      "hotspot": {
+        "x": 4,
+        "y": 8
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 22,
+          "palette": 3,
+          "flipH": 0,
+          "flipV": 0
+        }
+      ],
+      "sheet": {
+        "x": 16,
+        "y": 16
+      },
+      "name": "Marqueur de parole « ! »",
+      "palette": 3
+    },
+    "sauvegarde": {
+      "w": 16,
+      "h": 16,
+      "hotspot": {
+        "x": 8,
+        "y": 16
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 23,
+          "palette": 3,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 24,
+          "palette": 3,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 25,
+          "palette": 3,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 26,
+          "palette": 3,
+          "flipH": 0,
+          "flipV": 0
+        }
+      ],
+      "sheet": {
+        "x": 32,
+        "y": 16
+      },
+      "name": "Point de sauvegarde (étoile)",
+      "palette": 3
+    },
+    "porte": {
+      "w": 8,
+      "h": 8,
+      "hotspot": {
+        "x": 4,
+        "y": 8
+      },
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 27,
+          "palette": 3,
+          "flipH": 0,
+          "flipV": 0
+        }
+      ],
+      "sheet": {
+        "x": 48,
+        "y": 16
+      },
+      "name": "Marqueur de porte / sortie (flèche)",
+      "palette": 3
+    }
+  },
+  "id": "enemies-map",
+  "chr": "engine/chr/enemies-map.chr",
+  "unit": "R4 (1 KiB at $1800)",
+  "tiles": 28,
+  "capacity": 64,
+  "sheet": "gfx/enemies/enemies-map.png (cells 16x16, 8 per row)",
+  "note": "map enemies: 2 frames each, palette 3 of their area; objects use palette 3 (grey/white) except the cartable (palette 1 red)"
+}

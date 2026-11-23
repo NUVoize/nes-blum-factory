@@ -1,0 +1,433 @@
+{
+  "format": "sebring-sprites",
+  "version": 1,
+  "chr": "../../engine/chr/sprites.chr",
+  "sheet": "sprites.png",
+  "palettes": [
+    [
+      15,
+      22,
+      48
+    ],
+    [
+      15,
+      54,
+      41
+    ],
+    [
+      15,
+      17,
+      48
+    ],
+    [
+      15,
+      39,
+      48
+    ]
+  ],
+  "paletteNotes": [
+    "voiture du joueur",
+    "Blum (tuque + chemise) et arbres",
+    "autos, autobus, enseigne",
+    "cones, deneigeuse, nids-de-poule, lampadaires, feux d'artifice"
+  ],
+  "player": {
+    "w": 32,
+    "h": 24,
+    "tilesPerFrame": 12,
+    "palette": 0,
+    "frames": {
+      "straight": 0,
+      "soft-left": 12,
+      "hard-left": 24,
+      "spin-rear34": 36,
+      "spin-side": 48,
+      "spin-front34": 60,
+      "spin-front": 72,
+      "flip-roll": 84
+    },
+    "engine": {
+      "SPR_CAR0": 0,
+      "SPR_CAR_L": 12,
+      "SPR_CAR_R": 12,
+      "SPR_CAR_R_attr": "0x40 (mirror of soft-left; hard-left likewise)",
+      "SPR_CAR_HARD_L": 24,
+      "spin_tile": [
+        0,
+        36,
+        48,
+        60,
+        72,
+        60,
+        48,
+        36
+      ],
+      "spin_attr": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        64,
+        64,
+        64
+      ],
+      "spin_note": "8 poses (rear, rear34, side, front34, front, then the three mirrored); the M1 engine uses 4 poses x 4 frames: take [straight, rear34, side, front34] with attr [0,0,0,0] or the full 8 at 2 frames each",
+      "flip_roll": 84,
+      "flip_note": "engine flips `straight` with attr $80 + upside-down offsets mid-air; flip-roll suits frames 8-15 and 48-55 of the arc"
+    }
+  },
+  "driver": {
+    "w": 8,
+    "h": 16,
+    "palette": 1,
+    "frames": [
+      96,
+      98
+    ],
+    "dx": -9,
+    "dyHead": -12,
+    "dyShoulders": -4,
+    "note": "head tile = SPR_DRIVER contract (8x8); shoulders tile = head + 1; 2nd frame = sprout sway",
+    "engine": {
+      "SPR_DRIVER": 96,
+      "shoulders": 97,
+      "headFrame2": 98,
+      "shouldersFrame2": 99
+    }
+  },
+  "traffic": {
+    "sizes": [
+      [
+        8,
+        8
+      ],
+      [
+        16,
+        8
+      ],
+      [
+        24,
+        16
+      ]
+    ],
+    "kindTile": [
+      100,
+      101,
+      103,
+      109,
+      110,
+      112,
+      118,
+      119,
+      121,
+      127,
+      128,
+      130,
+      136,
+      137,
+      139,
+      145,
+      146,
+      148
+    ],
+    "kindAttr": [
+      2,
+      3,
+      2,
+      3,
+      3,
+      3
+    ],
+    "kinds": {
+      "car": {
+        "id": 0,
+        "palette": 2,
+        "sizes": [
+          {
+            "size": 0,
+            "w": 8,
+            "h": 8,
+            "tile": 100
+          },
+          {
+            "size": 1,
+            "w": 16,
+            "h": 8,
+            "tile": 101
+          },
+          {
+            "size": 2,
+            "w": 24,
+            "h": 16,
+            "tile": 103
+          }
+        ]
+      },
+      "cone": {
+        "id": 1,
+        "palette": 3,
+        "sizes": [
+          {
+            "size": 0,
+            "w": 8,
+            "h": 8,
+            "tile": 109
+          },
+          {
+            "size": 1,
+            "w": 16,
+            "h": 8,
+            "tile": 110
+          },
+          {
+            "size": 2,
+            "w": 24,
+            "h": 16,
+            "tile": 112
+          }
+        ]
+      },
+      "bus": {
+        "id": 2,
+        "palette": 2,
+        "sizes": [
+          {
+            "size": 0,
+            "w": 8,
+            "h": 8,
+            "tile": 118
+          },
+          {
+            "size": 1,
+            "w": 16,
+            "h": 8,
+            "tile": 119
+          },
+          {
+            "size": 2,
+            "w": 24,
+            "h": 16,
+            "tile": 121
+          }
+        ]
+      },
+      "plow": {
+        "id": 3,
+        "palette": 3,
+        "sizes": [
+          {
+            "size": 0,
+            "w": 8,
+            "h": 8,
+            "tile": 127
+          },
+          {
+            "size": 1,
+            "w": 16,
+            "h": 8,
+            "tile": 128
+          },
+          {
+            "size": 2,
+            "w": 24,
+            "h": 16,
+            "tile": 130
+          }
+        ]
+      },
+      "pothole": {
+        "id": 4,
+        "palette": 3,
+        "sizes": [
+          {
+            "size": 0,
+            "w": 8,
+            "h": 8,
+            "tile": 136
+          },
+          {
+            "size": 1,
+            "w": 16,
+            "h": 8,
+            "tile": 137
+          },
+          {
+            "size": 2,
+            "w": 24,
+            "h": 16,
+            "tile": 139
+          }
+        ]
+      }
+    }
+  },
+  "props": {
+    "kind": 5,
+    "looks": {
+      "lamp": {
+        "palette": 3,
+        "sizes": [
+          {
+            "size": 0,
+            "w": 8,
+            "h": 8,
+            "tile": 145
+          },
+          {
+            "size": 1,
+            "w": 16,
+            "h": 8,
+            "tile": 146
+          },
+          {
+            "size": 2,
+            "w": 24,
+            "h": 16,
+            "tile": 148
+          }
+        ]
+      },
+      "tree": {
+        "palette": 1,
+        "sizes": [
+          {
+            "size": 0,
+            "w": 8,
+            "h": 8,
+            "tile": 154
+          },
+          {
+            "size": 1,
+            "w": 16,
+            "h": 8,
+            "tile": 155
+          },
+          {
+            "size": 2,
+            "w": 24,
+            "h": 16,
+            "tile": 157
+          }
+        ]
+      },
+      "sign": {
+        "palette": 2,
+        "sizes": [
+          {
+            "size": 0,
+            "w": 8,
+            "h": 8,
+            "tile": 163
+          },
+          {
+            "size": 1,
+            "w": 16,
+            "h": 8,
+            "tile": 164
+          },
+          {
+            "size": 2,
+            "w": 24,
+            "h": 16,
+            "tile": 166
+          }
+        ]
+      }
+    },
+    "suggested": {
+      "anjou": "lamp",
+      "metropolitaine": "lamp",
+      "sherbrooke": "tree",
+      "plateau": "tree",
+      "centre-ville": "sign"
+    }
+  },
+  "fx": {
+    "burst-small": [
+      {
+        "w": 8,
+        "h": 8,
+        "tiles": [
+          172
+        ]
+      },
+      {
+        "w": 8,
+        "h": 8,
+        "tiles": [
+          173
+        ]
+      }
+    ],
+    "burst-large": [
+      {
+        "w": 16,
+        "h": 16,
+        "tiles": [
+          174,
+          175,
+          176,
+          177
+        ]
+      },
+      {
+        "w": 16,
+        "h": 16,
+        "tiles": [
+          178,
+          179,
+          180,
+          181
+        ]
+      }
+    ],
+    "smoke": [
+      {
+        "w": 8,
+        "h": 8,
+        "tiles": [
+          182
+        ]
+      },
+      {
+        "w": 8,
+        "h": 8,
+        "tiles": [
+          183
+        ]
+      }
+    ],
+    "skid": [
+      {
+        "w": 8,
+        "h": 8,
+        "tiles": [
+          184
+        ]
+      }
+    ],
+    "flag": [
+      {
+        "w": 8,
+        "h": 16,
+        "tiles": [
+          185,
+          186
+        ]
+      }
+    ],
+    "honk": [
+      {
+        "w": 8,
+        "h": 8,
+        "tiles": [
+          187
+        ]
+      }
+    ],
+    "notes": "fireworks: palette 3 (orange/white) and 0 (red/white); flag: palette 0 or 3 (black/white chequers); smoke: any (white)"
+  },
+  "tiles": 188,
+  "capacity": 256
+}

@@ -1,0 +1,2157 @@
+{
+  "schemaVersion": 1,
+  "format": "legend-kit",
+  "step": "BLUMZ-A1",
+  "origin": "original pixel art and music written by code for this project (muse-ui, 2026-10-21); references redrawn, never traced or embedded; no logo, no third-party font, no emoji, no address",
+  "chrLayout": {
+    "note": "MMC3 CHR mode 0: R0 = 2 KiB at $0000 (UI bank, fixed), R1 = 2 KiB at $0800 (area tileset, or battle backdrop + enemy, or title), R2-R5 = 1 KiB at $1000/$1400/$1800/$1C00 (Blum era, NPC set, map enemies + objects, FX)",
+    "R0": {
+      "file": "engine/chr/ui.chr",
+      "tiles": 128,
+      "blank": 0,
+      "fontFirst": 1,
+      "fontGlyphs": 102,
+      "frame": {
+        "tl": 103,
+        "tr": 104,
+        "bl": 105,
+        "br": 106,
+        "top": 107,
+        "bottom": 108,
+        "left": 109,
+        "right": 110,
+        "arrow": 111
+      },
+      "common": {
+        "cursor": 112,
+        "bullet": 113,
+        "bar-full": 114,
+        "bar-empty": 115,
+        "bar-left": 116,
+        "bar-right": 117,
+        "hline": 118,
+        "vline": 119,
+        "check": 120,
+        "lock": 121,
+        "star": 122,
+        "dots": 123,
+        "letterbox": 124,
+        "shade": 125,
+        "corner-dot": 126,
+        "heart": 127
+      }
+    },
+    "R1": {
+      "areas": {
+        "appartement": "engine/chr/appartement.chr",
+        "anjou": "engine/chr/anjou.chr",
+        "chenier-ext": "engine/chr/chenier-ext.chr",
+        "chenier-int": "engine/chr/chenier-int.chr"
+      },
+      "battle": {
+        "backdropHalf": {
+          "classe": "engine/chr/battle-bg-classe.chr",
+          "cour": "engine/chr/battle-bg-cour.chr",
+          "salon": "engine/chr/battle-bg-salon.chr"
+        },
+        "enemyHalf": {
+          "crayon": "engine/chr/enemy-crayon.chr",
+          "marie-claude": "engine/chr/enemy-marie-claude.chr",
+          "mouton": "engine/chr/enemy-mouton.chr",
+          "boulette": "engine/chr/enemy-boulette.chr"
+        },
+        "note": "R1 in battle = backdrop 1 KiB (tiles $80-$BF) + enemy 1 KiB (tiles $C0-$FF): add 0x80 to backdrop indices, 0xC0 to enemy grid indices"
+      },
+      "title": "engine/chr/title.chr"
+    },
+    "R2": {
+      "blum-enfant": "engine/chr/blum-enfant.chr"
+    },
+    "R3": {
+      "npcs-ch00": "engine/chr/npcs-ch00.chr",
+      "npcs-ch01": "engine/chr/npcs-ch01.chr"
+    },
+    "R4": {
+      "enemies-map": "engine/chr/enemies-map.chr"
+    },
+    "R5": {
+      "fx": "engine/chr/fx.chr"
+    }
+  },
+  "font": {
+    "order": [
+      " ",
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J",
+      "K",
+      "L",
+      "M",
+      "N",
+      "O",
+      "P",
+      "Q",
+      "R",
+      "S",
+      "T",
+      "U",
+      "V",
+      "W",
+      "X",
+      "Y",
+      "Z",
+      ".",
+      ",",
+      "!",
+      "?",
+      "'",
+      "-",
+      ":",
+      "/",
+      "+",
+      "(",
+      ")",
+      "«",
+      "»",
+      "É",
+      "È",
+      "Ê",
+      "Ë",
+      "À",
+      "Â",
+      "Ç",
+      "Î",
+      "Ï",
+      "Ô",
+      "Û",
+      "Ù",
+      "Ü",
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "j",
+      "k",
+      "l",
+      "m",
+      "n",
+      "o",
+      "p",
+      "q",
+      "r",
+      "s",
+      "t",
+      "u",
+      "v",
+      "w",
+      "x",
+      "y",
+      "z",
+      "é",
+      "è",
+      "ê",
+      "ë",
+      "à",
+      "â",
+      "î",
+      "ï",
+      "ô",
+      "û",
+      "ù",
+      "ü",
+      "ç"
+    ],
+    "tile": "FONT_FIRST + index",
+    "fold": "typographic apostrophes/quotes folded like spike-art.ts encodeText; capitals 7 rows, lower case 8 rows (descenders)",
+    "knownAlias": "capital Ô and lower-case ô have the same pixels (harmless, documented in the app's unit test)"
+  },
+  "palettes": {
+    "universal": "$0F",
+    "ui": [
+      "$0F",
+      "$02",
+      "$30",
+      "$27"
+    ],
+    "areas": {
+      "appartement": {
+        "file": "engine/palettes/appartement.bin",
+        "bg": [
+          [
+            "$0F",
+            "$02",
+            "$30",
+            "$27"
+          ],
+          [
+            "$0F",
+            "$17",
+            "$27",
+            "$37"
+          ],
+          [
+            "$0F",
+            "$06",
+            "$16",
+            "$37"
+          ],
+          [
+            "$0F",
+            "$09",
+            "$29",
+            "$30"
+          ]
+        ],
+        "bgRoles": [
+          "UI",
+          "bois, murs crème",
+          "tapis rouge, meubles",
+          "plantes, cuisine blanche"
+        ],
+        "spr": [
+          [
+            "$0F",
+            "$36",
+            "$29"
+          ],
+          [
+            "$0F",
+            "$36",
+            "$16"
+          ],
+          [
+            "$0F",
+            "$36",
+            "$12"
+          ],
+          [
+            "$0F",
+            "$00",
+            "$10"
+          ]
+        ],
+        "sprRoles": [
+          "Blum tête / Nivoix",
+          "Blum corps / rouge",
+          "Madame Bélanger, Magdi (bleu)",
+          "Mouton de poussière, objets gris"
+        ]
+      },
+      "anjou": {
+        "file": "engine/palettes/anjou.bin",
+        "bg": [
+          [
+            "$0F",
+            "$02",
+            "$30",
+            "$27"
+          ],
+          [
+            "$0F",
+            "$08",
+            "$1A",
+            "$29"
+          ],
+          [
+            "$0F",
+            "$07",
+            "$17",
+            "$30"
+          ],
+          [
+            "$0F",
+            "$00",
+            "$10",
+            "$3D"
+          ]
+        ],
+        "bgRoles": [
+          "UI",
+          "gazon, arbres, haies",
+          "brique, maison, clôture",
+          "asphalte, trottoir"
+        ],
+        "spr": [
+          [
+            "$0F",
+            "$36",
+            "$29"
+          ],
+          [
+            "$0F",
+            "$36",
+            "$16"
+          ],
+          [
+            "$0F",
+            "$36",
+            "$12"
+          ],
+          [
+            "$0F",
+            "$00",
+            "$30"
+          ]
+        ],
+        "sprRoles": [
+          "Blum tête",
+          "Blum corps",
+          "Maxi, Paul (bleu)",
+          "Boulette de papier, objets"
+        ]
+      },
+      "chenier-ext": {
+        "file": "engine/palettes/chenier-ext.bin",
+        "bg": [
+          [
+            "$0F",
+            "$02",
+            "$30",
+            "$27"
+          ],
+          [
+            "$0F",
+            "$08",
+            "$1A",
+            "$29"
+          ],
+          [
+            "$0F",
+            "$07",
+            "$38",
+            "$30"
+          ],
+          [
+            "$0F",
+            "$00",
+            "$10",
+            "$28"
+          ]
+        ],
+        "bgRoles": [
+          "UI",
+          "gazon, arbres",
+          "brique brune, panneaux beiges, fenêtres",
+          "asphalte, lignes de jeu jaunes"
+        ],
+        "spr": [
+          [
+            "$0F",
+            "$36",
+            "$29"
+          ],
+          [
+            "$0F",
+            "$36",
+            "$16"
+          ],
+          [
+            "$0F",
+            "$36",
+            "$12"
+          ],
+          [
+            "$0F",
+            "$00",
+            "$30"
+          ]
+        ],
+        "sprRoles": [
+          "Blum tête",
+          "Blum corps",
+          "Maxi, Paul, Marie-Claude (bleu)",
+          "Boulette de papier, objets"
+        ]
+      },
+      "chenier-int": {
+        "file": "engine/palettes/chenier-int.bin",
+        "bg": [
+          [
+            "$0F",
+            "$02",
+            "$30",
+            "$27"
+          ],
+          [
+            "$0F",
+            "$00",
+            "$10",
+            "$38"
+          ],
+          [
+            "$0F",
+            "$17",
+            "$27",
+            "$37"
+          ],
+          [
+            "$0F",
+            "$0A",
+            "$1A",
+            "$30"
+          ]
+        ],
+        "bgRoles": [
+          "UI",
+          "plancher, murs, casiers gris",
+          "portes, pupitres bois",
+          "tableau vert, affiches"
+        ],
+        "spr": [
+          [
+            "$0F",
+            "$36",
+            "$29"
+          ],
+          [
+            "$0F",
+            "$36",
+            "$16"
+          ],
+          [
+            "$0F",
+            "$36",
+            "$12"
+          ],
+          [
+            "$0F",
+            "$28",
+            "$16"
+          ]
+        ],
+        "sprRoles": [
+          "Blum tête",
+          "Blum corps",
+          "Maxi, Paul, Marie-Claude (bleu)",
+          "Terreur des Crayons (jaune, rouge)"
+        ]
+      }
+    },
+    "battle": {
+      "classe+crayon": "engine/palettes/battle-classe-crayon.bin",
+      "classe+marie-claude": "engine/palettes/battle-classe-marie-claude.bin",
+      "cour+boulette": "engine/palettes/battle-cour-boulette.bin",
+      "salon+mouton": "engine/palettes/battle-salon-mouton.bin"
+    },
+    "battleSprites": [
+      [
+        "$0F",
+        "$36",
+        "$29"
+      ],
+      [
+        "$0F",
+        "$36",
+        "$16"
+      ],
+      [
+        "$0F",
+        "$27",
+        "$28"
+      ],
+      [
+        "$0F",
+        "$30",
+        "$2C"
+      ]
+    ],
+    "title": "engine/palettes/title.bin",
+    "blumBodyPerEra": {
+      "enfant": [
+        "$0F",
+        "$36",
+        "$16"
+      ],
+      "primaire": [
+        "$0F",
+        "$36",
+        "$12"
+      ],
+      "secondaire": [
+        "$0F",
+        "$00",
+        "$16"
+      ],
+      "etudiant": [
+        "$0F",
+        "$36",
+        "$1A"
+      ],
+      "adulte": [
+        "$0F",
+        "$36",
+        "$01"
+      ]
+    }
+  },
+  "tilesets": {
+    "appartement": {
+      "doc": "gfx/tilesets/appartement.json",
+      "metatiles": "engine/metatiles/appartement.bin",
+      "attrBits": {
+        "palette": "0-1",
+        "solid": 4,
+        "counter": 8,
+        "trigger": 16
+      },
+      "chars": {
+        "#": "mur, haut (sombre)",
+        "w": "mur crème rayé",
+        "W": "mur avec fenêtre",
+        "p": "mur avec cadre",
+        "d": "mur avec petit tableau (école de bienveillance)",
+        ".": "plancher de bois (brun, joints orangés)",
+        "=": "tapis rouge à losanges",
+        "k": "carrelage de cuisine",
+        "T": "table",
+        "c": "chaise",
+        "B": "bibliothèque",
+        "P": "plante en pot",
+        "K": "comptoir de cuisine",
+        "S": "cuisinière",
+        "F": "réfrigérateur",
+        "b": "lit (couverture rouge)",
+        "D": "porte (sortie)",
+        "L": "lampe sur pied",
+        "t": "téléviseur",
+        "C": "commode",
+        "h": "mur avec horloge",
+        "r": "tapis de couloir"
+      }
+    },
+    "anjou": {
+      "doc": "gfx/tilesets/anjou.json",
+      "metatiles": "engine/metatiles/anjou.bin",
+      "attrBits": {
+        "palette": "0-1",
+        "solid": 4,
+        "counter": 8,
+        "trigger": 16
+      },
+      "chars": {
+        "g": "gazon",
+        "f": "gazon fleuri",
+        "h": "haie",
+        "A": "arbre haut gauche",
+        "B": "arbre haut droit",
+        "a": "arbre bas gauche",
+        "b": "arbre bas droit",
+        "u": "buisson",
+        "s": "trottoir",
+        "r": "rue (asphalte)",
+        "l": "rue, ligne discontinue",
+        "c": "bordure (trottoir / rue)",
+        "p": "entrée de garage (dalles)",
+        "k": "allée de dalles sur gazon",
+        "W": "mur de brique",
+        "w": "mur de brique avec fenêtre",
+        "d": "porte d'entrée (blanche)",
+        "R": "toit (bardeaux sombres)",
+        "e": "bord du toit",
+        "G": "porte de garage",
+        "F": "clôture blanche",
+        "m": "boîte aux lettres (sans numéro)",
+        "o": "lampadaire sur trottoir"
+      }
+    },
+    "chenier-ext": {
+      "doc": "gfx/tilesets/chenier-ext.json",
+      "metatiles": "engine/metatiles/chenier-ext.bin",
+      "attrBits": {
+        "palette": "0-1",
+        "solid": 4,
+        "counter": 8,
+        "trigger": 16
+      },
+      "chars": {
+        "g": "gazon",
+        "A": "arbre haut gauche",
+        "B": "arbre haut droit",
+        "a": "arbre bas gauche",
+        "b": "arbre bas droit",
+        "u": "buisson",
+        "s": "trottoir",
+        "z": "asphalte de la cour",
+        "y": "ligne de jeu jaune",
+        "Y": "ligne de jeu jaune, verticale",
+        "H": "marelle (cases)",
+        "c": "bordure (trottoir / cour)",
+        "M": "mur de brique brune (pilier)",
+        "P": "panneau beige",
+        "w": "bande de fenêtres",
+        "D": "entrée (double porte)",
+        "R": "corniche sombre (haut du mur)",
+        "o": "panier de basket",
+        "n": "banc",
+        "F": "clôture grillagée",
+        "v": "support à vélos",
+        "m": "mât (sans drapeau)"
+      }
+    },
+    "chenier-int": {
+      "doc": "gfx/tilesets/chenier-int.json",
+      "metatiles": "engine/metatiles/chenier-int.bin",
+      "attrBits": {
+        "palette": "0-1",
+        "solid": 4,
+        "counter": 8,
+        "trigger": 16
+      },
+      "chars": {
+        ".": "plancher carrelé",
+        ",": "plancher, bande grise",
+        "#": "mur, haut (sombre)",
+        "w": "mur beige",
+        "c": "casiers",
+        "d": "porte de classe",
+        "e": "sortie (double porte)",
+        "k": "pupitre",
+        "K": "bureau du professeur",
+        "s": "chaise",
+        "t": "tableau vert, gauche",
+        "T": "tableau vert, droite",
+        "p": "mur avec affiche",
+        "W": "fenêtre intérieure",
+        "f": "fontaine",
+        "b": "poubelle",
+        "h": "crochets à manteaux",
+        "B": "bibliothèque",
+        "x": "escalier"
+      }
+    }
+  },
+  "sampleScreens": {
+    "salon": {
+      "area": "appartement",
+      "text": "gfx/screens/sample-salon.txt",
+      "nametable": "engine/screens/sample-salon.bin"
+    },
+    "rue": {
+      "area": "anjou",
+      "text": "gfx/screens/sample-rue.txt",
+      "nametable": "engine/screens/sample-rue.bin"
+    },
+    "ecole": {
+      "area": "chenier-ext",
+      "text": "gfx/screens/sample-ecole.txt",
+      "nametable": "engine/screens/sample-ecole.bin"
+    },
+    "couloir": {
+      "area": "chenier-int",
+      "text": "gfx/screens/sample-couloir.txt",
+      "nametable": "engine/screens/sample-couloir.bin"
+    },
+    "classe": {
+      "area": "chenier-int",
+      "text": "gfx/screens/sample-classe.txt",
+      "nametable": "engine/screens/sample-classe.bin"
+    }
+  },
+  "blum": {
+    "era": "enfant",
+    "doc": "gfx/blum/blum-enfant.json",
+    "map": {
+      "down0": {
+        "sprites": [
+          {
+            "x": 0,
+            "y": 0,
+            "tile": 1,
+            "palette": 0,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 0,
+            "tile": 1,
+            "palette": 0,
+            "flipH": 1,
+            "flipV": 0
+          },
+          {
+            "x": 0,
+            "y": 8,
+            "tile": 2,
+            "palette": 1,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 8,
+            "tile": 3,
+            "palette": 1,
+            "flipH": 0,
+            "flipV": 0
+          }
+        ],
+        "hotspot": {
+          "x": 8,
+          "y": 16
+        }
+      },
+      "down1": {
+        "sprites": [
+          {
+            "x": 0,
+            "y": 0,
+            "tile": 4,
+            "palette": 0,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 0,
+            "tile": 5,
+            "palette": 0,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 0,
+            "y": 8,
+            "tile": 6,
+            "palette": 1,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 8,
+            "tile": 7,
+            "palette": 1,
+            "flipH": 0,
+            "flipV": 0
+          }
+        ],
+        "hotspot": {
+          "x": 8,
+          "y": 16
+        }
+      },
+      "up0": {
+        "sprites": [
+          {
+            "x": 0,
+            "y": 0,
+            "tile": 8,
+            "palette": 0,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 0,
+            "tile": 8,
+            "palette": 0,
+            "flipH": 1,
+            "flipV": 0
+          },
+          {
+            "x": 0,
+            "y": 8,
+            "tile": 9,
+            "palette": 1,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 8,
+            "tile": 10,
+            "palette": 1,
+            "flipH": 0,
+            "flipV": 0
+          }
+        ],
+        "hotspot": {
+          "x": 8,
+          "y": 16
+        }
+      },
+      "up1": {
+        "sprites": [
+          {
+            "x": 0,
+            "y": 0,
+            "tile": 11,
+            "palette": 0,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 0,
+            "tile": 12,
+            "palette": 0,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 0,
+            "y": 8,
+            "tile": 13,
+            "palette": 1,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 8,
+            "tile": 14,
+            "palette": 1,
+            "flipH": 0,
+            "flipV": 0
+          }
+        ],
+        "hotspot": {
+          "x": 8,
+          "y": 16
+        }
+      },
+      "side0": {
+        "sprites": [
+          {
+            "x": 0,
+            "y": 0,
+            "tile": 15,
+            "palette": 0,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 0,
+            "tile": 16,
+            "palette": 0,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 0,
+            "y": 8,
+            "tile": 17,
+            "palette": 1,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 8,
+            "tile": 18,
+            "palette": 1,
+            "flipH": 0,
+            "flipV": 0
+          }
+        ],
+        "hotspot": {
+          "x": 8,
+          "y": 16
+        }
+      },
+      "side1": {
+        "sprites": [
+          {
+            "x": 0,
+            "y": 0,
+            "tile": 15,
+            "palette": 0,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 0,
+            "tile": 19,
+            "palette": 0,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 0,
+            "y": 8,
+            "tile": 20,
+            "palette": 1,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 8,
+            "tile": 21,
+            "palette": 1,
+            "flipH": 0,
+            "flipV": 0
+          }
+        ],
+        "hotspot": {
+          "x": 8,
+          "y": 16
+        }
+      }
+    },
+    "battle": {
+      "idle": {
+        "sprites": [
+          {
+            "x": 0,
+            "y": 0,
+            "tile": 22,
+            "palette": 0,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 0,
+            "tile": 23,
+            "palette": 0,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 0,
+            "y": 8,
+            "tile": 24,
+            "palette": 1,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 8,
+            "tile": 25,
+            "palette": 1,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 0,
+            "y": 16,
+            "tile": 26,
+            "palette": 1,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 16,
+            "tile": 27,
+            "palette": 1,
+            "flipH": 0,
+            "flipV": 0
+          }
+        ],
+        "hotspot": {
+          "x": 8,
+          "y": 24
+        }
+      },
+      "attack": {
+        "sprites": [
+          {
+            "x": 0,
+            "y": 0,
+            "tile": 28,
+            "palette": 0,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 0,
+            "tile": 29,
+            "palette": 0,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 0,
+            "y": 8,
+            "tile": 30,
+            "palette": 1,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 8,
+            "tile": 31,
+            "palette": 1,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 0,
+            "y": 16,
+            "tile": 32,
+            "palette": 1,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 16,
+            "tile": 33,
+            "palette": 1,
+            "flipH": 0,
+            "flipV": 0
+          }
+        ],
+        "hotspot": {
+          "x": 8,
+          "y": 24
+        }
+      },
+      "hurt": {
+        "sprites": [
+          {
+            "x": 0,
+            "y": 0,
+            "tile": 34,
+            "palette": 0,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 0,
+            "tile": 35,
+            "palette": 0,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 0,
+            "y": 8,
+            "tile": 36,
+            "palette": 1,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 8,
+            "tile": 37,
+            "palette": 1,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 0,
+            "y": 16,
+            "tile": 38,
+            "palette": 1,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 16,
+            "tile": 39,
+            "palette": 1,
+            "flipH": 0,
+            "flipV": 0
+          }
+        ],
+        "hotspot": {
+          "x": 8,
+          "y": 24
+        }
+      },
+      "victory": {
+        "sprites": [
+          {
+            "x": 0,
+            "y": 0,
+            "tile": 40,
+            "palette": 0,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 0,
+            "tile": 41,
+            "palette": 0,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 0,
+            "y": 8,
+            "tile": 42,
+            "palette": 1,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 8,
+            "tile": 43,
+            "palette": 1,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 0,
+            "y": 16,
+            "tile": 26,
+            "palette": 1,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 16,
+            "tile": 26,
+            "palette": 1,
+            "flipH": 1,
+            "flipV": 0
+          }
+        ],
+        "hotspot": {
+          "x": 8,
+          "y": 24
+        }
+      }
+    },
+    "portrait": [
+      {
+        "x": 0,
+        "y": 0,
+        "tile": 44,
+        "palette": 0,
+        "flipH": 0,
+        "flipV": 0
+      },
+      {
+        "x": 8,
+        "y": 0,
+        "tile": 45,
+        "palette": 0,
+        "flipH": 0,
+        "flipV": 0
+      },
+      {
+        "x": 0,
+        "y": 8,
+        "tile": 46,
+        "palette": 0,
+        "flipH": 0,
+        "flipV": 0
+      },
+      {
+        "x": 8,
+        "y": 8,
+        "tile": 47,
+        "palette": 0,
+        "flipH": 0,
+        "flipV": 0
+      }
+    ],
+    "left": "side frames mirrored (attribute $40, x = 8 - x per cell)",
+    "erasMock": "gfx/blum/blum-eras.png (NOT production: primaire, secondaire, étudiant, adulte are palette + body sketches)"
+  },
+  "npcs": {
+    "npcs-ch00": {
+      "doc": "gfx/npcs/npcs-ch00.json",
+      "characters": {
+        "belanger": "Madame Bélanger",
+        "magdi": "Magdi",
+        "nivoix": "Nivoix"
+      }
+    },
+    "npcs-ch01": {
+      "doc": "gfx/npcs/npcs-ch01.json",
+      "characters": {
+        "maxi": "Maxi",
+        "paul": "Paul",
+        "marie-claude": "Marie-Claude"
+      }
+    }
+  },
+  "mapEnemies": {
+    "crayon": {
+      "name": "La Terreur des Crayons",
+      "palette": 3,
+      "frames": [
+        [
+          {
+            "x": 0,
+            "y": 0,
+            "tile": 1,
+            "palette": 3,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 0,
+            "tile": 2,
+            "palette": 3,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 0,
+            "y": 8,
+            "tile": 3,
+            "palette": 3,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 8,
+            "tile": 3,
+            "palette": 3,
+            "flipH": 1,
+            "flipV": 0
+          }
+        ],
+        [
+          {
+            "x": 0,
+            "y": 0,
+            "tile": 1,
+            "palette": 3,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 0,
+            "tile": 2,
+            "palette": 3,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 0,
+            "y": 8,
+            "tile": 4,
+            "palette": 3,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 8,
+            "tile": 3,
+            "palette": 3,
+            "flipH": 1,
+            "flipV": 0
+          }
+        ]
+      ]
+    },
+    "mouton": {
+      "name": "Mouton de poussière",
+      "palette": 3,
+      "frames": [
+        [
+          {
+            "x": 0,
+            "y": 0,
+            "tile": 5,
+            "palette": 3,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 0,
+            "tile": 6,
+            "palette": 3,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 0,
+            "y": 8,
+            "tile": 7,
+            "palette": 3,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 8,
+            "tile": 8,
+            "palette": 3,
+            "flipH": 0,
+            "flipV": 0
+          }
+        ],
+        [
+          {
+            "x": 0,
+            "y": 0,
+            "tile": 5,
+            "palette": 3,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 0,
+            "tile": 6,
+            "palette": 3,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 0,
+            "y": 8,
+            "tile": 9,
+            "palette": 3,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 8,
+            "tile": 10,
+            "palette": 3,
+            "flipH": 0,
+            "flipV": 0
+          }
+        ]
+      ]
+    },
+    "boulette": {
+      "name": "Boulette de papier",
+      "palette": 3,
+      "frames": [
+        [
+          {
+            "x": 0,
+            "y": 0,
+            "tile": 11,
+            "palette": 3,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 0,
+            "tile": 12,
+            "palette": 3,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 0,
+            "y": 8,
+            "tile": 13,
+            "palette": 3,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 8,
+            "tile": 14,
+            "palette": 3,
+            "flipH": 0,
+            "flipV": 0
+          }
+        ],
+        [
+          {
+            "x": 0,
+            "y": 0,
+            "tile": 15,
+            "palette": 3,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 0,
+            "tile": 16,
+            "palette": 3,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 0,
+            "y": 8,
+            "tile": 17,
+            "palette": 3,
+            "flipH": 0,
+            "flipV": 0
+          },
+          {
+            "x": 8,
+            "y": 8,
+            "tile": 18,
+            "palette": 3,
+            "flipH": 0,
+            "flipV": 0
+          }
+        ]
+      ]
+    }
+  },
+  "objects": {
+    "billet": {
+      "name": "Billet d'autorisation (papier)",
+      "palette": 3,
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 19,
+          "palette": 3,
+          "flipH": 0,
+          "flipV": 0
+        }
+      ]
+    },
+    "clochette": {
+      "name": "Clochette (ITEM_CLOCHE)",
+      "palette": 3,
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 20,
+          "palette": 3,
+          "flipH": 0,
+          "flipV": 0
+        }
+      ]
+    },
+    "cartable": {
+      "name": "Cartable (objet / sac)",
+      "palette": 1,
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 21,
+          "palette": 1,
+          "flipH": 0,
+          "flipV": 0
+        }
+      ]
+    },
+    "marque": {
+      "name": "Marqueur de parole « ! »",
+      "palette": 3,
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 22,
+          "palette": 3,
+          "flipH": 0,
+          "flipV": 0
+        }
+      ]
+    },
+    "sauvegarde": {
+      "name": "Point de sauvegarde (étoile)",
+      "palette": 3,
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 23,
+          "palette": 3,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 24,
+          "palette": 3,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 25,
+          "palette": 3,
+          "flipH": 0,
+          "flipV": 0
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 26,
+          "palette": 3,
+          "flipH": 0,
+          "flipV": 0
+        }
+      ]
+    },
+    "porte": {
+      "name": "Marqueur de porte / sortie (flèche)",
+      "palette": 3,
+      "sprites": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 27,
+          "palette": 3,
+          "flipH": 0,
+          "flipV": 0
+        }
+      ]
+    }
+  },
+  "battle": {
+    "layout": {
+      "messageWindow": "rows 0-5",
+      "strip": "rows 6-11",
+      "floorEdge": "row 12",
+      "enemyField": "rows 13-19 (black), enemy feet on row 19, centred on column 9",
+      "blum": "sprite 16x24 at (200, 128), faces left",
+      "windows": "rows 20-29: commands 12 wide, status 18 wide"
+    },
+    "backdrops": {
+      "classe": {
+        "doc": "gfx/battle/bg-classe.json",
+        "nametable": "engine/battle/bg-classe.bin"
+      },
+      "cour": {
+        "doc": "gfx/battle/bg-cour.json",
+        "nametable": "engine/battle/bg-cour.bin"
+      },
+      "salon": {
+        "doc": "gfx/battle/bg-salon.json",
+        "nametable": "engine/battle/bg-salon.bin"
+      }
+    },
+    "enemies": {
+      "crayon": {
+        "doc": "gfx/enemies/crayon.json",
+        "name": "La Terreur des Crayons",
+        "shortName": "Terreur",
+        "kind": "boss",
+        "chapter": "CH01 maternelle"
+      },
+      "marie-claude": {
+        "doc": "gfx/enemies/marie-claude.json",
+        "name": "Marie-Claude « Dictée mortelle »",
+        "shortName": "Marie-Claude",
+        "kind": "boss",
+        "chapter": "CH01 1re"
+      },
+      "mouton": {
+        "doc": "gfx/enemies/mouton.json",
+        "name": "Mouton de poussière",
+        "shortName": "Mouton",
+        "kind": "normal",
+        "chapter": "CH00"
+      },
+      "boulette": {
+        "doc": "gfx/enemies/boulette.json",
+        "name": "Boulette de papier",
+        "shortName": "Boulette",
+        "kind": "normal",
+        "chapter": "CH01"
+      }
+    },
+    "pairings": [
+      "classe+crayon",
+      "classe+marie-claude",
+      "cour+boulette",
+      "salon+mouton"
+    ],
+    "fx": {
+      "cartable": {
+        "name": "Coup de cartable",
+        "class": "GUERRIER",
+        "palette": 2,
+        "frames": [
+          [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 1,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 1,
+              "palette": 2,
+              "flipH": 1,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 2,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 2,
+              "palette": 2,
+              "flipH": 1,
+              "flipV": 0
+            }
+          ],
+          [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 3,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 4,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 5,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 6,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ]
+        ]
+      },
+      "etincelle": {
+        "name": "Étincelle",
+        "class": "MAGE",
+        "palette": 2,
+        "frames": [
+          [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 7,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 8,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 9,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 10,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ],
+          [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 11,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 12,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 13,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 14,
+              "palette": 2,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ]
+        ]
+      },
+      "gomme": {
+        "name": "Vol de gomme",
+        "class": "VOLEUR",
+        "palette": 3,
+        "frames": [
+          [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 15,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 16,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 17,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 18,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ],
+          [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 19,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 16,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 20,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 18,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ]
+        ]
+      },
+      "papier": {
+        "name": "Projectile de papier",
+        "class": "ARCHER",
+        "palette": 3,
+        "frames": [
+          [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 21,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 22,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 23,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 24,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ],
+          [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 25,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 26,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 27,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 28,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ]
+        ]
+      },
+      "insecte": {
+        "name": "Insecte réanimé",
+        "class": "NECROMANCIEN",
+        "palette": 0,
+        "frames": [
+          [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 29,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 30,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 31,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 32,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ],
+          [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 33,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 34,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 35,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 36,
+              "palette": 0,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ]
+        ]
+      }
+    },
+    "fxCommon": {
+      "hit": {
+        "name": "coup reçu",
+        "palette": 3,
+        "frames": [
+          [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 37,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 38,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 39,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 40,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ],
+          [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 41,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 42,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 43,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 44,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            }
+          ]
+        ]
+      },
+      "bouclier": {
+        "name": "Défense",
+        "palette": 3,
+        "frames": [
+          [
+            {
+              "x": 0,
+              "y": 0,
+              "tile": 45,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "tile": 45,
+              "palette": 3,
+              "flipH": 1,
+              "flipV": 0
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "tile": 46,
+              "palette": 3,
+              "flipH": 0,
+              "flipV": 0
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "tile": 46,
+              "palette": 3,
+              "flipH": 1,
+              "flipV": 0
+            }
+          ]
+        ]
+      }
+    },
+    "cursor": {
+      "tile": 47,
+      "palette": 3,
+      "note": "8x8 hand-free pointer (menu arrow), palette 3 white"
+    }
+  },
+  "screens": {
+    "title": {
+      "doc": "gfx/screens/title.json",
+      "nametable": "engine/screens/title.bin",
+      "chr": "engine/chr/title.chr",
+      "palette": "engine/palettes/title.bin"
+    },
+    "classes": {
+      "doc": "gfx/screens/classes.json",
+      "nametable": "engine/screens/classes.bin (UI bank only)"
+    }
+  },
+  "sound": {
+    "index": "music/index.json",
+    "export": [
+      "music/export/music.s",
+      "music/export/sfx.s"
+    ],
+    "legendSound": {
+      "SONG_TITLE": 5,
+      "SONG_LEGENDE": 0,
+      "SONG_ANJOU": 1,
+      "SONG_BATTLE": 2,
+      "SONG_BOSS": 3,
+      "SONG_VICTORY": 4,
+      "SONG_AWAITS_A": 5,
+      "SONG_AWAITS_B": 6,
+      "SFX_MENU": 0,
+      "SFX_TEXT": 1,
+      "SFX_HIT": 2,
+      "SFX_ITEM": 3,
+      "SFX_BELL": 4,
+      "SFX_CANCEL": 5,
+      "SFX_LEVELUP": 6,
+      "SFX_DOOR": 7
+    },
+    "areaMusic": {
+      "appartement": "legende",
+      "anjou": "awaits_a",
+      "chenier-ext": "awaits_b",
+      "chenier-int": "awaits_b"
+    },
+    "songs": [
+      "title",
+      "anjou",
+      "battle",
+      "boss",
+      "victory",
+      "awaits_a",
+      "awaits_b"
+    ],
+    "sfx": [
+      "menu",
+      "text",
+      "hit",
+      "item",
+      "bell",
+      "cancel",
+      "levelup",
+      "door"
+    ]
+  },
+  "budget": "budget.json (tools/validate.py --write-budget)",
+  "validators": [
+    "tools/validate.py",
+    "music/tools/validate.py"
+  ]
+}

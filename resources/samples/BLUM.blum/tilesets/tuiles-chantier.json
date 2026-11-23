@@ -1,0 +1,260 @@
+{
+  "schemaVersion": 1,
+  "id": "tuiles-chantier",
+  "chr": "graphics/tuiles-chantier.chr",
+  "empty": 0,
+  "metatiles": [
+    {
+      "id": 0,
+      "name": "vide",
+      "tiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "palette": 2,
+      "behaviour": "empty"
+    },
+    {
+      "id": 1,
+      "name": "asphalte",
+      "tiles": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "palette": 2,
+      "behaviour": "solid"
+    },
+    {
+      "id": 2,
+      "name": "beton",
+      "tiles": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "palette": 2,
+      "behaviour": "solid"
+    },
+    {
+      "id": 3,
+      "name": "briques",
+      "tiles": [
+        9,
+        10,
+        9,
+        10
+      ],
+      "palette": 2,
+      "behaviour": "solid"
+    },
+    {
+      "id": 4,
+      "name": "poutre",
+      "tiles": [
+        11,
+        12,
+        0,
+        0
+      ],
+      "palette": 2,
+      "behaviour": "oneWay"
+    },
+    {
+      "id": 5,
+      "name": "echelle",
+      "tiles": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "palette": 3,
+      "behaviour": "ladder"
+    },
+    {
+      "id": 6,
+      "name": "echafaud",
+      "tiles": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "palette": 2,
+      "behaviour": "solid"
+    },
+    {
+      "id": 7,
+      "name": "pics",
+      "tiles": [
+        0,
+        0,
+        21,
+        21
+      ],
+      "palette": 2,
+      "behaviour": "hazard"
+    },
+    {
+      "id": 8,
+      "name": "caisse",
+      "tiles": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "palette": 3,
+      "behaviour": "solid"
+    },
+    {
+      "id": 9,
+      "name": "graine",
+      "tiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "palette": 2,
+      "behaviour": "collectible"
+    },
+    {
+      "id": 10,
+      "name": "poteau",
+      "tiles": [
+        26,
+        27,
+        28,
+        29
+      ],
+      "palette": 1,
+      "behaviour": "checkpoint"
+    },
+    {
+      "id": 11,
+      "name": "porte_haut",
+      "tiles": [
+        30,
+        31,
+        32,
+        33
+      ],
+      "palette": 2,
+      "behaviour": "exit"
+    },
+    {
+      "id": 12,
+      "name": "porte_bas",
+      "tiles": [
+        34,
+        35,
+        36,
+        37
+      ],
+      "palette": 2,
+      "behaviour": "exit"
+    },
+    {
+      "id": 13,
+      "name": "baril",
+      "tiles": [
+        38,
+        39,
+        40,
+        41
+      ],
+      "palette": 1,
+      "behaviour": "solid"
+    },
+    {
+      "id": 14,
+      "name": "cone_deco",
+      "tiles": [
+        42,
+        43,
+        44,
+        45
+      ],
+      "palette": 1,
+      "behaviour": "empty"
+    },
+    {
+      "id": 15,
+      "name": "pancarte_detour",
+      "tiles": [
+        46,
+        47,
+        48,
+        49
+      ],
+      "palette": 1,
+      "behaviour": "empty"
+    },
+    {
+      "id": 16,
+      "name": "barriere",
+      "tiles": [
+        50,
+        51,
+        52,
+        53
+      ],
+      "palette": 3,
+      "behaviour": "solid"
+    },
+    {
+      "id": 17,
+      "name": "lampe",
+      "tiles": [
+        54,
+        55,
+        56,
+        57
+      ],
+      "palette": 3,
+      "behaviour": "empty"
+    },
+    {
+      "id": 18,
+      "name": "grue",
+      "tiles": [
+        58,
+        59,
+        58,
+        59
+      ],
+      "palette": 2,
+      "behaviour": "empty"
+    },
+    {
+      "id": 19,
+      "name": "fenetres",
+      "tiles": [
+        60,
+        61,
+        62,
+        63
+      ],
+      "palette": 3,
+      "behaviour": "empty"
+    },
+    {
+      "id": 20,
+      "name": "tuyau",
+      "tiles": [
+        64,
+        64,
+        65,
+        65
+      ],
+      "palette": 2,
+      "behaviour": "solid"
+    }
+  ]
+}

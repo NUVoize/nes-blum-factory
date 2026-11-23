@@ -1,0 +1,1200 @@
+{
+  "format": "sebring-pistes",
+  "schemaVersion": 1,
+  "title": "SEBRING",
+  "stages": [
+    {
+      "schemaVersion": 1,
+      "id": "anjou",
+      "name": {
+        "fr": "Ville d'Anjou",
+        "en": "Ville d'Anjou"
+      },
+      "palette": "coucher-de-soleil",
+      "backdrop": "galeries-anjou",
+      "timeStart": 57,
+      "segments": [
+        {
+          "length": 220,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 1,
+          "scenery": 0
+        },
+        {
+          "length": 260,
+          "curve": -12,
+          "hill": 0,
+          "traffic": 1,
+          "scenery": 0
+        },
+        {
+          "length": 200,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 1,
+          "scenery": 0,
+          "objects": [
+            {
+              "at": 80,
+              "kind": "cone",
+              "lane": 1
+            },
+            {
+              "at": 140,
+              "kind": "cone",
+              "lane": 1
+            }
+          ]
+        },
+        {
+          "length": 280,
+          "curve": 14,
+          "hill": 0,
+          "traffic": 1,
+          "scenery": 0
+        },
+        {
+          "length": 180,
+          "curve": 0,
+          "hill": 4,
+          "traffic": 1,
+          "scenery": 0
+        },
+        {
+          "length": 200,
+          "curve": 0,
+          "hill": -2,
+          "traffic": 1,
+          "scenery": 0,
+          "objects": [
+            {
+              "at": 60,
+              "kind": "car",
+              "lane": 0
+            }
+          ]
+        },
+        {
+          "length": 260,
+          "curve": -16,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 0
+        },
+        {
+          "length": 200,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 1,
+          "scenery": 0,
+          "checkpoint": {
+            "addTime": 54
+          }
+        },
+        {
+          "length": 240,
+          "curve": 0,
+          "hill": 8,
+          "traffic": 1,
+          "scenery": 0
+        },
+        {
+          "length": 200,
+          "curve": 10,
+          "hill": 4,
+          "traffic": 1,
+          "scenery": 0,
+          "objects": [
+            {
+              "at": 100,
+              "kind": "pothole",
+              "lane": -1
+            }
+          ]
+        },
+        {
+          "length": 220,
+          "curve": 0,
+          "hill": -4,
+          "traffic": 1,
+          "scenery": 0
+        },
+        {
+          "length": 260,
+          "curve": -18,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 0
+        },
+        {
+          "length": 220,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 1,
+          "scenery": 0,
+          "objects": [
+            {
+              "at": 70,
+              "kind": "cone",
+              "lane": -1
+            },
+            {
+              "at": 110,
+              "kind": "cone",
+              "lane": -1
+            },
+            {
+              "at": 150,
+              "kind": "cone",
+              "lane": -1
+            }
+          ]
+        },
+        {
+          "length": 240,
+          "curve": 16,
+          "hill": 0,
+          "traffic": 1,
+          "scenery": 0
+        },
+        {
+          "length": 200,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 0,
+          "checkpoint": {
+            "addTime": 52
+          }
+        },
+        {
+          "length": 240,
+          "curve": -20,
+          "hill": 0,
+          "traffic": 1,
+          "scenery": 0
+        },
+        {
+          "length": 200,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 1,
+          "scenery": 0,
+          "objects": [
+            {
+              "at": 90,
+              "kind": "car",
+              "lane": 1
+            }
+          ]
+        },
+        {
+          "length": 240,
+          "curve": 18,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 0
+        },
+        {
+          "length": 200,
+          "curve": 0,
+          "hill": 6,
+          "traffic": 1,
+          "scenery": 0
+        },
+        {
+          "length": 220,
+          "curve": 0,
+          "hill": 12,
+          "traffic": 0,
+          "scenery": 1
+        },
+        {
+          "length": 200,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 1,
+          "scenery": 1
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "id": "metropolitaine",
+      "name": {
+        "fr": "Autoroute Métropolitaine",
+        "en": "Metropolitan Expressway"
+      },
+      "palette": "crepuscule",
+      "backdrop": "metropolitaine",
+      "timeStart": 56,
+      "segments": [
+        {
+          "length": 260,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 1
+        },
+        {
+          "length": 300,
+          "curve": -14,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 1
+        },
+        {
+          "length": 240,
+          "curve": 0,
+          "hill": 6,
+          "traffic": 2,
+          "scenery": 1
+        },
+        {
+          "length": 260,
+          "curve": 0,
+          "hill": -6,
+          "traffic": 2,
+          "scenery": 1
+        },
+        {
+          "length": 300,
+          "curve": 18,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 1
+        },
+        {
+          "length": 220,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 1,
+          "scenery": 1,
+          "objects": [
+            {
+              "at": 60,
+              "kind": "cone",
+              "lane": 1
+            },
+            {
+              "at": 100,
+              "kind": "cone",
+              "lane": 1
+            },
+            {
+              "at": 140,
+              "kind": "cone",
+              "lane": 1
+            },
+            {
+              "at": 180,
+              "kind": "cone",
+              "lane": 0
+            }
+          ]
+        },
+        {
+          "length": 220,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 1,
+          "scenery": 1,
+          "objects": [
+            {
+              "at": 60,
+              "kind": "cone",
+              "lane": -1
+            },
+            {
+              "at": 100,
+              "kind": "cone",
+              "lane": -1
+            },
+            {
+              "at": 140,
+              "kind": "cone",
+              "lane": -1
+            }
+          ],
+          "checkpoint": {
+            "addTime": 53
+          }
+        },
+        {
+          "length": 280,
+          "curve": -22,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 1
+        },
+        {
+          "length": 240,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 1,
+          "scenery": 1,
+          "objects": [
+            {
+              "at": 80,
+              "kind": "bus",
+              "lane": 0
+            }
+          ]
+        },
+        {
+          "length": 260,
+          "curve": 0,
+          "hill": 10,
+          "traffic": 2,
+          "scenery": 1
+        },
+        {
+          "length": 240,
+          "curve": 0,
+          "hill": -8,
+          "traffic": 2,
+          "scenery": 1
+        },
+        {
+          "length": 300,
+          "curve": 20,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 1
+        },
+        {
+          "length": 240,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 1,
+          "checkpoint": {
+            "addTime": 51
+          }
+        },
+        {
+          "length": 260,
+          "curve": 0,
+          "hill": 14,
+          "traffic": 1,
+          "scenery": 1
+        },
+        {
+          "length": 200,
+          "curve": 0,
+          "hill": -10,
+          "traffic": 1,
+          "scenery": 1,
+          "objects": [
+            {
+              "at": 100,
+              "kind": "plow",
+              "lane": 1
+            }
+          ]
+        },
+        {
+          "length": 280,
+          "curve": -18,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 1
+        },
+        {
+          "length": 240,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 1
+        },
+        {
+          "length": 260,
+          "curve": 16,
+          "hill": 4,
+          "traffic": 2,
+          "scenery": 1
+        },
+        {
+          "length": 240,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 1,
+          "checkpoint": {
+            "addTime": 35
+          }
+        },
+        {
+          "length": 260,
+          "curve": -24,
+          "hill": 0,
+          "traffic": 1,
+          "scenery": 1,
+          "objects": [
+            {
+              "at": 120,
+              "kind": "car",
+              "lane": 0
+            }
+          ]
+        },
+        {
+          "length": 220,
+          "curve": 0,
+          "hill": -6,
+          "traffic": 1,
+          "scenery": 0
+        },
+        {
+          "length": 220,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 1,
+          "scenery": 0,
+          "objects": [
+            {
+              "at": 60,
+              "kind": "cone",
+              "lane": 1
+            },
+            {
+              "at": 100,
+              "kind": "cone",
+              "lane": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "id": "sherbrooke",
+      "name": {
+        "fr": "Rue Sherbrooke Est",
+        "en": "Sherbrooke Street East"
+      },
+      "palette": "soir",
+      "backdrop": "stade-olympique",
+      "timeStart": 50,
+      "segments": [
+        {
+          "length": 220,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 1,
+          "scenery": 0
+        },
+        {
+          "length": 240,
+          "curve": 12,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 0
+        },
+        {
+          "length": 200,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 1,
+          "scenery": 0,
+          "objects": [
+            {
+              "at": 60,
+              "kind": "bus",
+              "lane": 1
+            },
+            {
+              "at": 150,
+              "kind": "pothole",
+              "lane": -1
+            }
+          ]
+        },
+        {
+          "length": 260,
+          "curve": -16,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 0
+        },
+        {
+          "length": 200,
+          "curve": 0,
+          "hill": 4,
+          "traffic": 1,
+          "scenery": 0,
+          "objects": [
+            {
+              "at": 100,
+              "kind": "pothole",
+              "lane": 0
+            }
+          ]
+        },
+        {
+          "length": 240,
+          "curve": 0,
+          "hill": -4,
+          "traffic": 2,
+          "scenery": 0
+        },
+        {
+          "length": 220,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 1,
+          "scenery": 2,
+          "checkpoint": {
+            "addTime": 49
+          }
+        },
+        {
+          "length": 260,
+          "curve": -20,
+          "hill": 0,
+          "traffic": 1,
+          "scenery": 2
+        },
+        {
+          "length": 220,
+          "curve": 0,
+          "hill": 6,
+          "traffic": 1,
+          "scenery": 2,
+          "objects": [
+            {
+              "at": 80,
+              "kind": "pothole",
+              "lane": 1
+            },
+            {
+              "at": 140,
+              "kind": "car",
+              "lane": 0
+            }
+          ]
+        },
+        {
+          "length": 240,
+          "curve": 18,
+          "hill": -2,
+          "traffic": 2,
+          "scenery": 2
+        },
+        {
+          "length": 220,
+          "curve": 0,
+          "hill": -4,
+          "traffic": 1,
+          "scenery": 2,
+          "objects": [
+            {
+              "at": 90,
+              "kind": "bus",
+              "lane": -1
+            }
+          ]
+        },
+        {
+          "length": 240,
+          "curve": -14,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 2
+        },
+        {
+          "length": 200,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 1,
+          "scenery": 0,
+          "objects": [
+            {
+              "at": 40,
+              "kind": "pothole",
+              "lane": -1
+            },
+            {
+              "at": 90,
+              "kind": "pothole",
+              "lane": 1
+            },
+            {
+              "at": 150,
+              "kind": "pothole",
+              "lane": 0
+            }
+          ],
+          "checkpoint": {
+            "addTime": 48
+          }
+        },
+        {
+          "length": 260,
+          "curve": 22,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 0
+        },
+        {
+          "length": 220,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 1,
+          "scenery": 0,
+          "objects": [
+            {
+              "at": 60,
+              "kind": "pothole",
+              "lane": 0
+            },
+            {
+              "at": 120,
+              "kind": "pothole",
+              "lane": -1
+            },
+            {
+              "at": 180,
+              "kind": "pothole",
+              "lane": 1
+            }
+          ]
+        },
+        {
+          "length": 240,
+          "curve": -22,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 0
+        },
+        {
+          "length": 200,
+          "curve": 0,
+          "hill": 8,
+          "traffic": 1,
+          "scenery": 0
+        },
+        {
+          "length": 240,
+          "curve": 0,
+          "hill": -6,
+          "traffic": 2,
+          "scenery": 0
+        },
+        {
+          "length": 220,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 0,
+          "checkpoint": {
+            "addTime": 28
+          }
+        },
+        {
+          "length": 260,
+          "curve": 16,
+          "hill": 0,
+          "traffic": 1,
+          "scenery": 0,
+          "objects": [
+            {
+              "at": 120,
+              "kind": "bus",
+              "lane": 0
+            }
+          ]
+        },
+        {
+          "length": 240,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 0
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "id": "plateau",
+      "name": {
+        "fr": "Le Plateau - avenue du Parc",
+        "en": "The Plateau - Park Avenue"
+      },
+      "palette": "nuit-tombante",
+      "backdrop": "mont-royal",
+      "timeStart": 56,
+      "segments": [
+        {
+          "length": 220,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 1,
+          "scenery": 0
+        },
+        {
+          "length": 240,
+          "curve": 0,
+          "hill": 10,
+          "traffic": 1,
+          "scenery": 0
+        },
+        {
+          "length": 200,
+          "curve": -14,
+          "hill": 4,
+          "traffic": 2,
+          "scenery": 0
+        },
+        {
+          "length": 240,
+          "curve": 0,
+          "hill": -8,
+          "traffic": 1,
+          "scenery": 0,
+          "objects": [
+            {
+              "at": 120,
+              "kind": "pothole",
+              "lane": 0
+            }
+          ]
+        },
+        {
+          "length": 220,
+          "curve": 18,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 0
+        },
+        {
+          "length": 240,
+          "curve": 0,
+          "hill": 12,
+          "traffic": 1,
+          "scenery": 0,
+          "objects": [
+            {
+              "at": 60,
+              "kind": "car",
+              "lane": -1
+            }
+          ]
+        },
+        {
+          "length": 200,
+          "curve": 0,
+          "hill": -10,
+          "traffic": 1,
+          "scenery": 0
+        },
+        {
+          "length": 220,
+          "curve": -22,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 0,
+          "checkpoint": {
+            "addTime": 48
+          }
+        },
+        {
+          "length": 200,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 1,
+          "scenery": 0,
+          "objects": [
+            {
+              "at": 80,
+              "kind": "plow",
+              "lane": 0
+            },
+            {
+              "at": 150,
+              "kind": "pothole",
+              "lane": 1
+            }
+          ]
+        },
+        {
+          "length": 260,
+          "curve": 24,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 0
+        },
+        {
+          "length": 220,
+          "curve": 0,
+          "hill": 6,
+          "traffic": 1,
+          "scenery": 0
+        },
+        {
+          "length": 240,
+          "curve": -24,
+          "hill": -4,
+          "traffic": 2,
+          "scenery": 0
+        },
+        {
+          "length": 220,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 1,
+          "scenery": 0,
+          "objects": [
+            {
+              "at": 60,
+              "kind": "cone",
+              "lane": 1
+            },
+            {
+              "at": 100,
+              "kind": "cone",
+              "lane": 1
+            },
+            {
+              "at": 140,
+              "kind": "cone",
+              "lane": 1
+            }
+          ]
+        },
+        {
+          "length": 220,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 0,
+          "checkpoint": {
+            "addTime": 50
+          }
+        },
+        {
+          "length": 260,
+          "curve": 0,
+          "hill": 14,
+          "traffic": 1,
+          "scenery": 0
+        },
+        {
+          "length": 240,
+          "curve": 20,
+          "hill": 8,
+          "traffic": 1,
+          "scenery": 0,
+          "objects": [
+            {
+              "at": 120,
+              "kind": "pothole",
+              "lane": -1
+            }
+          ]
+        },
+        {
+          "length": 220,
+          "curve": 0,
+          "hill": -10,
+          "traffic": 1,
+          "scenery": 0
+        },
+        {
+          "length": 260,
+          "curve": -26,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 0
+        },
+        {
+          "length": 220,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 1,
+          "scenery": 0,
+          "objects": [
+            {
+              "at": 70,
+              "kind": "car",
+              "lane": 1
+            },
+            {
+              "at": 150,
+              "kind": "bus",
+              "lane": -1
+            }
+          ]
+        },
+        {
+          "length": 240,
+          "curve": 0,
+          "hill": -6,
+          "traffic": 2,
+          "scenery": 0,
+          "checkpoint": {
+            "addTime": 29
+          }
+        },
+        {
+          "length": 260,
+          "curve": 22,
+          "hill": 0,
+          "traffic": 1,
+          "scenery": 0
+        },
+        {
+          "length": 240,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 0
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "id": "centre-ville",
+      "name": {
+        "fr": "Centre-ville",
+        "en": "Downtown"
+      },
+      "palette": "nuit",
+      "backdrop": "centre-ville",
+      "timeStart": 51,
+      "segments": [
+        {
+          "length": 220,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 1
+        },
+        {
+          "length": 240,
+          "curve": -16,
+          "hill": 0,
+          "traffic": 3,
+          "scenery": 1
+        },
+        {
+          "length": 220,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 1,
+          "objects": [
+            {
+              "at": 60,
+              "kind": "bus",
+              "lane": 0
+            },
+            {
+              "at": 140,
+              "kind": "cone",
+              "lane": 1
+            }
+          ]
+        },
+        {
+          "length": 260,
+          "curve": 20,
+          "hill": 0,
+          "traffic": 3,
+          "scenery": 1
+        },
+        {
+          "length": 220,
+          "curve": 0,
+          "hill": 6,
+          "traffic": 2,
+          "scenery": 1
+        },
+        {
+          "length": 240,
+          "curve": 0,
+          "hill": -6,
+          "traffic": 2,
+          "scenery": 1,
+          "objects": [
+            {
+              "at": 100,
+              "kind": "pothole",
+              "lane": -1
+            }
+          ]
+        },
+        {
+          "length": 220,
+          "curve": -24,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 1,
+          "checkpoint": {
+            "addTime": 49
+          }
+        },
+        {
+          "length": 240,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 3,
+          "scenery": 1
+        },
+        {
+          "length": 220,
+          "curve": 24,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 1,
+          "objects": [
+            {
+              "at": 80,
+              "kind": "bus",
+              "lane": 1
+            },
+            {
+              "at": 160,
+              "kind": "car",
+              "lane": -1
+            }
+          ]
+        },
+        {
+          "length": 240,
+          "curve": 0,
+          "hill": 8,
+          "traffic": 2,
+          "scenery": 1
+        },
+        {
+          "length": 220,
+          "curve": 0,
+          "hill": -8,
+          "traffic": 2,
+          "scenery": 1,
+          "objects": [
+            {
+              "at": 60,
+              "kind": "cone",
+              "lane": 0
+            },
+            {
+              "at": 100,
+              "kind": "cone",
+              "lane": 0
+            },
+            {
+              "at": 140,
+              "kind": "cone",
+              "lane": 0
+            }
+          ]
+        },
+        {
+          "length": 260,
+          "curve": -20,
+          "hill": 0,
+          "traffic": 3,
+          "scenery": 1
+        },
+        {
+          "length": 220,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 1,
+          "checkpoint": {
+            "addTime": 49
+          }
+        },
+        {
+          "length": 260,
+          "curve": 26,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 1,
+          "objects": [
+            {
+              "at": 120,
+              "kind": "plow",
+              "lane": 0
+            }
+          ]
+        },
+        {
+          "length": 220,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 3,
+          "scenery": 1
+        },
+        {
+          "length": 240,
+          "curve": -26,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 1,
+          "objects": [
+            {
+              "at": 120,
+              "kind": "bus",
+              "lane": 1
+            }
+          ]
+        },
+        {
+          "length": 220,
+          "curve": 0,
+          "hill": 10,
+          "traffic": 2,
+          "scenery": 1
+        },
+        {
+          "length": 240,
+          "curve": 0,
+          "hill": -10,
+          "traffic": 2,
+          "scenery": 1
+        },
+        {
+          "length": 240,
+          "curve": 16,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 1,
+          "checkpoint": {
+            "addTime": 30
+          }
+        },
+        {
+          "length": 240,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 2,
+          "scenery": 1,
+          "objects": [
+            {
+              "at": 80,
+              "kind": "cone",
+              "lane": -1
+            },
+            {
+              "at": 120,
+              "kind": "cone",
+              "lane": 1
+            }
+          ]
+        },
+        {
+          "length": 300,
+          "curve": 0,
+          "hill": 0,
+          "traffic": 1,
+          "scenery": 1
+        }
+      ]
+    }
+  ]
+}

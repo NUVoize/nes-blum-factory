@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "phases": [
+    {
+      "steps": [
+        {
+          "op": "vulnerable",
+          "on": false
+        },
+        {
+          "op": "move_to",
+          "x": 114,
+          "speed": 1
+        },
+        {
+          "op": "wait",
+          "frames": 30
+        },
+        {
+          "op": "jump",
+          "vx": 0,
+          "vy": 64
+        },
+        {
+          "op": "flash",
+          "frames": 12
+        },
+        {
+          "op": "vulnerable",
+          "on": true
+        },
+        {
+          "op": "wait",
+          "frames": 90
+        },
+        {
+          "op": "vulnerable",
+          "on": false
+        },
+        {
+          "op": "move_to",
+          "x": 121,
+          "speed": 1
+        },
+        {
+          "op": "wait",
+          "frames": 30
+        },
+        {
+          "op": "jump",
+          "vx": 0,
+          "vy": 64
+        },
+        {
+          "op": "flash",
+          "frames": 12
+        },
+        {
+          "op": "vulnerable",
+          "on": true
+        },
+        {
+          "op": "wait",
+          "frames": 90
+        }
+      ]
+    },
+    {
+      "hpBelow": 3,
+      "steps": [
+        {
+          "op": "vulnerable",
+          "on": false
+        },
+        {
+          "op": "move_to",
+          "x": 115,
+          "speed": 2
+        },
+        {
+          "op": "jump",
+          "vx": 0,
+          "vy": 72
+        },
+        {
+          "op": "spawn",
+          "enemy": "limace"
+        },
+        {
+          "op": "vulnerable",
+          "on": true
+        },
+        {
+          "op": "wait",
+          "frames": 70
+        },
+        {
+          "op": "vulnerable",
+          "on": false
+        },
+        {
+          "op": "move_to",
+          "x": 122,
+          "speed": 2
+        },
+        {
+          "op": "jump",
+          "vx": 0,
+          "vy": 72
+        },
+        {
+          "op": "vulnerable",
+          "on": true
+        },
+        {
+          "op": "wait",
+          "frames": 70
+        }
+      ]
+    }
+  ]
+}

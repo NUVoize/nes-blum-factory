@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "comment": "LEGEND OF BLUM vertical slice (BLUMZ-M1): game-wide settings. Levels: one per chapter step (end of CH00, maternelle, 1re). Damage: attack = atk - enemy def, power = class power + 2 x level (- def unless the class pierces), +-1 roll, minimum 1 (docs/RPG-PLAN.md 2.7).",
+  "title": "THE LEGEND OF BLUM",
+  "start": { "screen": "salon", "x": 7, "y": 12, "facing": "up", "script": "SCR_START" },
+  "player": { "level": 1, "collations": 2, "collationHeal": 12, "collationMax": 9 },
+  "levels": [
+    { "hp": 22, "atk": 5, "def": 1, "energy": 2 },
+    { "hp": 28, "atk": 7, "def": 2, "energy": 3 },
+    { "hp": 34, "atk": 9, "def": 3, "energy": 3 },
+    { "hp": 40, "atk": 11, "def": 4, "energy": 4 },
+    { "hp": 46, "atk": 13, "def": 5, "energy": 4 },
+    { "hp": 52, "atk": 15, "def": 6, "energy": 5 },
+    { "hp": 58, "atk": 17, "def": 7, "energy": 5 },
+    { "hp": 64, "atk": 19, "def": 8, "energy": 6 }
+  ],
+  "fictionalNames": ["Terreur des Crayons", "Mouton de poussière", "Boulette de papier", "Voix du secrétariat"],
+  "end": "F_SLICE_FINI"
+}

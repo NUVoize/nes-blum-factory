@@ -1,0 +1,308 @@
+{
+  "schemaVersion": 1,
+  "id": "tuiles-potager",
+  "chr": "graphics/tuiles-potager.chr",
+  "empty": 0,
+  "metatiles": [
+    {
+      "id": 0,
+      "name": "vide",
+      "tiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "palette": 1,
+      "behaviour": "empty"
+    },
+    {
+      "id": 1,
+      "name": "herbe",
+      "tiles": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "palette": 1,
+      "behaviour": "solid"
+    },
+    {
+      "id": 2,
+      "name": "terre",
+      "tiles": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "palette": 2,
+      "behaviour": "solid"
+    },
+    {
+      "id": 3,
+      "name": "roche",
+      "tiles": [
+        9,
+        10,
+        9,
+        10
+      ],
+      "palette": 2,
+      "behaviour": "solid"
+    },
+    {
+      "id": 4,
+      "name": "planche",
+      "tiles": [
+        11,
+        12,
+        0,
+        0
+      ],
+      "palette": 2,
+      "behaviour": "oneWay"
+    },
+    {
+      "id": 5,
+      "name": "echelle",
+      "tiles": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "palette": 2,
+      "behaviour": "ladder"
+    },
+    {
+      "id": 6,
+      "name": "liane",
+      "tiles": [
+        17,
+        18,
+        17,
+        18
+      ],
+      "palette": 1,
+      "behaviour": "solid"
+    },
+    {
+      "id": 7,
+      "name": "pics",
+      "tiles": [
+        0,
+        0,
+        19,
+        19
+      ],
+      "palette": 0,
+      "behaviour": "hazard"
+    },
+    {
+      "id": 8,
+      "name": "eau",
+      "tiles": [
+        20,
+        20,
+        21,
+        21
+      ],
+      "palette": 3,
+      "behaviour": "empty"
+    },
+    {
+      "id": 9,
+      "name": "graine",
+      "tiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "palette": 1,
+      "behaviour": "collectible"
+    },
+    {
+      "id": 10,
+      "name": "poteau",
+      "tiles": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "palette": 3,
+      "behaviour": "checkpoint"
+    },
+    {
+      "id": 11,
+      "name": "porte_haut",
+      "tiles": [
+        26,
+        27,
+        28,
+        29
+      ],
+      "palette": 2,
+      "behaviour": "exit"
+    },
+    {
+      "id": 12,
+      "name": "porte_bas",
+      "tiles": [
+        30,
+        31,
+        32,
+        33
+      ],
+      "palette": 2,
+      "behaviour": "exit"
+    },
+    {
+      "id": 13,
+      "name": "cloture",
+      "tiles": [
+        34,
+        35,
+        36,
+        37
+      ],
+      "palette": 2,
+      "behaviour": "empty"
+    },
+    {
+      "id": 14,
+      "name": "fleurs",
+      "tiles": [
+        38,
+        39,
+        40,
+        41
+      ],
+      "palette": 3,
+      "behaviour": "empty"
+    },
+    {
+      "id": 15,
+      "name": "tomates",
+      "tiles": [
+        42,
+        43,
+        44,
+        45
+      ],
+      "palette": 3,
+      "behaviour": "empty"
+    },
+    {
+      "id": 16,
+      "name": "buisson",
+      "tiles": [
+        46,
+        47,
+        48,
+        49
+      ],
+      "palette": 1,
+      "behaviour": "empty"
+    },
+    {
+      "id": 17,
+      "name": "tronc",
+      "tiles": [
+        50,
+        51,
+        52,
+        53
+      ],
+      "palette": 2,
+      "behaviour": "empty"
+    },
+    {
+      "id": 18,
+      "name": "feuillage",
+      "tiles": [
+        54,
+        55,
+        56,
+        57
+      ],
+      "palette": 1,
+      "behaviour": "empty"
+    },
+    {
+      "id": 19,
+      "name": "nuage",
+      "tiles": [
+        58,
+        59,
+        60,
+        61
+      ],
+      "palette": 3,
+      "behaviour": "empty"
+    },
+    {
+      "id": 20,
+      "name": "colline",
+      "tiles": [
+        62,
+        63,
+        64,
+        64
+      ],
+      "palette": 1,
+      "behaviour": "empty"
+    },
+    {
+      "id": 21,
+      "name": "carottes",
+      "tiles": [
+        65,
+        66,
+        67,
+        68
+      ],
+      "palette": 1,
+      "behaviour": "empty"
+    },
+    {
+      "id": 22,
+      "name": "pancarte",
+      "tiles": [
+        69,
+        70,
+        71,
+        72
+      ],
+      "palette": 2,
+      "behaviour": "empty"
+    },
+    {
+      "id": 23,
+      "name": "caisse",
+      "tiles": [
+        73,
+        74,
+        75,
+        76
+      ],
+      "palette": 2,
+      "behaviour": "solid"
+    },
+    {
+      "id": 24,
+      "name": "touffe",
+      "tiles": [
+        0,
+        0,
+        77,
+        78
+      ],
+      "palette": 1,
+      "behaviour": "empty"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "01M5C5M8ZJJTN4378DZY2260GD",
+  "director": "visual",
+  "state": "approved",
+  "createdAt": "2026-10-20T08:07:44.882Z",
+  "tool": "propose_palette_set",
+  "summary": {
+    "fr": "Palettes du monde « La Cabane à sucre ».",
+    "en": "Palettes for world \"The Sugar Shack\"."
+  },
+  "ops": [
+    {
+      "op": "add",
+      "doc": "graphics/palettes.json",
+      "pointer": "/sets/-",
+      "value": {
+        "id": "cabane",
+        "backdrop": 49,
+        "bg": [
+          [
+            15,
+            48,
+            22
+          ],
+          [
+            7,
+            23,
+            39
+          ],
+          [
+            6,
+            22,
+            38
+          ],
+          [
+            28,
+            44,
+            48
+          ]
+        ],
+        "sprites": [
+          [
+            15,
+            54,
+            41
+          ],
+          [
+            15,
+            48,
+            39
+          ],
+          [
+            15,
+            23,
+            39
+          ],
+          [
+            15,
+            0,
+            48
+          ]
+        ]
+      }
+    }
+  ],
+  "warnings": [],
+  "decidedAt": "2026-10-20T08:07:45.059Z",
+  "txId": "01M5C5M94WDRWESM3S6XKJXMFD"
+}

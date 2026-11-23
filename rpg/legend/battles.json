@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "comment": "Battles of the slice. Move kinds (docs/RPG-PLAN.md 2.7, M1 subset): attack (atk +-1 - Blum def, halved by Défense), multi (hits x damage, no defence, halved by Défense), warn (announces the next blast, no damage), blast (damage, or blocked when Blum used Défense), heal, stun (Blum loses his next turn unless he used Défense). [n] = the number of the turn (damage, XP). minLevel = level the story guarantees (the validator checks the path and simulates every class).",
+  "battles": [
+    {
+      "id": "BAT_MOUTON",
+      "name": "Mouton de poussière",
+      "short": "Mouton",
+      "art": "mouton",
+      "backdrop": "salon",
+      "boss": false,
+      "flee": true,
+      "music": "battle",
+      "stats": { "hp": 14, "atk": 3, "def": 0 },
+      "xp": 3,
+      "minLevel": 1,
+      "intro": "Un Mouton de poussière sort de sous le comptoir !",
+      "moves": [
+        { "id": "souffle", "kind": "attack", "text": "Poussière dans les yeux ! Blum perd [n] PV." }
+      ],
+      "pattern": ["souffle"]
+    },
+    {
+      "id": "BAT_CRAYONS",
+      "name": "Terreur des Crayons",
+      "short": "Terreur",
+      "art": "crayon",
+      "backdrop": "classe",
+      "boss": true,
+      "flee": false,
+      "music": "battle",
+      "stats": { "hp": 34, "atk": 5, "def": 1 },
+      "xp": 8,
+      "minLevel": 2,
+      "intro": "La Terreur des Crayons sort du pot à crayons !",
+      "moves": [
+        { "id": "pique", "kind": "attack", "text": "La Terreur pique avec sa mine ! Blum perd [n] PV." },
+        { "id": "pluie", "kind": "multi", "hits": 3, "damage": 2, "text": "Pluie de crayons ! Trois coups, Blum perd [n] PV." }
+      ],
+      "pattern": ["pique", "pluie", "pique", "pique"]
+    },
+    {
+      "id": "BAT_BOULETTE",
+      "name": "Boulette de papier",
+      "short": "Boulette",
+      "art": "boulette",
+      "backdrop": "cour",
+      "boss": false,
+      "flee": true,
+      "music": "battle",
+      "stats": { "hp": 18, "atk": 5, "def": 1 },
+      "xp": 4,
+      "minLevel": 3,
+      "intro": "Une boulette de papier géante roule vers toi !",
+      "moves": [
+        { "id": "roule", "kind": "attack", "text": "La boulette roule sur Blum ! Il perd [n] PV." },
+        { "id": "confettis", "kind": "multi", "hits": 2, "damage": 3, "text": "Tempête de confettis ! Blum perd [n] PV." }
+      ],
+      "pattern": ["roule", "confettis"]
+    },
+    {
+      "id": "BAT_MARIE_CLAUDE",
+      "name": "Marie-Claude",
+      "short": "Marie-Claude",
+      "art": "marie-claude",
+      "backdrop": "classe",
+      "boss": true,
+      "flee": false,
+      "music": "boss",
+      "stats": { "hp": 50, "atk": 6, "def": 2 },
+      "xp": 15,
+      "minLevel": 3,
+      "intro": "Marie-Claude ajuste ses lunettes. Silence, dictée !",
+      "moves": [
+        { "id": "regle", "kind": "attack", "text": "Coup de règle sur les doigts ! Blum perd [n] PV." },
+        { "id": "prepare", "kind": "warn", "text": "Marie-Claude prépare une DICTÉE MORTELLE !" },
+        { "id": "dictee", "kind": "blast", "damage": 16, "blocked": 4, "text": "DICTÉE MORTELLE ! Blum perd [n] PV.", "blockedText": "Blum se cache derrière son cahier : [n] PV seulement." }
+      ],
+      "pattern": ["regle", "prepare", "dictee", "regle", "regle", "prepare", "dictee"]
+    }
+  ],
+  "text": {
+    "attack": "Blum attaque ! [n] dégâts.",
+    "defend": "Blum se met en défense.",
+    "collation": "Blum mange une collation. +[n] PV.",
+    "noCollation": "Plus de collation dans le sac !",
+    "noEnergy": "Pas assez d'Énergie !",
+    "flee": "Blum se sauve en courant !",
+    "noFlee": "Pas moyen de se sauver !",
+    "stunned": "Blum est figé ! Il perd son tour.",
+    "win": "Victoire ! Blum gagne [n] XP.",
+    "lose": "Blum est K.-O. ... Allez, on se relève !"
+  }
+}

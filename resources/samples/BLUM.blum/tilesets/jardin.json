@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "jardin",
+  "chr": "builtin:jardin",
+  "empty": 0,
+  "metatiles": [
+    {
+      "id": 0,
+      "name": "ciel",
+      "tiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "palette": 0,
+      "behaviour": "empty"
+    },
+    {
+      "id": 1,
+      "name": "herbe",
+      "tiles": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "palette": 1,
+      "behaviour": "solid"
+    },
+    {
+      "id": 2,
+      "name": "terre",
+      "tiles": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "palette": 1,
+      "behaviour": "solid"
+    },
+    {
+      "id": 3,
+      "name": "bloc",
+      "tiles": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "palette": 2,
+      "behaviour": "solid"
+    },
+    {
+      "id": 4,
+      "name": "planche",
+      "tiles": [
+        13,
+        14,
+        0,
+        0
+      ],
+      "palette": 2,
+      "behaviour": "oneWay"
+    },
+    {
+      "id": 5,
+      "name": "échelle",
+      "tiles": [
+        15,
+        16,
+        15,
+        16
+      ],
+      "palette": 2,
+      "behaviour": "ladder"
+    },
+    {
+      "id": 6,
+      "name": "pics",
+      "tiles": [
+        17,
+        17,
+        18,
+        18
+      ],
+      "palette": 3,
+      "behaviour": "hazard"
+    },
+    {
+      "id": 7,
+      "name": "fleur",
+      "tiles": [
+        19,
+        20,
+        21,
+        22
+      ],
+      "palette": 3,
+      "behaviour": "collectible"
+    },
+    {
+      "id": 8,
+      "name": "drapeau",
+      "tiles": [
+        23,
+        0,
+        24,
+        0
+      ],
+      "palette": 3,
+      "behaviour": "checkpoint"
+    },
+    {
+      "id": 9,
+      "name": "sortie",
+      "tiles": [
+        25,
+        26,
+        27,
+        28
+      ],
+      "palette": 3,
+      "behaviour": "exit"
+    },
+    {
+      "id": 10,
+      "name": "nuage",
+      "tiles": [
+        29,
+        30,
+        31,
+        32
+      ],
+      "palette": 0,
+      "behaviour": "empty"
+    },
+    {
+      "id": 11,
+      "name": "buisson",
+      "tiles": [
+        0,
+        0,
+        33,
+        34
+      ],
+      "palette": 1,
+      "behaviour": "empty"
+    }
+  ]
+}

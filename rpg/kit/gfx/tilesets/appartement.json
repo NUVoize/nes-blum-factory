@@ -1,0 +1,431 @@
+{
+  "id": "appartement",
+  "title": "Appartement de Madame Bélanger (CH00, lieu inventé)",
+  "chr": "engine/chr/appartement.chr",
+  "unit": "R1 (2 KiB at $0800)",
+  "tiles": 79,
+  "capacity": 128,
+  "metatileTable": "engine/metatiles/appartement.bin (5 bytes x 64: tl tr bl br attr)",
+  "palettes": "engine/palettes/appartement.bin",
+  "bg": [
+    [
+      "$0F",
+      "$02",
+      "$30",
+      "$27"
+    ],
+    [
+      "$0F",
+      "$17",
+      "$27",
+      "$37"
+    ],
+    [
+      "$0F",
+      "$06",
+      "$16",
+      "$37"
+    ],
+    [
+      "$0F",
+      "$09",
+      "$29",
+      "$30"
+    ]
+  ],
+  "bgRoles": [
+    "UI",
+    "bois, murs crème",
+    "tapis rouge, meubles",
+    "plantes, cuisine blanche"
+  ],
+  "spr": [
+    [
+      "$0F",
+      "$36",
+      "$29"
+    ],
+    [
+      "$0F",
+      "$36",
+      "$16"
+    ],
+    [
+      "$0F",
+      "$36",
+      "$12"
+    ],
+    [
+      "$0F",
+      "$00",
+      "$10"
+    ]
+  ],
+  "sprRoles": [
+    "Blum tête / Nivoix",
+    "Blum corps / rouge",
+    "Madame Bélanger, Magdi (bleu)",
+    "Mouton de poussière, objets gris"
+  ],
+  "attrBits": {
+    "palette": "bits 0-1",
+    "solid": 4,
+    "counter": 8,
+    "trigger": 16
+  },
+  "sheet": "gfx/tilesets/appartement.png (8 metatiles per row, in metatile order)",
+  "metatiles": [
+    {
+      "index": 0,
+      "ch": "#",
+      "name": "mur, haut (sombre)",
+      "palette": 1,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "attr": 5
+    },
+    {
+      "index": 1,
+      "ch": "w",
+      "name": "mur crème rayé",
+      "palette": 1,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        3,
+        3,
+        4,
+        4
+      ],
+      "attr": 5
+    },
+    {
+      "index": 2,
+      "ch": "W",
+      "name": "mur avec fenêtre",
+      "palette": 1,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "attr": 5
+    },
+    {
+      "index": 3,
+      "ch": "p",
+      "name": "mur avec cadre",
+      "palette": 2,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "attr": 6
+    },
+    {
+      "index": 4,
+      "ch": "d",
+      "name": "mur avec petit tableau (école de bienveillance)",
+      "palette": 3,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "attr": 7
+    },
+    {
+      "index": 5,
+      "ch": ".",
+      "name": "plancher de bois (brun, joints orangés)",
+      "palette": 1,
+      "solid": false,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        17,
+        17,
+        18,
+        18
+      ],
+      "attr": 1
+    },
+    {
+      "index": 6,
+      "ch": "=",
+      "name": "tapis rouge à losanges",
+      "palette": 2,
+      "solid": false,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        19,
+        20,
+        21,
+        22
+      ],
+      "attr": 2
+    },
+    {
+      "index": 7,
+      "ch": "k",
+      "name": "carrelage de cuisine",
+      "palette": 3,
+      "solid": false,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        23,
+        24,
+        24,
+        23
+      ],
+      "attr": 3
+    },
+    {
+      "index": 8,
+      "ch": "T",
+      "name": "table",
+      "palette": 1,
+      "solid": true,
+      "counter": true,
+      "trigger": false,
+      "tiles": [
+        25,
+        26,
+        27,
+        28
+      ],
+      "attr": 13
+    },
+    {
+      "index": 9,
+      "ch": "c",
+      "name": "chaise",
+      "palette": 1,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        29,
+        30,
+        31,
+        32
+      ],
+      "attr": 5
+    },
+    {
+      "index": 10,
+      "ch": "B",
+      "name": "bibliothèque",
+      "palette": 2,
+      "solid": true,
+      "counter": true,
+      "trigger": false,
+      "tiles": [
+        33,
+        34,
+        35,
+        36
+      ],
+      "attr": 14
+    },
+    {
+      "index": 11,
+      "ch": "P",
+      "name": "plante en pot",
+      "palette": 3,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        37,
+        38,
+        39,
+        40
+      ],
+      "attr": 7
+    },
+    {
+      "index": 12,
+      "ch": "K",
+      "name": "comptoir de cuisine",
+      "palette": 3,
+      "solid": true,
+      "counter": true,
+      "trigger": false,
+      "tiles": [
+        41,
+        42,
+        43,
+        44
+      ],
+      "attr": 15
+    },
+    {
+      "index": 13,
+      "ch": "S",
+      "name": "cuisinière",
+      "palette": 3,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        45,
+        46,
+        47,
+        48
+      ],
+      "attr": 7
+    },
+    {
+      "index": 14,
+      "ch": "F",
+      "name": "réfrigérateur",
+      "palette": 3,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "attr": 7
+    },
+    {
+      "index": 15,
+      "ch": "b",
+      "name": "lit (couverture rouge)",
+      "palette": 2,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        53,
+        54,
+        55,
+        56
+      ],
+      "attr": 6
+    },
+    {
+      "index": 16,
+      "ch": "D",
+      "name": "porte (sortie)",
+      "palette": 1,
+      "solid": false,
+      "counter": false,
+      "trigger": true,
+      "tiles": [
+        57,
+        58,
+        59,
+        60
+      ],
+      "attr": 17
+    },
+    {
+      "index": 17,
+      "ch": "L",
+      "name": "lampe sur pied",
+      "palette": 1,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        61,
+        62,
+        63,
+        64
+      ],
+      "attr": 5
+    },
+    {
+      "index": 18,
+      "ch": "t",
+      "name": "téléviseur",
+      "palette": 1,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        65,
+        66,
+        67,
+        68
+      ],
+      "attr": 5
+    },
+    {
+      "index": 19,
+      "ch": "C",
+      "name": "commode",
+      "palette": 1,
+      "solid": true,
+      "counter": true,
+      "trigger": false,
+      "tiles": [
+        69,
+        70,
+        71,
+        72
+      ],
+      "attr": 13
+    },
+    {
+      "index": 20,
+      "ch": "h",
+      "name": "mur avec horloge",
+      "palette": 1,
+      "solid": true,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        73,
+        74,
+        75,
+        76
+      ],
+      "attr": 5
+    },
+    {
+      "index": 21,
+      "ch": "r",
+      "name": "tapis de couloir",
+      "palette": 2,
+      "solid": false,
+      "counter": false,
+      "trigger": false,
+      "tiles": [
+        77,
+        78,
+        77,
+        78
+      ],
+      "attr": 2
+    }
+  ]
+}

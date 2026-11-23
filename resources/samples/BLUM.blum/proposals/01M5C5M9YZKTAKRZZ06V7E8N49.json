@@ -1,0 +1,118 @@
+{
+  "id": "01M5C5M9YZKTAKRZZ06V7E8N49",
+  "director": "movement",
+  "state": "approved",
+  "createdAt": "2026-10-20T08:07:45.887Z",
+  "tool": "propose_boss",
+  "summary": {
+    "fr": "Boss « Le Roi des Cônes » : 8 vies, 2 phase(s).",
+    "en": "Boss \"The Cone King\": 8 hp, 2 phase(s)."
+  },
+  "ops": [
+    {
+      "op": "set",
+      "doc": "scripts/roi-cones.json",
+      "value": {
+        "schemaVersion": 1,
+        "phases": [
+          {
+            "steps": [
+              {
+                "op": "vulnerable",
+                "on": true
+              },
+              {
+                "op": "jump",
+                "vx": 24,
+                "vy": 72
+              },
+              {
+                "op": "wait",
+                "frames": 20
+              },
+              {
+                "op": "jump",
+                "vx": -24,
+                "vy": 72
+              },
+              {
+                "op": "wait",
+                "frames": 20
+              },
+              {
+                "op": "spawn",
+                "enemy": "cone"
+              },
+              {
+                "op": "wait",
+                "frames": 60
+              }
+            ]
+          },
+          {
+            "hpBelow": 4,
+            "steps": [
+              {
+                "op": "vulnerable",
+                "on": true
+              },
+              {
+                "op": "jump",
+                "vx": 32,
+                "vy": 80
+              },
+              {
+                "op": "wait",
+                "frames": 10
+              },
+              {
+                "op": "jump",
+                "vx": -32,
+                "vy": 80
+              },
+              {
+                "op": "wait",
+                "frames": 10
+              },
+              {
+                "op": "spawn",
+                "enemy": "cone"
+              },
+              {
+                "op": "flash",
+                "frames": 6
+              },
+              {
+                "op": "wait",
+                "frames": 40
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "op": "set",
+      "doc": "actors/roi-cones.json",
+      "value": {
+        "schemaVersion": 1,
+        "kind": "boss",
+        "name": {
+          "fr": "Le Roi des Cônes",
+          "en": "The Cone King"
+        },
+        "hp": 8,
+        "damage": 1,
+        "graphics": "graphics/boss-roi-cones.json",
+        "frames": [
+          "roi-cones1",
+          "roi-cones2"
+        ],
+        "script": "roi-cones"
+      }
+    }
+  ],
+  "warnings": [],
+  "decidedAt": "2026-10-20T08:07:46.114Z",
+  "txId": "01M5C5MA5T9DYJBRR3JMCM4S9P"
+}

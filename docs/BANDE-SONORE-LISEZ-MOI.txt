@@ -1,0 +1,85 @@
+BANDE SONORE - « Adventure Awaits », de Fred, pour Blum
+=======================================================
+
+(English below.)
+
+Ce qu'il y a dans ce dossier
+----------------------------
+
+  Adventure Awaits - version A.mp3          la chanson d'origine, version A
+  Adventure Awaits - version B.mp3          la chanson d'origine, version B
+  Adventure Awaits - version A (NES).wav    la même chanson jouée par la NES (THE LEGEND OF BLUM)
+  Adventure Awaits - version B (NES).wav    idem, version B
+  Adventure Awaits (NES).nsf                les deux versions NES dans un seul fichier musique NES
+                                            (piste 1 = version A, piste 2 = version B)
+  The Legend of Blum - musique du jeu (NES).nsf
+                                            toute la musique du jeu, 7 pistes : 1 La légende, 2 Rue d'Anjou,
+                                            3 Récré de combat, 4 Dictée mortelle, 5 Victoire !,
+                                            6 Adventure Awaits (A), 7 Adventure Awaits (B)
+
+Par où commencer : écoute « version A.mp3 », puis tout de suite « version A (NES).wav ». Pareil pour B.
+Les fichiers NES font deux fois le tour de la boucle : à la fin, la musique repart du début sans coupure,
+comme dans le jeu.
+
+Dans le jeu THE LEGEND OF BLUM : la version A joue sur l'écran titre et dans la rue ; la version B joue
+à l'école Chénier (la cour et l'intérieur).
+
+Comment ces chansons ont été faites
+-----------------------------------
+
+1. Fred a écrit ce texte et l'a donné à un générateur de musique (Suno), qui a fait les deux chansons :
+
+   « Authentic late-1980s Nintendo Entertainment System fantasy RPG soundtrack, heroic 8-bit chiptune
+   adventure theme, memorable catchy melodic hook, adventurous and slightly whimsical, classic fantasy
+   overworld exploration music, bright pulse-wave lead melody, warm secondary pulse harmonies, rolling
+   triangle-wave bass, simple NES-style noise-channel percussion, fast melodic arpeggios, nostalgic 1987
+   video game sound chip character, triumphant major-key passages with mysterious minor-key transitions,
+   energetic but not aggressive, perfectly looping instrumental game music, strictly retro NES audio
+   limitations, no vocals, no orchestral instruments, no modern synthesizers, no cinematic production,
+   no guitars, no realistic drums, no ambient pads, no modern EDM. »
+
+2. Les mp3 « sonnent » NES, mais une vraie NES ne peut pas les jouer. Pour les mettre dans la cartouche,
+   il a fallu les réécrire note par note pour la puce son de la NES, qui n'a que 4 voix :
+     - 2 ondes carrées : la mélodie, et les arpèges rapides qui font les accords ;
+     - 1 onde triangle : la basse qui roule ;
+     - 1 bruit : la batterie (grosse caisse, caisse claire, charleston).
+   On a mesuré le tempo et les accords de chaque chanson, séparé les instruments (Demucs), relevé les notes
+   (basic-pitch), puis tout réécrit à la main, mesure par mesure, avec les vraies limites de la NES.
+   Version A : ré, 4/4, 113 battements par minute, refrain héroïque si bémol - do - ré, passage mineur.
+   Version B : fa, galop en 12/8, 139 battements par minute, passage mineur puis retour en majeur.
+   Chaque chanson est raccourcie à sa partie principale (environ une minute) et boucle sans fin.
+
+3. Les deux chansons tiennent dans la banque son de la cartouche avec tout le reste de la musique du jeu
+   (4 661 octets sur 8 192). Les fichiers WAV et NSF viennent exactement des mêmes notes que la cartouche.
+
+Écouter les fichiers .nsf : un lecteur de musique NES (NSFPlay, ou foobar2000 avec le module « Game Emu
+Player »), ou l'émulateur Mesen (Fichier > Ouvrir, puis choisir la piste). Une cartouche flash NES qui lit
+les NSF peut aussi les jouer sur une vraie console.
+
+Musique : Fred (NUVoize), 2026, pour Blum. Arrangement NES : NES BLUM FACTORY. Outils : Demucs (MIT),
+basic-pitch de Spotify (Apache-2.0), FamiStudio (MIT).
+
+
+SOUNDTRACK - "Adventure Awaits", by Fred, for Blum
+==================================================
+
+What is in this folder: the two original songs (mp3, version A and version B), the same songs as the NES
+plays them in THE LEGEND OF BLUM (WAV, the loop played twice), the two NES versions in one NES music file
+(Adventure Awaits (NES).nsf: track 1 = A, track 2 = B), and the whole game soundtrack as an NSF (7 tracks).
+
+Where to start: play "version A.mp3", then right away "version A (NES).wav". Same for B.
+In the game, version A plays on the title screen and in the street; version B plays at the Chénier school.
+
+How they were made: Fred wrote the prompt above and a music generator (Suno) made the two songs. A real
+NES cannot play an mp3, so each song was rewritten note by note for the NES sound chip and its 4 voices:
+2 pulse waves (melody, and fast arpeggios for the chords), 1 triangle (the rolling bass), 1 noise (drums).
+Tempo and chords were measured, the instruments separated (Demucs), the notes transcribed (basic-pitch), then
+everything was arranged by hand, bar by bar, within the real NES limits. Version A: D, 4/4, 113 BPM.
+Version B: F, 12/8 gallop, 139 BPM. Each song is cut to its main part (about one minute) and loops forever.
+Both fit in the cartridge's sound bank with the rest of the game's music (4,661 of 8,192 bytes).
+
+Play the .nsf files with an NES music player (NSFPlay, or foobar2000 with "Game Emu Player") or with the
+Mesen emulator (File > Open, then pick the track).
+
+Music: Fred (NUVoize), 2026, for Blum. NES arrangement: NES BLUM FACTORY. Tools: Demucs (MIT), Spotify's
+basic-pitch (Apache-2.0), FamiStudio (MIT).

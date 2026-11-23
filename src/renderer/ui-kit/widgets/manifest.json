@@ -1,0 +1,287 @@
+{
+  "note": "All sizes at 1x. Use image-rendering: pixelated and integer zoom (var(--px)).",
+  "assets": {
+    "frame-stone": {
+      "file": "widgets/frame-stone.png",
+      "w": 24,
+      "h": 24,
+      "kind": "image",
+      "slice": 8,
+      "css": "border-style: solid; border-width: calc(8px * var(--px)); border-image: url('widgets/frame-stone.png') 8 fill round;",
+      "style": "A: bevelled steel window"
+    },
+    "frame-gilded": {
+      "file": "widgets/frame-gilded.png",
+      "w": 24,
+      "h": 24,
+      "kind": "image",
+      "slice": 8,
+      "css": "border-style: solid; border-width: calc(8px * var(--px)); border-image: url('widgets/frame-gilded.png') 8 fill round;",
+      "style": "B: gilded dialogue frame with rivets"
+    },
+    "frame-inset": {
+      "file": "widgets/frame-inset.png",
+      "w": 24,
+      "h": 24,
+      "kind": "image",
+      "slice": 8,
+      "css": "border-style: solid; border-width: calc(8px * var(--px)); border-image: url('widgets/frame-inset.png') 8 fill round;",
+      "style": "sunken well for viewports and lists"
+    },
+    "title-bar": {
+      "file": "widgets/title-bar.png",
+      "w": 24,
+      "h": 12,
+      "kind": "image",
+      "slice": 8,
+      "css": "border-style: solid; border-width: calc(8px * var(--px)); border-image: url('widgets/title-bar.png') 8 fill round;",
+      "note": "left slice holds the bloom diamond; text goes after 10px*px"
+    },
+    "button-normal": {
+      "file": "widgets/button-normal.png",
+      "w": 32,
+      "h": 16,
+      "kind": "image",
+      "slice": 4,
+      "css": "border-style: solid; border-width: calc(4px * var(--px)); border-image: url('widgets/button-normal.png') 4 fill round;"
+    },
+    "button-hover": {
+      "file": "widgets/button-hover.png",
+      "w": 32,
+      "h": 16,
+      "kind": "image",
+      "slice": 4,
+      "css": "border-style: solid; border-width: calc(4px * var(--px)); border-image: url('widgets/button-hover.png') 4 fill round;"
+    },
+    "button-pressed": {
+      "file": "widgets/button-pressed.png",
+      "w": 32,
+      "h": 16,
+      "kind": "image",
+      "slice": 4,
+      "css": "border-style: solid; border-width: calc(4px * var(--px)); border-image: url('widgets/button-pressed.png') 4 fill round;"
+    },
+    "button-disabled": {
+      "file": "widgets/button-disabled.png",
+      "w": 32,
+      "h": 16,
+      "kind": "image",
+      "slice": 4,
+      "css": "border-style: solid; border-width: calc(4px * var(--px)); border-image: url('widgets/button-disabled.png') 4 fill round;"
+    },
+    "button-primary": {
+      "file": "widgets/button-primary.png",
+      "w": 32,
+      "h": 16,
+      "kind": "image",
+      "slice": 4,
+      "css": "border-style: solid; border-width: calc(4px * var(--px)); border-image: url('widgets/button-primary.png') 4 fill round;"
+    },
+    "button-primary-hover": {
+      "file": "widgets/button-primary-hover.png",
+      "w": 32,
+      "h": 16,
+      "kind": "image",
+      "slice": 4,
+      "css": "border-style: solid; border-width: calc(4px * var(--px)); border-image: url('widgets/button-primary-hover.png') 4 fill round;"
+    },
+    "button-primary-pressed": {
+      "file": "widgets/button-primary-pressed.png",
+      "w": 32,
+      "h": 16,
+      "kind": "image",
+      "slice": 4,
+      "css": "border-style: solid; border-width: calc(4px * var(--px)); border-image: url('widgets/button-primary-pressed.png') 4 fill round;"
+    },
+    "button-danger": {
+      "file": "widgets/button-danger.png",
+      "w": 32,
+      "h": 16,
+      "kind": "image",
+      "slice": 4,
+      "css": "border-style: solid; border-width: calc(4px * var(--px)); border-image: url('widgets/button-danger.png') 4 fill round;"
+    },
+    "tab-active": {
+      "file": "widgets/tab-active.png",
+      "w": 32,
+      "h": 14,
+      "kind": "image",
+      "slice": 4,
+      "css": "border-style: solid; border-width: calc(4px * var(--px)); border-image: url('widgets/tab-active.png') 4 fill round;"
+    },
+    "tab-inactive": {
+      "file": "widgets/tab-inactive.png",
+      "w": 32,
+      "h": 14,
+      "kind": "image",
+      "slice": 4,
+      "css": "border-style: solid; border-width: calc(4px * var(--px)); border-image: url('widgets/tab-inactive.png') 4 fill round;"
+    },
+    "text-field": {
+      "file": "widgets/text-field.png",
+      "w": 32,
+      "h": 16,
+      "kind": "image",
+      "slice": 4,
+      "css": "border-style: solid; border-width: calc(4px * var(--px)); border-image: url('widgets/text-field.png') 4 fill round;"
+    },
+    "text-field-focus": {
+      "file": "widgets/text-field-focus.png",
+      "w": 32,
+      "h": 16,
+      "kind": "image",
+      "slice": 4,
+      "css": "border-style: solid; border-width: calc(4px * var(--px)); border-image: url('widgets/text-field-focus.png') 4 fill round;"
+    },
+    "slider-track": {
+      "file": "widgets/slider-track.png",
+      "w": 32,
+      "h": 8,
+      "kind": "image",
+      "slice": 3,
+      "css": "border-style: solid; border-width: calc(3px * var(--px)); border-image: url('widgets/slider-track.png') 3 fill round;"
+    },
+    "slider-fill": {
+      "file": "widgets/slider-fill.png",
+      "w": 8,
+      "h": 6,
+      "kind": "tile"
+    },
+    "slider-knob": {
+      "file": "widgets/slider-knob.png",
+      "w": 8,
+      "h": 12,
+      "kind": "image"
+    },
+    "checkbox-off": {
+      "file": "widgets/checkbox-off.png",
+      "w": 12,
+      "h": 12,
+      "kind": "image"
+    },
+    "checkbox-on": {
+      "file": "widgets/checkbox-on.png",
+      "w": 12,
+      "h": 12,
+      "kind": "image"
+    },
+    "radio-off": {
+      "file": "widgets/radio-off.png",
+      "w": 12,
+      "h": 12,
+      "kind": "image"
+    },
+    "radio-on": {
+      "file": "widgets/radio-on.png",
+      "w": 12,
+      "h": 12,
+      "kind": "image"
+    },
+    "cursor-hand": {
+      "file": "widgets/cursor-hand.png",
+      "w": 16,
+      "h": 16,
+      "kind": "image",
+      "hotspot": [
+        5,
+        0
+      ]
+    },
+    "cursor-arrow": {
+      "file": "widgets/cursor-arrow.png",
+      "w": 8,
+      "h": 13,
+      "kind": "image",
+      "note": "menu cursor; bob 1px with CSS steps()"
+    },
+    "press-start-on": {
+      "file": "widgets/press-start-on.png",
+      "w": 91,
+      "h": 11,
+      "kind": "image",
+      "blink": "toggle on/off at 2 Hz with animation steps(1)"
+    },
+    "press-start-off": {
+      "file": "widgets/press-start-off.png",
+      "w": 91,
+      "h": 11,
+      "kind": "image"
+    },
+    "appuie-start-on": {
+      "file": "widgets/appuie-start-on.png",
+      "w": 131,
+      "h": 11,
+      "kind": "image"
+    },
+    "appuie-start-off": {
+      "file": "widgets/appuie-start-off.png",
+      "w": 131,
+      "h": 11,
+      "kind": "image"
+    },
+    "progress-track": {
+      "file": "widgets/progress-track.png",
+      "w": 32,
+      "h": 12,
+      "kind": "image",
+      "slice": 3,
+      "css": "border-style: solid; border-width: calc(3px * var(--px)); border-image: url('widgets/progress-track.png') 3 fill round;"
+    },
+    "progress-fill-success": {
+      "file": "widgets/progress-fill-success.png",
+      "w": 8,
+      "h": 6,
+      "kind": "tile"
+    },
+    "progress-fill-accent": {
+      "file": "widgets/progress-fill-accent.png",
+      "w": 8,
+      "h": 6,
+      "kind": "tile"
+    },
+    "progress-fill-bloom": {
+      "file": "widgets/progress-fill-bloom.png",
+      "w": 8,
+      "h": 6,
+      "kind": "tile"
+    },
+    "progress-fill-danger": {
+      "file": "widgets/progress-fill-danger.png",
+      "w": 8,
+      "h": 6,
+      "kind": "tile"
+    },
+    "toast-info": {
+      "file": "widgets/toast-info.png",
+      "w": 48,
+      "h": 24,
+      "kind": "image",
+      "slice": 8,
+      "css": "border-style: solid; border-width: calc(8px * var(--px)); border-image: url('widgets/toast-info.png') 8 fill round;"
+    },
+    "toast-success": {
+      "file": "widgets/toast-success.png",
+      "w": 48,
+      "h": 24,
+      "kind": "image",
+      "slice": 8,
+      "css": "border-style: solid; border-width: calc(8px * var(--px)); border-image: url('widgets/toast-success.png') 8 fill round;"
+    },
+    "toast-danger": {
+      "file": "widgets/toast-danger.png",
+      "w": 48,
+      "h": 24,
+      "kind": "image",
+      "slice": 8,
+      "css": "border-style: solid; border-width: calc(8px * var(--px)); border-image: url('widgets/toast-danger.png') 8 fill round;"
+    },
+    "toast-bloom": {
+      "file": "widgets/toast-bloom.png",
+      "w": 48,
+      "h": 24,
+      "kind": "image",
+      "slice": 8,
+      "css": "border-style: solid; border-width: calc(8px * var(--px)); border-image: url('widgets/toast-bloom.png') 8 fill round;"
+    }
+  }
+}

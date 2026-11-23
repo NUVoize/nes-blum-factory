@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "phases": [
+    {
+      "steps": [
+        {
+          "op": "vulnerable",
+          "on": true
+        },
+        {
+          "op": "jump",
+          "vx": 24,
+          "vy": 72
+        },
+        {
+          "op": "wait",
+          "frames": 20
+        },
+        {
+          "op": "jump",
+          "vx": -24,
+          "vy": 72
+        },
+        {
+          "op": "wait",
+          "frames": 20
+        },
+        {
+          "op": "spawn",
+          "enemy": "cone"
+        },
+        {
+          "op": "wait",
+          "frames": 60
+        }
+      ]
+    },
+    {
+      "hpBelow": 4,
+      "steps": [
+        {
+          "op": "vulnerable",
+          "on": true
+        },
+        {
+          "op": "jump",
+          "vx": 32,
+          "vy": 80
+        },
+        {
+          "op": "wait",
+          "frames": 10
+        },
+        {
+          "op": "jump",
+          "vx": -32,
+          "vy": 80
+        },
+        {
+          "op": "wait",
+          "frames": 10
+        },
+        {
+          "op": "spawn",
+          "enemy": "cone"
+        },
+        {
+          "op": "flash",
+          "frames": 6
+        },
+        {
+          "op": "wait",
+          "frames": 40
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 1,
+  "format": "nbf-graphics",
+  "id": "tuiles-tempete",
+  "name": "Tuiles Tempête",
+  "kind": "tileset",
+  "role": "background",
+  "source": "sample-game/gfx/tilesets/w4.json (NES-BLUM-FACTORY-ASSETS 385a930)",
+  "preview": "graphics/tuiles-tempete.png",
+  "chr": "graphics/tuiles-tempete.chr",
+  "bankSize": 4096,
+  "settings": null,
+  "palettes": {
+    "world": "tempete",
+    "mode": "free",
+    "backdrop": 1,
+    "slots": [
+      {
+        "slot": 0,
+        "colors": [
+          15,
+          48,
+          22
+        ]
+      },
+      {
+        "slot": 1,
+        "colors": [
+          17,
+          33,
+          49
+        ]
+      },
+      {
+        "slot": 2,
+        "colors": [
+          15,
+          44,
+          48
+        ]
+      },
+      {
+        "slot": 3,
+        "colors": [
+          7,
+          23,
+          55
+        ]
+      }
+    ]
+  },
+  "metatiles": [
+    {
+      "id": 0,
+      "tiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "palette": 1
+    },
+    {
+      "id": 1,
+      "tiles": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "palette": 2
+    },
+    {
+      "id": 2,
+      "tiles": [
+        5,
+        5,
+        6,
+        7
+      ],
+      "palette": 1
+    },
+    {
+      "id": 3,
+      "tiles": [
+        8,
+        9,
+        6,
+        10
+      ],
+      "palette": 1
+    },
+    {
+      "id": 4,
+      "tiles": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "palette": 1
+    },
+    {
+      "id": 5,
+      "tiles": [
+        15,
+        16,
+        0,
+        0
+      ],
+      "palette": 3
+    },
+    {
+      "id": 6,
+      "tiles": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "palette": 3
+    },
+    {
+      "id": 7,
+      "tiles": [
+        21,
+        21,
+        0,
+        0
+      ],
+      "palette": 2
+    },
+    {
+      "id": 8,
+      "tiles": [
+        22,
+        22,
+        23,
+        23
+      ],
+      "palette": 1
+    },
+    {
+      "id": 9,
+      "tiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "palette": 1
+    },
+    {
+      "id": 10,
+      "tiles": [
+        24,
+        25,
+        26,
+        27
+      ],
+      "palette": 3
+    },
+    {
+      "id": 11,
+      "tiles": [
+        28,
+        29,
+        30,
+        31
+      ],
+      "palette": 3
+    },
+    {
+      "id": 12,
+      "tiles": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "palette": 3
+    },
+    {
+      "id": 13,
+      "tiles": [
+        36,
+        37,
+        36,
+        37
+      ],
+      "palette": 3
+    },
+    {
+      "id": 14,
+      "tiles": [
+        38,
+        38,
+        39,
+        39
+      ],
+      "palette": 3
+    },
+    {
+      "id": 15,
+      "tiles": [
+        40,
+        41,
+        42,
+        43
+      ],
+      "palette": 2
+    },
+    {
+      "id": 16,
+      "tiles": [
+        44,
+        45,
+        46,
+        47
+      ],
+      "palette": 2
+    },
+    {
+      "id": 17,
+      "tiles": [
+        48,
+        49,
+        50,
+        51
+      ],
+      "palette": 2
+    },
+    {
+      "id": 18,
+      "tiles": [
+        52,
+        53,
+        54,
+        55
+      ],
+      "palette": 2
+    },
+    {
+      "id": 19,
+      "tiles": [
+        56,
+        57,
+        58,
+        59
+      ],
+      "palette": 2
+    },
+    {
+      "id": 20,
+      "tiles": [
+        60,
+        61,
+        62,
+        63
+      ],
+      "palette": 1
+    }
+  ],
+  "map": {
+    "cols": 8,
+    "rows": 3,
+    "cells": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      0,
+      0,
+      0
+    ]
+  },
+  "budget": {
+    "colors": 0,
+    "subpalettes": 4,
+    "tiles": 64,
+    "tilesBeforeMerge": 64,
+    "tileCapacity": 256,
+    "merged": 0,
+    "sprites": 0,
+    "maxPerLine": 0,
+    "banks": [
+      {
+        "index": 0,
+        "tiles": 64,
+        "capacity": 256
+      }
+    ],
+    "warnings": [],
+    "metatiles": 21
+  }
+}

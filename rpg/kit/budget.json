@@ -1,0 +1,101 @@
+{
+  "chrKiB": {
+    "ui": 2,
+    "tilesets": 8,
+    "battleBackdrops": 3,
+    "enemies": 4,
+    "blumEnfant": 1,
+    "npcSets": 2,
+    "enemiesMap": 1,
+    "fx": 1,
+    "title": 2,
+    "total": 24
+  },
+  "chrCapacityKiB": 128,
+  "tiles": {
+    "ui": {
+      "used": 128,
+      "capacity": 128
+    },
+    "tilesets": {
+      "appartement": {
+        "metatiles": 22,
+        "tiles": 79,
+        "capacity": 128
+      },
+      "anjou": {
+        "metatiles": 23,
+        "tiles": 73,
+        "capacity": 128
+      },
+      "chenier-ext": {
+        "metatiles": 22,
+        "tiles": 75,
+        "capacity": 128
+      },
+      "chenier-int": {
+        "metatiles": 19,
+        "tiles": 61,
+        "capacity": 128
+      }
+    },
+    "battleBackdrops": {
+      "classe": {
+        "tiles": 36,
+        "capacity": 64
+      },
+      "cour": {
+        "tiles": 26,
+        "capacity": 64
+      },
+      "salon": {
+        "tiles": 39,
+        "capacity": 64
+      }
+    },
+    "enemies": {
+      "crayon": {
+        "tiles": 26,
+        "capacity": 64
+      },
+      "marie-claude": {
+        "tiles": 31,
+        "capacity": 64
+      },
+      "mouton": {
+        "tiles": 17,
+        "capacity": 64
+      },
+      "boulette": {
+        "tiles": 17,
+        "capacity": 64
+      }
+    },
+    "blumEnfant": {
+      "tiles": 48,
+      "capacity": 64
+    },
+    "npcs": {
+      "npcs-ch00": {
+        "tiles": 37,
+        "capacity": 64
+      },
+      "npcs-ch01": {
+        "tiles": 38,
+        "capacity": 64
+      }
+    },
+    "enemiesMap": {
+      "tiles": 28,
+      "capacity": 64
+    },
+    "fx": {
+      "tiles": 48,
+      "capacity": 64
+    },
+    "title": {
+      "tiles": 58,
+      "capacity": 128
+    }
+  }
+}

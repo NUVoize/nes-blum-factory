@@ -1,0 +1,131 @@
+{
+  "id": "01M5C5MA0Z5A62QZKK6GFVHWM8",
+  "director": "movement",
+  "state": "approved",
+  "createdAt": "2026-10-20T08:07:45.951Z",
+  "tool": "propose_boss",
+  "summary": {
+    "fr": "Boss « Le Gros Frette » : 12 vies, 2 phase(s).",
+    "en": "Boss \"The Big Chill\": 12 hp, 2 phase(s)."
+  },
+  "ops": [
+    {
+      "op": "set",
+      "doc": "scripts/gros-frette.json",
+      "value": {
+        "schemaVersion": 1,
+        "phases": [
+          {
+            "steps": [
+              {
+                "op": "vulnerable",
+                "on": true
+              },
+              {
+                "op": "shoot",
+                "pattern": "aimed",
+                "speed": 32
+              },
+              {
+                "op": "wait",
+                "frames": 30
+              },
+              {
+                "op": "shoot",
+                "pattern": "aimed",
+                "speed": 32
+              },
+              {
+                "op": "wait",
+                "frames": 30
+              },
+              {
+                "op": "shoot",
+                "pattern": "aimed",
+                "speed": 32
+              },
+              {
+                "op": "wait",
+                "frames": 20
+              },
+              {
+                "op": "charge",
+                "speed": 32
+              },
+              {
+                "op": "wait",
+                "frames": 40
+              }
+            ]
+          },
+          {
+            "hpBelow": 6,
+            "steps": [
+              {
+                "op": "vulnerable",
+                "on": true
+              },
+              {
+                "op": "spawn",
+                "enemy": "glacon"
+              },
+              {
+                "op": "shoot",
+                "pattern": "aimed",
+                "speed": 36
+              },
+              {
+                "op": "wait",
+                "frames": 20
+              },
+              {
+                "op": "shoot",
+                "pattern": "spread",
+                "speed": 36
+              },
+              {
+                "op": "wait",
+                "frames": 15
+              },
+              {
+                "op": "charge",
+                "speed": 44
+              },
+              {
+                "op": "flash",
+                "frames": 6
+              },
+              {
+                "op": "wait",
+                "frames": 30
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "op": "set",
+      "doc": "actors/gros-frette.json",
+      "value": {
+        "schemaVersion": 1,
+        "kind": "boss",
+        "name": {
+          "fr": "Le Gros Frette",
+          "en": "The Big Chill"
+        },
+        "hp": 12,
+        "damage": 1,
+        "graphics": "graphics/boss-gros-frette.json",
+        "frames": [
+          "gros-frette1",
+          "gros-frette2"
+        ],
+        "script": "gros-frette"
+      }
+    }
+  ],
+  "warnings": [],
+  "decidedAt": "2026-10-20T08:07:46.192Z",
+  "txId": "01M5C5MA884BRE8JT2GY0257KK"
+}

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "centre-ville",
+  "name": {"fr": "Centre-ville", "en": "Downtown"},
+  "palette": "nuit",
+  "backdrop": "centre-ville",
+  "timeStart": 51,
+  "segments": [
+    {"length": 220, "curve": 0, "hill": 0, "traffic": 2, "scenery": 1},
+    {"length": 240, "curve": -16, "hill": 0, "traffic": 3, "scenery": 1},
+    {"length": 220, "curve": 0, "hill": 0, "traffic": 2, "scenery": 1, "objects": [{"at": 60, "kind": "bus", "lane": 0}, {"at": 140, "kind": "cone", "lane": 1}]},
+    {"length": 260, "curve": 20, "hill": 0, "traffic": 3, "scenery": 1},
+    {"length": 220, "curve": 0, "hill": 6, "traffic": 2, "scenery": 1},
+    {"length": 240, "curve": 0, "hill": -6, "traffic": 2, "scenery": 1, "objects": [{"at": 100, "kind": "pothole", "lane": -1}]},
+    {"length": 220, "curve": -24, "hill": 0, "traffic": 2, "scenery": 1, "checkpoint": {"addTime": 49}},
+    {"length": 240, "curve": 0, "hill": 0, "traffic": 3, "scenery": 1},
+    {"length": 220, "curve": 24, "hill": 0, "traffic": 2, "scenery": 1, "objects": [{"at": 80, "kind": "bus", "lane": 1}, {"at": 160, "kind": "car", "lane": -1}]},
+    {"length": 240, "curve": 0, "hill": 8, "traffic": 2, "scenery": 1},
+    {"length": 220, "curve": 0, "hill": -8, "traffic": 2, "scenery": 1, "objects": [{"at": 60, "kind": "cone", "lane": 0}, {"at": 100, "kind": "cone", "lane": 0}, {"at": 140, "kind": "cone", "lane": 0}]},
+    {"length": 260, "curve": -20, "hill": 0, "traffic": 3, "scenery": 1},
+    {"length": 220, "curve": 0, "hill": 0, "traffic": 2, "scenery": 1, "checkpoint": {"addTime": 49}},
+    {"length": 260, "curve": 26, "hill": 0, "traffic": 2, "scenery": 1, "objects": [{"at": 120, "kind": "plow", "lane": 0}]},
+    {"length": 220, "curve": 0, "hill": 0, "traffic": 3, "scenery": 1},
+    {"length": 240, "curve": -26, "hill": 0, "traffic": 2, "scenery": 1, "objects": [{"at": 120, "kind": "bus", "lane": 1}]},
+    {"length": 220, "curve": 0, "hill": 10, "traffic": 2, "scenery": 1},
+    {"length": 240, "curve": 0, "hill": -10, "traffic": 2, "scenery": 1},
+    {"length": 240, "curve": 16, "hill": 0, "traffic": 2, "scenery": 1, "checkpoint": {"addTime": 30}},
+    {"length": 240, "curve": 0, "hill": 0, "traffic": 2, "scenery": 1, "objects": [{"at": 80, "kind": "cone", "lane": -1}, {"at": 120, "kind": "cone", "lane": 1}]},
+    {"length": 300, "curve": 0, "hill": 0, "traffic": 1, "scenery": 1}
+  ]
+}

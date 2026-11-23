@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "enemy",
+  "name": {
+    "fr": "Glaçon filant",
+    "en": "Shooting Icicle"
+  },
+  "pattern": "flyer",
+  "speed": 256,
+  "hp": 1,
+  "damage": 1,
+  "turnAtLedge": false,
+  "frames": [
+    "glacon1",
+    "glacon2"
+  ],
+  "period": 32,
+  "amplitude": 8,
+  "graphics": "graphics/ennemis-tempete.json"
+}

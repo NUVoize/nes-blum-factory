@@ -1,0 +1,69 @@
+{
+  "id": "01M5C5M922HNXJ2TT0B5GH494H",
+  "director": "visual",
+  "state": "approved",
+  "createdAt": "2026-10-20T08:07:44.962Z",
+  "tool": "propose_palette_set",
+  "summary": {
+    "fr": "Palettes du monde « La Tempête ».",
+    "en": "Palettes for world \"The Ice Storm\"."
+  },
+  "ops": [
+    {
+      "op": "add",
+      "doc": "graphics/palettes.json",
+      "pointer": "/sets/-",
+      "value": {
+        "id": "tempete",
+        "backdrop": 1,
+        "bg": [
+          [
+            15,
+            48,
+            22
+          ],
+          [
+            17,
+            33,
+            49
+          ],
+          [
+            15,
+            44,
+            48
+          ],
+          [
+            7,
+            23,
+            55
+          ]
+        ],
+        "sprites": [
+          [
+            15,
+            54,
+            41
+          ],
+          [
+            15,
+            48,
+            39
+          ],
+          [
+            15,
+            48,
+            33
+          ],
+          [
+            15,
+            22,
+            39
+          ]
+        ]
+      }
+    }
+  ],
+  "warnings": [],
+  "decidedAt": "2026-10-20T08:07:45.151Z",
+  "txId": "01M5C5M97SEHP0TWF0XSQZ19NQ"
+}

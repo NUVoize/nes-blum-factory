@@ -1,0 +1,48 @@
+{
+  "id": "mouton",
+  "name": "Mouton de poussière",
+  "shortName": "Mouton",
+  "kind": "normal",
+  "chapter": "CH00",
+  "chr": "engine/chr/enemy-mouton.chr",
+  "unit": "second half of R1 (tiles 64-127 of the battle bank): add 64 to every index",
+  "tiles": 17,
+  "capacity": 64,
+  "w": 32,
+  "h": 32,
+  "tilesW": 4,
+  "tilesH": 4,
+  "palette": 3,
+  "paletteHex": [
+    "$0F",
+    "$00",
+    "$10"
+  ],
+  "grid": [
+    [
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      5,
+      6,
+      7,
+      8
+    ],
+    [
+      9,
+      10,
+      11,
+      12
+    ],
+    [
+      13,
+      14,
+      15,
+      16
+    ]
+  ],
+  "placement": "feet on the battle floor line (tile row 19), centred in the enemy area (columns 2-15)"
+}

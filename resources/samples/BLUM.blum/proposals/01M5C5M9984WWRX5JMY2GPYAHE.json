@@ -1,0 +1,142 @@
+{
+  "id": "01M5C5M9984WWRX5JMY2GPYAHE",
+  "director": "movement",
+  "state": "approved",
+  "createdAt": "2026-10-20T08:07:45.192Z",
+  "tool": "propose_physics",
+  "summary": {
+    "fr": "Mouvements : 21 changement(s), Blum : nerveux, saut de 3 cases, double saut.",
+    "en": "Movement: 21 change(s), Blum : nerveux, saut de 3 cases, double saut."
+  },
+  "ops": [
+    {
+      "op": "patch",
+      "doc": "physics.json",
+      "pointer": "/walkAccel",
+      "value": 24
+    },
+    {
+      "op": "patch",
+      "doc": "physics.json",
+      "pointer": "/runMax",
+      "value": 384
+    },
+    {
+      "op": "patch",
+      "doc": "physics.json",
+      "pointer": "/friction",
+      "value": 32
+    },
+    {
+      "op": "patch",
+      "doc": "physics.json",
+      "pointer": "/turnBoost",
+      "value": 48
+    },
+    {
+      "op": "patch",
+      "doc": "physics.json",
+      "pointer": "/gravity",
+      "value": 56
+    },
+    {
+      "op": "patch",
+      "doc": "physics.json",
+      "pointer": "/maxFall",
+      "value": 1024
+    },
+    {
+      "op": "patch",
+      "doc": "physics.json",
+      "pointer": "/airControl",
+      "value": 208
+    },
+    {
+      "op": "patch",
+      "doc": "physics.json",
+      "pointer": "/jumpVelocity",
+      "value": 1184
+    },
+    {
+      "op": "patch",
+      "doc": "physics.json",
+      "pointer": "/jumpCut",
+      "value": 256
+    },
+    {
+      "op": "patch",
+      "doc": "physics.json",
+      "pointer": "/coyoteFrames",
+      "value": 6
+    },
+    {
+      "op": "patch",
+      "doc": "physics.json",
+      "pointer": "/jumpBufferFrames",
+      "value": 6
+    },
+    {
+      "op": "patch",
+      "doc": "physics.json",
+      "pointer": "/doubleJump/enabled",
+      "value": true
+    },
+    {
+      "op": "patch",
+      "doc": "physics.json",
+      "pointer": "/doubleJump/velocity",
+      "value": 960
+    },
+    {
+      "op": "patch",
+      "doc": "physics.json",
+      "pointer": "/ladders/climbSpeed",
+      "value": 256
+    },
+    {
+      "op": "patch",
+      "doc": "physics.json",
+      "pointer": "/projectile/speed",
+      "value": 768
+    },
+    {
+      "op": "patch",
+      "doc": "physics.json",
+      "pointer": "/projectile/maxOnScreen",
+      "value": 2
+    },
+    {
+      "op": "patch",
+      "doc": "physics.json",
+      "pointer": "/projectile/cooldown",
+      "value": 18
+    },
+    {
+      "op": "patch",
+      "doc": "physics.json",
+      "pointer": "/health/hp",
+      "value": 3
+    },
+    {
+      "op": "patch",
+      "doc": "physics.json",
+      "pointer": "/health/knockback/x",
+      "value": 512
+    },
+    {
+      "op": "patch",
+      "doc": "physics.json",
+      "pointer": "/health/knockback/y",
+      "value": 512
+    },
+    {
+      "op": "patch",
+      "doc": "physics.json",
+      "pointer": "/health/iframes",
+      "value": 60
+    }
+  ],
+  "warnings": [],
+  "decidedAt": "2026-10-20T08:07:45.232Z",
+  "txId": "01M5C5M9ACJ70TGJ9ERD5DKVVF"
+}
